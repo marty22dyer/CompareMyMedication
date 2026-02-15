@@ -1,7 +1,7 @@
 import base from "../data/drugs.json";
 import overrides from "../data/overrides.json";
 import comprehensive from "../data/comprehensive-drugs.json";
-import commonMeds from "../data/common-meds.json";
+import commonMeds from "../data/common-meds-enriched.json";
 
 export type Drug = {
   slug: string;
