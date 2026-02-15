@@ -709,6 +709,99 @@
   font-size: 24px;
 }
 
+/* Additional Drug Page Styles */
+
+.drug-rx-badge {
+  background: #dc2626;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.drug-cost-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #16a34a;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.drug-cost-link:hover {
+  color: #15803d;
+  text-decoration: underline;
+}
+
+.drug-subsection-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 16px 0 12px 0;
+}
+
+.drug-info-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #475569;
+  margin: 0 0 12px 0;
+}
+
+.drug-warning-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #dc2626;
+  margin: 0 0 12px 0;
+  padding: 12px;
+  background: #fef2f2;
+  border-left: 4px solid #dc2626;
+  border-radius: 4px;
+}
+
+.drug-list {
+  margin: 0 0 16px 0;
+  padding-left: 24px;
+}
+
+.drug-list li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+.drug-dosing-disclaimer {
+  margin-top: 20px;
+  padding: 16px;
+  background: #eff6ff;
+  border-left: 4px solid #2563eb;
+  border-radius: 4px;
+}
+
+.drug-dosing-disclaimer p {
+  margin: 0;
+  font-size: 15px;
+  color: #1e40af;
+  line-height: 1.6;
+}
+
+.drug-seo-disclaimer {
+  margin-top: 32px;
+  padding: 20px;
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.drug-seo-disclaimer p {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .drug-header {
@@ -734,6 +827,16 @@
 
   .drug-action-buttons {
     grid-template-columns: 1fr;
+  }
+
+  .drug-subsection-title {
+    font-size: 16px;
+  }
+
+  .drug-info-text,
+  .drug-warning-text,
+  .drug-list li {
+    font-size: 15px;
   }
 }
 

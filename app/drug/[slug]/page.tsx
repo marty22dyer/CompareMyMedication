@@ -14,7 +14,26 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
   const name = drug.name;
   const generic = drug.generic || "—";
   const drugClass = drug.class || "—";
-  const conditions = drug.conditions || [];
+  const category = drug.category || "Medication";
+  const usedFor = drug.usedFor || [];
+  
+  // Pricing data
+  const hasGoodRxData = drug.goodrxData?.current_price;
+  const brandPrice = hasGoodRxData ? `$${drug.goodrxData?.current_price}` : "$$$$";
+  const genericPrice = hasGoodRxData && drug.goodrxData?.current_price ? `$${Math.round(drug.goodrxData.current_price * 0.3)}` : "$$";
+  const priceRange = hasGoodRxData ? `$${Math.round(drug.goodrxData.current_price * 0.3)} – $${drug.goodrxData.current_price}` : "Varies by pharmacy";
+  
+  // Drug information
+  const indications = drug.label?.indications || drug.openfdaData?.purpose ? [drug.openfdaData.purpose] : [];
+  const warnings = drug.label?.warnings || drug.openfdaData?.warnings || [];
+  const dosageInfo = drug.label?.dosage || drug.openfdaData?.dosage_and_administration ? [drug.openfdaData.dosage_and_administration] : [];
+  const sideEffects = drug.label?.sideEffects || drug.label?.adverseReactions || drug.openfdaData?.adverse_reactions || [];
+  const interactions = drug.label?.interactions || drug.openfdaData?.drug_interactions || [];
+  
+  // Additional info
+  const dosageForm = drug.ndcData?.dosage_form || drug.goodrxData?.dosage_form || "tablet, capsule";
+  const controlledStatus = drug.controlledSubstance ? "Schedule II" : "Not controlled";
+  const pregnancyCategory = drug.pregnancyCategory || drug.openfdaData?.pregnancy_category || "Consult doctor";
   
   const alts = (drug.alternatives ?? [])
     .map((s: string) => bySlug(s))
@@ -36,13 +55,15 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
                 Generic: <Link href="#" className="drug-generic-link">{generic}</Link>
               </p>
               <div className="drug-meta">
-                <span className="drug-category">{drug.category || "ADHD"}</span>
+                <span className="drug-category">{category}</span>
                 <span className="drug-meta-separator">•</span>
                 <span className="drug-class">{drugClass}</span>
-                <span className="drug-rating">
-                  ⭐⭐⭐⭐☆
-                </span>
-                <span className="drug-price-tier">$$$ price tier</span>
+                {drug.rxOnly && (
+                  <>
+                    <span className="drug-meta-separator">•</span>
+                    <span className="drug-rx-badge">Rx Only</span>
+                  </>
+                )}
               </div>
             </div>
             <div className="drug-header-right">
@@ -85,17 +106,23 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
               <div className="drug-snapshot-value">{drugClass}</div>
             </div>
             <div className="drug-snapshot-row">
-              <div className="drug-snapshot-label">Duration</div>
-              <div className="drug-snapshot-value">4–6 hr (IR) / 10–12 hr (XR)</div>
+              <div className="drug-snapshot-label">Category</div>
+              <div className="drug-snapshot-value">{category}</div>
             </div>
             <div className="drug-snapshot-row">
-              <div className="drug-snapshot-label">Controlled</div>
-              <div className="drug-snapshot-value">Schedule II</div>
+              <div className="drug-snapshot-label">Controlled Status</div>
+              <div className="drug-snapshot-value">{controlledStatus}</div>
             </div>
             <div className="drug-snapshot-row">
-              <div className="drug-snapshot-label">Forms</div>
-              <div className="drug-snapshot-value">tablet, capsule</div>
+              <div className="drug-snapshot-label">Forms Available</div>
+              <div className="drug-snapshot-value">{dosageForm}</div>
             </div>
+            {pregnancyCategory !== "Consult doctor" && (
+              <div className="drug-snapshot-row">
+                <div className="drug-snapshot-label">Pregnancy Category</div>
+                <div className="drug-snapshot-value">{pregnancyCategory}</div>
+              </div>
+            )}
           </div>
         </div>
 
@@ -110,16 +137,21 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
               <p className="drug-cost-subtitle">Estimated monthly cost:</p>
               <div className="drug-cost-tiers">
                 <div className="drug-cost-tier">
-                  <span className="drug-cost-tier-label">$$$$ Brand</span>
+                  <span className="drug-cost-tier-label">{brandPrice} Brand</span>
                 </div>
-                <div className="drug-cost-tier">
-                  <span className="drug-cost-tier-label">$$ Generic</span>
-                </div>
+                {generic !== "—" && (
+                  <div className="drug-cost-tier">
+                    <span className="drug-cost-tier-label">{genericPrice} Generic</span>
+                  </div>
+                )}
               </div>
             </div>
             <div className="drug-cost-right">
               <p className="drug-cost-subtitle">Typical pharmacy range:</p>
-              <p className="drug-cost-range">$12 – $85</p>
+              <p className="drug-cost-range">{priceRange}</p>
+              <a href={`https://www.goodrx.com/${drug.slug}`} target="_blank" rel="noopener noreferrer" className="drug-cost-link">
+                Compare Prices →
+              </a>
             </div>
           </div>
         </div>
@@ -138,7 +170,26 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
           </button>
           {expandedSection === 'effectiveness' && (
             <div className="drug-section-content">
-              <p>Information about drug effectiveness will be displayed here.</p>
+              {indications.length > 0 ? (
+                <>
+                  <h3 className="drug-subsection-title">What is {name} used for?</h3>
+                  {indications.map((indication, idx) => (
+                    <p key={idx} className="drug-info-text">{indication}</p>
+                  ))}
+                  {usedFor.length > 0 && (
+                    <>
+                      <h3 className="drug-subsection-title">Common Uses:</h3>
+                      <ul className="drug-list">
+                        {usedFor.map((use, idx) => (
+                          <li key={idx}>{use}</li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                </>
+              ) : (
+                <p className="drug-info-text">Consult your healthcare provider for information about how {name} may be effective for your condition.</p>
+              )}
             </div>
           )}
         </div>
@@ -157,10 +208,32 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
           </button>
           {expandedSection === 'sideEffects' && (
             <div className="drug-section-content">
-              {drug.label?.warnings?.length ? (
-                <p>{drug.label.warnings[0]}</p>
-              ) : (
-                <p>Side effect information will be displayed here.</p>
+              {warnings.length > 0 && (
+                <>
+                  <h3 className="drug-subsection-title">⚠️ Important Warnings:</h3>
+                  {warnings.map((warning, idx) => (
+                    <p key={idx} className="drug-warning-text">{warning}</p>
+                  ))}
+                </>
+              )}
+              {sideEffects.length > 0 && (
+                <>
+                  <h3 className="drug-subsection-title">Common Side Effects:</h3>
+                  <ul className="drug-list">
+                    {sideEffects.slice(0, 10).map((effect, idx) => (
+                      <li key={idx}>{effect}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {interactions.length > 0 && (
+                <>
+                  <h3 className="drug-subsection-title">Drug Interactions:</h3>
+                  <p className="drug-info-text">May interact with: {interactions.slice(0, 5).join(", ")}</p>
+                </>
+              )}
+              {warnings.length === 0 && sideEffects.length === 0 && (
+                <p className="drug-info-text">Always discuss potential side effects with your healthcare provider before starting {name}.</p>
               )}
             </div>
           )}
@@ -180,21 +253,38 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
           </button>
           {expandedSection === 'dosing' && (
             <div className="drug-section-content">
-              <p>Dosing information will be displayed here.</p>
+              {dosageInfo.length > 0 ? (
+                <>
+                  <h3 className="drug-subsection-title">Dosage Information:</h3>
+                  {dosageInfo.map((info, idx) => (
+                    <p key={idx} className="drug-info-text">{info}</p>
+                  ))}
+                </>
+              ) : (
+                <p className="drug-info-text">Dosing for {name} should be determined by your healthcare provider based on your individual needs and medical condition.</p>
+              )}
+              <div className="drug-dosing-disclaimer">
+                <p><strong>⚕️ Important:</strong> Never adjust your dosage without consulting your doctor. Dosing varies based on age, weight, condition severity, and other medications.</p>
+              </div>
             </div>
           )}
         </div>
 
         {/* Action Buttons */}
         <div className="drug-action-buttons">
-          <button className="drug-action-btn drug-action-btn-primary">
+          <Link href="/compare" className="drug-action-btn drug-action-btn-primary">
             <span className="drug-action-icon">💊</span>
             Compare Drugs
-          </button>
-          <button className="drug-action-btn drug-action-btn-secondary">
+          </Link>
+          <a href={`https://www.goodrx.com/${drug.slug}`} target="_blank" rel="noopener noreferrer" className="drug-action-btn drug-action-btn-secondary">
             <span className="drug-action-icon">💰</span>
             Find Cheaper Alternative
-          </button>
+          </a>
+        </div>
+        
+        {/* SEO Disclaimer */}
+        <div className="drug-seo-disclaimer">
+          <p><strong>Medical Disclaimer:</strong> This information is for educational purposes only and should not be used as a substitute for professional medical advice. Always consult your healthcare provider before starting, stopping, or changing any medication. Prices shown are estimates and may vary by location and pharmacy.</p>
         </div>
       </div>
     </div>
