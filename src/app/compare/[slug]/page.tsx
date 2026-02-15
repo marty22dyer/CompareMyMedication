@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DRUGS, bySlug, parseCompareSlug, titleCaseFromSlug } from "@/lib/drugs";
+import { DRUGS, bySlug, parseCompareSlug, titleCaseFromSlug } from "../../../lib/drugs";
 
 type Props = {
   params: { slug: string };
