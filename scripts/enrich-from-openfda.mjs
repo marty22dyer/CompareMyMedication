@@ -14,20 +14,45 @@ const MAX_RETRIES = 3;
 // Helper function to delay
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+// Extract brand name from brackets if present
+function extractBrandName(drugName) {
+  const bracketMatch = drugName.match(/\[([^\]]+)\]/);
+  if (bracketMatch) {
+    return bracketMatch[1];
+  }
+  
+  // Remove dosage information
+  const cleanName = drugName
+    .replace(/\d+(\.\d+)?\s*(MG|MCG|G|ML|%)/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  
+  return cleanName || drugName;
+}
+
 // Query OpenFDA API
 async function queryOpenFDA(drugName, retryCount = 0) {
   try {
+    // Extract brand name if in brackets
+    const brandName = extractBrandName(drugName);
+    const cleanName = drugName.replace(/\[.*?\]/g, '').trim();
+    
     // Try multiple search strategies
     const searchStrategies = [
-      `openfda.brand_name:"${drugName}"`,
-      `openfda.generic_name:"${drugName}"`,
-      `openfda.substance_name:"${drugName}"`,
+      `openfda.brand_name:"${brandName}"`,
+      `openfda.generic_name:"${brandName}"`,
+      `openfda.substance_name:"${brandName}"`,
     ];
+    
+    // If brand name is different from original, also try original
+    if (brandName !== drugName) {
+      searchStrategies.push(`openfda.brand_name:"${drugName}"`);
+    }
 
     for (const searchQuery of searchStrategies) {
       const url = `${OPENFDA_BASE_URL}?search=${encodeURIComponent(searchQuery)}&limit=1`;
       
-      console.log(`  Querying: ${searchQuery}`);
+      console.log(`  Querying: ${searchQuery.substring(0, 80)}...`);
       const response = await fetch(url);
       
       if (response.status === 404) {
@@ -46,7 +71,7 @@ async function queryOpenFDA(drugName, retryCount = 0) {
       const data = await response.json();
       
       if (data.results && data.results.length > 0) {
-        console.log(`  ✓ Found data via ${searchQuery}`);
+        console.log(`  ✓ Found data for "${brandName}"`);
         return data.results[0];
       }
     }
