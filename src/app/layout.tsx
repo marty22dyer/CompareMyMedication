@@ -25,7 +25,7 @@ export default function RootLayout({
 
         {/* HEADER */}
         <header className="w-full border-b bg-white shadow-sm">
-          <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="w-full px-6 py-4 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
               <Image
                 src="/CompareMyMedication_logo.png"
@@ -48,7 +48,7 @@ export default function RootLayout({
         </header>
 
         {/* PAGE */}
-        <main className="max-w-6xl mx-auto px-6 py-10">
+        <main className="w-full">
           {children}
         </main>
 
