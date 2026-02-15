@@ -25,16 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/CompareMyMedication Favicon.png" sizes="512x512" type="image/png" />
-        <link rel="icon" href="/CompareMyMedication Favicon.png" sizes="256x256" type="image/png" />
-        <link rel="icon" href="/CompareMyMedication Favicon.png" sizes="192x192" type="image/png" />
-        <link rel="icon" href="/CompareMyMedication Favicon.png" sizes="128x128" type="image/png" />
-        <link rel="icon" href="/CompareMyMedication Favicon.png" sizes="96x96" type="image/png" />
-        <link rel="icon" href="/CompareMyMedication Favicon.png" sizes="64x64" type="image/png" />
-        <link rel="icon" href="/CompareMyMedication Favicon.png" sizes="32x32" type="image/png" />
-        <link rel="apple-touch-icon" href="/CompareMyMedication Favicon.png" sizes="512x512" type="image/png" />
-        <link rel="apple-touch-icon" href="/CompareMyMedication Favicon.png" sizes="192x192" type="image/png" />
-        <link rel="apple-touch-icon" href="/CompareMyMedication Favicon.png" sizes="180x180" type="image/png" />
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💊</text></svg>" />
       </head>
       <body>
         <header className="cmm-nav">
