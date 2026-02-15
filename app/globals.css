@@ -2,6 +2,342 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ===== Modern Drug Page Styles ===== */
+
+/* Drug Page Container */
+.drug-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f8fafc 0%, #ffffff 100%);
+}
+
+/* Hero Section */
+.drug-hero {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: white;
+  padding: 48px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.drug-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Breadcrumb */
+.drug-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.drug-breadcrumb-link {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.drug-breadcrumb-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.drug-breadcrumb-separator {
+  opacity: 0.6;
+}
+
+.drug-breadcrumb-current {
+  opacity: 0.9;
+}
+
+/* Drug Title */
+.drug-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0 0 16px 0;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.drug-generic {
+  font-size: 18px;
+  margin: 0 0 16px 0;
+  opacity: 0.95;
+}
+
+.drug-disclaimer {
+  font-size: 15px;
+  margin: 0;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  border-left: 4px solid rgba(255, 255, 255, 0.5);
+  max-width: 800px;
+}
+
+/* Main Content */
+.drug-content {
+  max-width: 1200px;
+  margin: -40px auto 0;
+  padding: 0 24px 80px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Drug Cards */
+.drug-card {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.drug-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.drug-card-primary {
+  border-top: 4px solid #2563eb;
+  background: linear-gradient(to bottom, #eff6ff 0%, #ffffff 100%);
+}
+
+.drug-card-warning {
+  border-left: 4px solid #f59e0b;
+  background: linear-gradient(to right, #fffbeb 0%, #ffffff 100%);
+}
+
+.drug-card-info {
+  border-left: 4px solid #3b82f6;
+  background: linear-gradient(to right, #eff6ff 0%, #ffffff 100%);
+}
+
+.drug-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 24px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Key Facts Grid */
+.drug-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.drug-fact {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s;
+}
+
+.drug-fact:hover {
+  border-color: #2563eb;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+}
+
+.drug-fact-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.drug-fact-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.4;
+}
+
+/* Conditions Tags */
+.drug-conditions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.drug-condition-tag {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #dbeafe;
+  color: #1e40af;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+  border: 1px solid #bfdbfe;
+}
+
+.drug-condition-tag:hover {
+  background: #3b82f6;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+}
+
+/* Compare List */
+.drug-compare-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.drug-compare-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #1e293b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.drug-compare-link:hover {
+  background: #eff6ff;
+  border-color: #2563eb;
+  color: #2563eb;
+  transform: translateX(4px);
+}
+
+.drug-compare-arrow {
+  color: #2563eb;
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.drug-compare-link:hover .drug-compare-arrow {
+  transform: translateX(4px);
+}
+
+/* Similar Medications */
+.drug-similar-list {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.drug-similar-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.drug-similar-link:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+.drug-similar-separator {
+  color: #cbd5e1;
+  margin: 0 4px;
+}
+
+/* Text Content */
+.drug-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #475569;
+  margin: 0;
+}
+
+/* Back to Top Button */
+.drug-back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  background: #2563eb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  z-index: 100;
+}
+
+.drug-back-to-top:hover {
+  background: #1e40af;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .drug-hero {
+    padding: 32px 16px;
+  }
+
+  .drug-title {
+    font-size: 36px;
+  }
+
+  .drug-content {
+    padding: 0 16px 60px;
+    margin-top: -30px;
+  }
+
+  .drug-card {
+    padding: 24px 20px;
+  }
+
+  .drug-card-title {
+    font-size: 20px;
+  }
+
+  .drug-facts-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .drug-back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drug-title {
+    font-size: 28px;
+  }
+
+  .drug-generic {
+    font-size: 16px;
+  }
+
+  .drug-disclaimer {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
