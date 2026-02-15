@@ -24,9 +24,9 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
   const priceRange = hasGoodRxData ? `$${Math.round(drug.goodrxData.current_price * 0.3)} – $${drug.goodrxData.current_price}` : "Varies by pharmacy";
   
   // Drug information
-  const indications = drug.label?.indications || drug.openfdaData?.purpose ? [drug.openfdaData.purpose] : [];
+  const indications = drug.label?.indications || (drug.openfdaData?.purpose ? [drug.openfdaData.purpose] : []);
   const warnings = drug.label?.warnings || drug.openfdaData?.warnings || [];
-  const dosageInfo = drug.label?.dosage || drug.openfdaData?.dosage_and_administration ? [drug.openfdaData.dosage_and_administration] : [];
+  const dosageInfo = drug.label?.dosage || (drug.openfdaData?.dosage_and_administration ? [drug.openfdaData.dosage_and_administration] : []);
   const sideEffects = drug.label?.sideEffects || drug.label?.adverseReactions || drug.openfdaData?.adverse_reactions || [];
   const interactions = drug.label?.interactions || drug.openfdaData?.drug_interactions || [];
   
