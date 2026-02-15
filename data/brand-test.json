@@ -1,0 +1,25 @@
+[
+  {
+    "slug": "lipitor",
+    "name": "Lipitor",
+    "generic": "atorvastatin",
+    "class": "Statin",
+    "category": "cholesterol",
+    "usedFor": [
+      "High cholesterol"
+    ],
+    "alternatives": []
+  },
+  {
+    "slug": "prilosec",
+    "name": "Prilosec",
+    "generic": "omeprazole",
+    "class": "PPI",
+    "category": "gi-acid",
+    "usedFor": [
+      "Acid reflux",
+      "GERD"
+    ],
+    "alternatives": []
+  }
+]

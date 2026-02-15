@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Black background -->
+  <rect width="512" height="512" fill="#000000"/>
+  
+  <!-- Blue pill (left) -->
+  <ellipse cx="180" cy="256" rx="80" ry="120" fill="#2d6fe3"/>
+  
+  <!-- Light blue pill (right) -->
+  <ellipse cx="332" cy="256" rx="80" ry="120" fill="#87ceeb"/>
+  
+  <!-- Green downward arrow -->
+  <path d="M256 180 L320 280 L280 280 L280 340 L232 340 L232 280 L192 280 Z" fill="#1aa273"/>
+  
+  <!-- White dollar sign in arrow -->
+  <text x="256" y="300" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">$</text>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "name": "rosterodds-dashboard",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.3.6",
+    "next": "14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "25.2.3",
+    "@types/react": "19.2.14",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "14.0.4",
+    "typescript": "^5.0.0"
+  }
+}

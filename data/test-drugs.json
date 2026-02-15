@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "metformin",
+    "name": "Metformin",
+    "generic": "metformin",
+    "class": "Biguanide",
+    "category": "diabetes",
+    "usedFor": [
+      "Type 2 Diabetes"
+    ],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "Metformin is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus."
+      ],
+      "warnings": [
+        "Lactic acidosis is a rare but serious complication that can occur due to metformin accumulation.",
+        "Renal function should be monitored regularly."
+      ]
+    }
+  },
+  {
+    "slug": "atorvastatin",
+    "name": "Atorvastatin",
+    "generic": "atorvastatin",
+    "class": "Statin",
+    "category": "cholesterol",
+    "usedFor": [
+      "High cholesterol"
+    ],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "Atorvastatin is indicated as an adjunct to diet to reduce elevated total cholesterol and LDL cholesterol."
+      ],
+      "warnings": [
+        "Statins can cause muscle pain and weakness.",
+        "Liver function should be monitored before and during treatment."
+      ]
+    }
+  },
+  {
+    "slug": "lisinopril",
+    "name": "Lisinopril",
+    "generic": "lisinopril",
+    "class": "ACE inhibitor",
+    "category": "blood-pressure",
+    "usedFor": [
+      "High blood pressure"
+    ],
+    "alternatives": [
+      "losartan",
+      "valsartan"
+    ],
+    "label": {
+      "indications": [
+        "Lisinopril is indicated for the treatment of hypertension and heart failure."
+      ],
+      "warnings": [
+        "Can cause angioedema, a serious swelling that can affect airway.",
+        "Monitor potassium levels during treatment."
+      ]
+    }
+  },
+  {
+    "slug": "sertraline",
+    "name": "Sertraline",
+    "generic": "sertraline",
+    "class": "SSRI",
+    "category": "mental-health",
+    "usedFor": [
+      "Depression",
+      "Anxiety"
+    ],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "Sertraline is indicated for major depressive disorder, panic disorder, and obsessive-compulsive disorder."
+      ],
+      "warnings": [
+        "Increased risk of suicidal thoughts in young adults.",
+        "May cause serotonin syndrome when combined with other serotonergic drugs."
+      ]
+    }
+  },
+  {
+    "slug": "omeprazole",
+    "name": "Omeprazole",
+    "generic": "omeprazole",
+    "class": "PPI",
+    "category": "gi-acid",
+    "usedFor": [
+      "Acid reflux",
+      "GERD"
+    ],
+    "alternatives": [
+      "pantoprazole",
+      "esomeprazole"
+    ],
+    "label": {
+      "indications": [
+        "Omeprazole is indicated for the treatment of GERD, erosive esophagitis, and duodenal ulcers."
+      ],
+      "warnings": [
+        "Long-term use may increase risk of bone fractures.",
+        "Can interfere with absorption of certain medications."
+      ]
+    }
+  }
+]

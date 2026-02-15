@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "wegovy",
+    "name": "Wegovy",
+    "generic": "semaglutide",
+    "class": "GLP-1 receptor agonist",
+    "category": "weight-loss",
+    "usedFor": ["Weight loss"],
+    "alternatives": ["ozempic", "mounjaro", "zepbound", "saxenda"]
+  },
+  {
+    "slug": "ozempic",
+    "name": "Ozempic",
+    "generic": "semaglutide",
+    "class": "GLP-1 receptor agonist",
+    "category": "diabetes",
+    "usedFor": ["Type 2 diabetes"],
+    "alternatives": ["wegovy", "mounjaro", "trulicity", "rybelsus"]
+  },
+  {
+    "slug": "mounjaro",
+    "name": "Mounjaro",
+    "generic": "tirzepatide",
+    "class": "GLP-1 receptor agonist",
+    "category": "diabetes",
+    "usedFor": ["Type 2 diabetes", "Weight loss"],
+    "alternatives": ["ozempic", "wegovy", "trulicity"]
+  },
+  {
+    "slug": "metformin",
+    "name": "Metformin",
+    "generic": "metformin",
+    "class": "biguanide",
+    "category": "diabetes",
+    "usedFor": ["Type 2 diabetes"],
+    "alternatives": ["glucophage", "fortamet"]
+  },
+  {
+    "slug": "lisinopril",
+    "name": "Lisinopril",
+    "generic": "lisinopril",
+    "class": "ACE inhibitor",
+    "category": "blood-pressure",
+    "usedFor": ["High blood pressure", "Heart failure"],
+    "alternatives": ["zestril", "prinivil"]
+  },
+  {
+    "slug": "atorvastatin",
+    "name": "Atorvastatin",
+    "generic": "atorvastatin",
+    "class": "statin",
+    "category": "cholesterol",
+    "usedFor": ["High cholesterol"],
+    "alternatives": ["lipitor", "crestor"]
+  },
+  {
+    "slug": "lipitor",
+    "name": "Lipitor",
+    "generic": "atorvastatin",
+    "class": "statin",
+    "category": "cholesterol",
+    "usedFor": ["High cholesterol"],
+    "alternatives": ["crestor", "zocor"]
+  },
+  {
+    "slug": "viagra",
+    "name": "Viagra",
+    "generic": "sildenafil",
+    "class": "PDE5 inhibitor",
+    "category": "erectile-dysfunction",
+    "usedFor": ["Erectile dysfunction"],
+    "alternatives": ["cialis", "levitra"]
+  },
+  {
+    "slug": "cialis",
+    "name": "Cialis",
+    "generic": "tadalafil",
+    "class": "PDE5 inhibitor",
+    "category": "erectile-dysfunction",
+    "usedFor": ["Erectile dysfunction", "Benign prostatic hyperplasia"],
+    "alternatives": ["viagra", "levitra"]
+  },
+  {
+    "slug": "adderall",
+    "name": "Adderall",
+    "generic": "amphetamine/dextroamphetamine",
+    "class": "CNS stimulant",
+    "category": "adhd",
+    "usedFor": ["ADHD", "Narcolepsy"],
+    "alternatives": ["vyvanse", "concerta", "ritalin"]
+  }
+]

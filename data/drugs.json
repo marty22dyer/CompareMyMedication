@@ -1,0 +1,8630 @@
+[
+  {
+    "slug": "abacavir",
+    "name": "abacavir",
+    "rxcui": "190521",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "indications (4) #Section_4 Warnings and Precautions (5.1) #Section_5.1 [see,] italics Contraindications (4) #Section_4 Warnings and Precautions (5.1) #Section_5.1 [see,] italics Abacavir and lamivudine is contraindicated in patients with a prior hypersensitivity reaction to abacavir and in HLA-B*5701-positive patients. All patients should be screened for the HLA-B*5701 allele prior to initiating therapy with abacavir and lamivudine or reinitiation of therapy with abacavir and lamivudine, unless patients have a previously documented HLA-B*5701 allele assessment. Discontinue abacavir and lamivudine immediately if a hypersensitivity reaction is suspected, regardless of HLA-B*5701 status and even when other diagnoses are possible. bold Warnings and Precautions (5.1) #Section_5.1 [see] italics Following a hypersensitivity reaction to abacavir and lamivudine, NEVER restart abacavir and lamivud"
+      ],
+      "warnings": [
+        "Warnings and Precautions (5.1) #Section_5.1 [see] italics Serious and sometimes fatal hypersensitivity reactions, with multiple organ involvement, have occurred with abacavir, a component of abacavir and lamivudine. Patients who carry the HLA-B*5701 allele are at a higher risk of a hypersensitivity reaction to abacavir; although, hypersensitivity reactions have occurred in patients who do not carry the HLA-B*5701 allele. bold Contraindications (4) #Section_4 Warnings and Precautions (5.1) #Section_5.1 [see,] italics Contraindications (4) #Section_4 Warnings and Precautions (5.1) #Section_5.1 [see,] italics Abacavir and lamivudine is contraindicated in patients with a prior hypersensitivity reaction to abacavir and in HLA-B*5701-positive patients. All patients should be screened for the HLA-B*5701 allele prior to initiating therapy with abacavir and lamivudine or reinitiation of therapy w"
+      ]
+    },
+    "dailymed": {
+      "setid": "d12e80eb-906c-4932-bb03-b4060ba1d31c"
+    }
+  },
+  {
+    "slug": "abaloparatide",
+    "name": "abaloparatide",
+    "rxcui": "1921069",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "INDICATIONS & USAGE SECTION 1 INDICATIONS AND USAGE TYMLOS is a human parathyroid hormone related peptide [PTHrP(1-34)] analog indicated for the: #S1.1 Treatment of postmenopausal women with osteoporosis at high risk for fracture or patients who have failed or are intolerant to other available osteoporosis therapy. () #S1.2 Treatment to increase bone density in men with osteoporosis at high risk for fracture or patients who have failed or are intolerant to other available osteoporosis therapy. () unordered disc a6f9c520-1724-4c44-a878-7c65fe87f997 42229-5 SPL UNCLASSIFIED SECTION 1.1 Treatment of Postmenopausal Women with Osteoporosis at High Risk for Fracture TYMLOS is indicated for the treatment of postmenopausal women with osteoporosis at high risk for fracture (defined as a history of osteoporotic fracture or multiple risk factors for fracture), or patients who have failed or are int"
+      ],
+      "warnings": [
+        "Warnings and Precautions () and Adverse Reactions ()] italics Administer the first several doses where the patient can sit or lie down if necessary, in case symptoms of orthostatic hypotension occur. Visually inspect TYMLOS for particulate matter and discoloration prior to administration. TYMLOS is a clear and colorless solution. Do not use if solid particles appear or if the solution is cloudy or colored. Provide appropriate training and instruction to patients and caregivers on the proper use of the TYMLOS pen. unordered Disc s8 1f0a75ad-6da3-4930-8e8f-b5ffddc6ddde 42229-5 SPL UNCLASSIFIED SECTION 2.3 Treatment Duration The safety and efficacy of TYMLOS have not been evaluated beyond 2 years of treatment. Use of the drug for more than 2 years during a patient's lifetime is not recommended. s8a s6 fca11479-8117-4e2d-9a78-29d3b4f6dc1a 43678-2 DOSAGE FORMS & STRENGTHS SECTION 3 DOSAGE FOR"
+      ]
+    },
+    "dailymed": {
+      "setid": "712143d9-e21e-4013-bb3b-3426a21060a8"
+    }
+  },
+  {
+    "slug": "abametapir",
+    "name": "abametapir",
+    "rxcui": "2475532",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "abarelix",
+    "name": "abarelix",
+    "rxcui": "301739",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "abatacept",
+    "name": "abatacept",
+    "rxcui": "614391",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "abciximab",
+    "name": "abciximab",
+    "rxcui": "83929",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "abemaciclib",
+    "name": "abemaciclib",
+    "rxcui": "1946825",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "INDICATIONS & USAGE SECTION 1 INDICATIONS AND USAGE ® VERZENIOis a kinase inhibitor indicated: #s3 #s98 in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, node-positive, early breast cancer at high risk of recurrence. (,) #s4 in combination with an aromatase inhibitor as initial endocrine-based therapy for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative advanced or metastatic breast cancer. () #s4 in combination with fulvestrant for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative advanced or metastatic breast cancer with disease progression following endocrine therapy. () "
+      ],
+      "warnings": [
+        "WARNINGS AND PRECAUTIONS SECTION 5 WARNINGS AND PRECAUTIONS #s9 #s16 Diarrhea: VERZENIO can cause severe cases of diarrhea, associated with dehydration and infection. Instruct patients at the first sign of loose stools to initiate antidiarrheal therapy, increase oral fluids, and notify their healthcare provider. (,) #s9 #s17 Neutropenia: Monitor complete blood counts prior to the start of VERZENIO therapy, every 2 weeks for the first 2 months, monthly for the next 2 months, and as clinically indicated. (,) #s9 #s18 Interstitial Lung Disease (ILD)/Pneumonitis: Severe and fatal cases of ILD/pneumonitis have been reported. Monitor for clinical symptoms or radiological changes indicative of ILD/pneumonitis. Permanently discontinue VERZENIO in all patients with Grade 3 or 4 ILD or pneumonitis. (,) #s9 #s19 Hepatotoxicity: Increases in serum transaminase levels have been observed. Perform live"
+      ]
+    },
+    "dailymed": {
+      "setid": "be4bc0de-0fdc-4d46-8d25-be43c79e6a06"
+    }
+  },
+  {
+    "slug": "abetimus",
+    "name": "abetimus",
+    "rxcui": "1311600",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "abies-alba-leaf-oil",
+    "name": "Abies alba leaf oil",
+    "rxcui": "1549633",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "abies-balsamea-leaf-oil",
+    "name": "Abies balsamea leaf oil",
+    "rxcui": "1356479",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "abies-sibirica-leaf-oil",
+    "name": "Abies sibirica leaf oil",
+    "rxcui": "1306158",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "abiraterone",
+    "name": "abiraterone",
+    "rxcui": "1100072",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "INDICATIONS & USAGE SECTION 1 INDICATIONS AND USAGE Abiraterone acetate tablets are indicated in combination with prednisone for the treatment of patients with: Metastatic castration-resistant prostate cancer (CRPC) Metastatic high-risk castration-sensitive prostate cancer (CSPC) unordered Abiraterone acetate is a CYP17 inhibitor indicated in combination with prednisone for the treatment of patients with: #ID_ea8b0ca6-3572-4261-a464-628f5b3b96d2 metastatic castration-resistant prostate cancer (CRPC). () #ID_ea8b0ca6-3572-4261-a464-628f5b3b96d2 metastatic high-risk castration-sensitive prostate cancer (CSPC). () unordered ID_ea8b0ca6-3572-4261-a464-628f5b3b96d2 2d03acce-fc25-473c-e063-6294a90a8509 34068-7 "
+      ],
+      "warnings": [
+        "Warnings and Precautions (5.3) #ID_ac648cbe-cee5-4745-95c6-60dfb88c9738 [see] italics . italics . italics For patients who develop hepatotoxicity during treatment with abiraterone acetate tablets (ALT and/or AST greater than 5 x ULN or total bilirubin greater than 3 x ULN), interrupt treatment with abiraterone acetate tabletsTreatment may be restarted at a reduced dose of 750 mg once daily following return of liver function tests to the patient’s baseline or to AST and ALT less than or equal to 2.5 x ULN and total bilirubin less than or equal to 1.5 x ULNFor patients who resume treatment, monitor serum transaminases and bilirubin at a minimum of every two weeks for three months and monthly thereafter. . italics If hepatotoxicity recurs at the dose of 750 mg once daily, re-treatment may be restarted at a reduced dose of 500 mg once daily following return of liver function tests to the pat"
+      ]
+    },
+    "dailymed": {
+      "setid": "f308b463-27e4-422a-95a2-ecbbf95eee20"
+    }
+  },
+  {
+    "slug": "abrocitinib",
+    "name": "abrocitinib",
+    "rxcui": "2591476",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "Indications and Usage () top 02/2023 right top #S2.2 #S2.3 #S2.4 #S2.5 Dosage and Administration (,,,) top 12/2023 right top Noautorules 100% ID_65004E13-B1BA-415B-BB76-74B09FBE0DE7 c0da1c73-6f8c-4606-9289-9125d26cf662 34066-1 Boxed Warning section WARNING: SERIOUS INFECTIONS, MORTALITY, MALIGNANCY, MAJOR ADVERSE CARDIOVASCULAR EVENTS, and THROMBOSIS WARNING: SERIOUS INFECTIONS, MORTALITY, MALIGNANCY, MAJOR ADVERSE CARDIOVASCULAR EVENTS (MACE), and THROMBOSIS See full prescribing information for complete boxed warning. italics • #S5.1 Increased risk of serious bacterial, fungal, viral and opportunistic infections leading to hospitalization or death, including tuberculosis (TB). Discontinue treatment with CIBINQO if serious or opportunistic infection occurs. Test for latent TB before and during therapy; treat latent TB prior to use. Monitor all patients for active TB during treatment, eve"
+      ],
+      "warnings": [
+        "Warnings and Precautions (5.1) #S5.1 Adverse Reactions (6.1) #S6.1 [seeand] italics Patients treated with CIBINQO may be at increased risk for developing serious infections that may lead to hospitalization or death. The most frequent serious infections reported with CIBINQO were herpes simplex, herpes zoster, and pneumonia. bold If a serious or opportunistic infection develops, discontinue CIBINQO and control the infection. bold Reported infections from Janus kinase (JAK) inhibitors used to treat inflammatory conditions: bold Avoid use of CIBINQO in patients with an active, serious infection including localized infections. The risks and benefits of treatment with CIBINQO should be carefully considered prior to initiating therapy in patients with chronic or recurrent infections. bold Warnings and Precautions (5.1) #S5.1 [see] italics Patients should be closely monitored for the developmen"
+      ]
+    },
+    "dailymed": {
+      "setid": "16c12a56-4550-414b-ac9d-b785b41fea6b"
+    }
+  },
+  {
+    "slug": "acacia-decurrens-extract",
+    "name": "Acacia decurrens extract",
+    "rxcui": "1362813",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acacia-pollen-extract",
+    "name": "Acacia pollen extract",
+    "rxcui": "851732",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acai-berry-extract",
+    "name": "acai berry extract",
+    "rxcui": "848929",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acai-extract",
+    "name": "acai extract",
+    "rxcui": "824547",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acai-fruit-pulp",
+    "name": "acai fruit pulp",
+    "rxcui": "1482538",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acai-oil",
+    "name": "acai oil",
+    "rxcui": "1309282",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acalabrutinib",
+    "name": "acalabrutinib",
+    "rxcui": "1986808",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "Indications and Usage, Mantle Cell Lymphoma () 1/2025 #ID_e4afe2b6-feae-4f47-a30b-6bc1e8b31940 Dosage and Administration, Recommended Dosage () 1/2025 #ID_04f4f621-bac9-46e0-bd9a-ceb029fffeee Dosage and Administration, Dosage Modifications for Adverse Reactions () 1/2025 #ID_3f5f6533-3a71-4461-945c-d49e1829c49b Warnings and Precautions, Second Primary Malignancies () 1/2025 #ID_25e5a9cc-0386-46a4-9d5a-ec8202f651ba Warnings and Precautions, Cardiac Arrythmias () 6/2024 #ID_512f2206-3480-49ba-aa08-abc1ec3fb02b Warnings and Precautions, Hepatotoxicity, Including Drug-Induced Liver Injury () 6/2024 ID_94B8C322-2A00-409C-A42E-3BAB478EC657 67c0e010-f3b7-46f8-981b-d9163bd61852 34067-9 INDICATIONS & USAGE SECTION 1 INDICATIONS AND USAGE CALQUENCE is a kinase inhibitor indicated: • #ID_6aa62177-3989-4ec9-b0fd-8cfbce942fc7 In combination with bendamustine and rituximab for the treatment of adult p"
+      ],
+      "warnings": [
+        "Warnings and Precautions, Second Primary Malignancies () 1/2025 #ID_25e5a9cc-0386-46a4-9d5a-ec8202f651ba Warnings and Precautions, Cardiac Arrythmias () 6/2024 #ID_512f2206-3480-49ba-aa08-abc1ec3fb02b Warnings and Precautions, Hepatotoxicity, Including Drug-Induced Liver Injury () 6/2024 ID_94B8C322-2A00-409C-A42E-3BAB478EC657 67c0e010-f3b7-46f8-981b-d9163bd61852 34067-9 INDICATIONS & USAGE SECTION 1 INDICATIONS AND USAGE CALQUENCE is a kinase inhibitor indicated: • #ID_6aa62177-3989-4ec9-b0fd-8cfbce942fc7 In combination with bendamustine and rituximab for the treatment of adult patients with previously untreated mantle cell lymphoma (MCL) who are ineligible for autologous hematopoietic stem cell transplantation (HSCT). () • #ID_3f8836ad-7051-453a-963f-ccf2bb8e8c62 For the treatment of adult patients with MCL who have received at least one prior therapy. () • #ID_af036978-1c67-41da-b271-"
+      ]
+    },
+    "dailymed": {
+      "setid": "b1409184-3267-4d8c-8f17-4e01f69828b1"
+    }
+  },
+  {
+    "slug": "acalypha-indica-extract",
+    "name": "Acalypha indica extract",
+    "rxcui": "1441294",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acamprosate",
+    "name": "acamprosate",
+    "rxcui": "82819",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "INDICATIONS & USAGE SECTION 1 INDICATIONS AND USAGE Acamprosate calcium delayed-release tablets are indicated for the maintenance of abstinence from alcohol in patients with alcohol dependence who are abstinent at treatment initiation. Treatment with acamprosate calcium delayed-release tablets should be part of a comprehensive management program that includes psychosocial support. The efficacy of acamprosate calcium delayed-release tablets in promoting abstinence has not been demonstrated in subjects who have not undergone detoxification and not achieved alcohol abstinence prior to beginning acamprosate calcium delayed-release tablets treatment. The efficacy of acamprosate calcium delayed-release tablets in promoting abstinence from alcohol in polysubstance abusers has not been adequately assessed. #i4i_indications_id_0a83766e-ad70-4b43-b78f-9380ba56d95c #i4i_clinical_studies_id_3523302d"
+      ],
+      "warnings": [
+        "Warnings and Precautions (5.1) #i4i_section_id_89068e3f-d4c3-4c78-bdf3-17cf2124d27a Use in Specific Populations (8.6) #i4i_section_id_be8b5a8a-845c-4038-92c4-3a07985a9ce3 [see,,, italics Clinical Pharmacology (12.3) #i4i_pharmacokinetics_id_6204c669-4dbc-4eb0-8e19-22a8d4ce0928 ] italics For patients with moderate renal impairment (creatinine clearance of 30 mL/min to 50 mL/min), a starting dose of one 333 mg tablet taken three times daily is recommended. Acamprosate calcium delayed-release tablets are contraindicated in patients with severe renal impairment (creatinine clearance of ≤ 30 mL/min)and. i4i_section_id_182bc578-8af9-4977-a1d3-5429640ae6c4 i4i_dosage_admin_id_755c5b43-677e-4b61-8819-655b3eb6a623 42e7a9bd-1a43-0b76-e063-6294a90a02b7 43678-2 DOSAGE FORMS & STRENGTHS SECTION 3 DOSAGE FORMS AND STRENGTHS Acamprosate calcium delayed-release tablets, 333 mg are white to off-white, ro"
+      ]
+    },
+    "dailymed": {
+      "setid": "4473326f-79f1-61b2-e063-6294a90a17a3"
+    }
+  },
+  {
+    "slug": "acarbose",
+    "name": "acarbose",
+    "rxcui": "16681",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "INDICATIONS & USAGE SECTION INDICATIONS AND USAGE Acarbose tablets, USP are indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus. ID32 ID8 b89e62cd-1ee8-4b5b-96db-0b40ce6fe815 34070-3 "
+      ],
+      "warnings": []
+    },
+    "dailymed": {
+      "setid": "29939129-7d09-4c22-bf3e-491a8a97f4c4"
+    }
+  },
+  {
+    "slug": "acebutolol",
+    "name": "acebutolol",
+    "rxcui": "149",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "INDICATIONS & USAGE SECTION INDICATIONS AND USAGE bold Hypertension bold Acebutolol HCl capsules are indicated for the management of hypertension in adults. It may be used alone or in combination with other antihypertensive agents, especially thiazide-type diuretics. Ventricular Arrhythmias bold Acebutolol HCl capsules are indicated in the management of ventricular premature beats; it reduces the total number of premature beats, as well as the number of paired and multiform ventricular ectopic beats, and R-on-T beats. LINK_e5d82e71-a00b-4792-9091-92657f4faa14 fa40a564-a56f-15c1-e053-6294a90ad8e9 34070-3 "
+      ],
+      "warnings": [
+        "WARNINGS #LINK_ad0f3596-9cf0-4748-ba10-2be6cd9fcda3 bold Acebutolol HCl is contraindicated in: 1) persistently severe bradycardia; 2) second- and third-degree heart block; 3) overt cardiac failure; and 4) cardiogenic shock (see). LINK_9865384e-7a3f-4c35-a059-893a434b3434 fa40a564-a570-15c1-e053-6294a90ad8e9 34071-1 WARNINGS SECTION WARNINGS bold Cardiac Failure bold Sympathetic stimulation may be essential for support of the circulation in individuals with diminished myocardial contractility, and its inhibition by β-adrenergic receptor blockade may precipitate more severe failure. Although β-blockers should be avoided in overt cardiac failure, acebutolol can be used with caution in patients with a history of heart failure who are controlled with digitalis and/or diuretics. Both digitalis and acebutolol impair AV conduction. If cardiac failure persists, therapy with acebutolol should be w"
+      ]
+    },
+    "dailymed": {
+      "setid": "fa40a564-a579-15c1-e053-6294a90ad8e9"
+    }
+  },
+  {
+    "slug": "acecarbromal",
+    "name": "acecarbromal",
+    "rxcui": "16688",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aceclidine",
+    "name": "aceclidine",
+    "rxcui": "2721766",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "INDICATIONS & USAGE SECTION 1 INDICATIONS AND USAGE VIZZ is indicated for the treatment of presbyopia in adults. #S1 VIZZ is a cholinergic agonist indicated for the treatment of presbyopia in adults (). S1 485ee479-310d-1721-e063-6394a90aed7d 34068-7 "
+      ],
+      "warnings": [
+        "WARNINGS AND PRECAUTIONS SECTION 5 WARNINGS AND PRECAUTIONS Blurred Vision: underline #S5.1 Patients may experience temporary dim or dark vision after instillation. Do not drive or operate machinery if vision is not clear (e.g., blurred vision). Exercise caution in night driving and other hazardous activities in poor illumination (). Risk of Retinal Tear/Detachment: underline #S5.2 Rare cases of retinal tears and detachments have been reported with miotics. Examination of the retina is advised in all patients prior to initiation of therapy. Patients should be advised to seek immediate medical care with sudden onset of flashing lights, floaters, or vision loss (). Iritis underline #S5.3 : Caution is advised in patients with a history of iritis (). unordered Disc 485ee479-3113-1721-e063-6394a90aed7d 42229-5 SPL UNCLASSIFIED SECTION 5.1 Blurred Vision Miotics may cause accommodative spasm. "
+      ]
+    },
+    "dailymed": {
+      "setid": "7aed8024-ad30-44d6-8f3b-63338ad3ce52"
+    }
+  },
+  {
+    "slug": "aceclofenac",
+    "name": "aceclofenac",
+    "rxcui": "16689",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aceglutamide",
+    "name": "aceglutamide",
+    "rxcui": "1426379",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acemannan",
+    "name": "acemannan",
+    "rxcui": "1426875",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acemetacin",
+    "name": "acemetacin",
+    "rxcui": "16695",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aceneuramate",
+    "name": "aceneuramate",
+    "rxcui": "2613559",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acenocoumarol",
+    "name": "acenocoumarol",
+    "rxcui": "154",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acepromazine",
+    "name": "acepromazine",
+    "rxcui": "155",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aceprometazine",
+    "name": "aceprometazine",
+    "rxcui": "161203",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acer-negundo-wood-extract",
+    "name": "Acer negundo wood extract",
+    "rxcui": "2121052",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acer-nigrum-whole-extract",
+    "name": "Acer nigrum whole extract",
+    "rxcui": "2539930",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acesulfame",
+    "name": "acesulfame",
+    "rxcui": "1310546",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "INDICATIONS & USAGE SECTION 1 INDICATIONS AND USAGE Polyethylene Glycol-3350, Electrolytes, and Ascorbate for Oral Solution is an osmotic laxative indicated for cleansing of the colon as a preparation for colonoscopy in adults. #LINK_0a32b14b-8ff4-4983-ba2d-2384e8fc4827 Polyethylene Glycol-3350, Electrolytes, and Ascorbate for Oral Solution is an osmotic laxative indicated for cleansing of the colon as a preparation for colonoscopy in adults. () LINK_0a32b14b-8ff4-4983-ba2d-2384e8fc4827 86cd0358-cdc5-49a2-be59-e8c4e2a2363f 34068-7 "
+      ],
+      "warnings": [
+        "Warnings and Precautions ()]. italics Correct fluid and electrolyte abnormalities before treatment with Polyethylene Glycol-3350, Electrolytes, and Ascorbate for Oral Solution • #ID_e328a85d-ccab-42ed-894f-41d6dfee98d6 #ID_89b6bfd8-2d6f-47ce-bac4-284d157f7885 [see Dosage and Administration (, italics ] italics Two doses of Polyethylene Glycol-3350, Electrolytes, and Ascorbate for Oral Solution are required for a complete preparation for colonoscopy. The time interval between the two doses depends on the regimen prescribed and the planned timing of the colonoscopy procedure.). • #ID_e328a85d-ccab-42ed-894f-41d6dfee98d6 [see Dosage and Administration ()]. italics The “Split-Dose” is the preferred method and consists of two separate doses: the first dose is taken the evening before the colonoscopy, and the second dose is taken the next day, the morning of the day of the colonoscopy • #ID_89"
+      ]
+    },
+    "dailymed": {
+      "setid": "cd9c0751-10fa-4f5f-bf29-742823541d22"
+    }
+  },
+  {
+    "slug": "acetaldehyde",
+    "name": "acetaldehyde",
+    "rxcui": "1311137",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetamide",
+    "name": "acetamide",
+    "rxcui": "2475952",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetamidoethoxyethanol",
+    "name": "acetamidoethoxyethanol",
+    "rxcui": "2370868",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetamidopropyl-trimonium",
+    "name": "acetamidopropyl trimonium",
+    "rxcui": "1483778",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetaminophen",
+    "name": "acetaminophen",
+    "rxcui": "161",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetanilide",
+    "name": "acetanilide",
+    "rxcui": "162",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetate",
+    "name": "acetate",
+    "rxcui": "164",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "INDICATIONS & USAGE SECTION INDICATIONS AND USAGE Hydrocortisone acetate suppositories are indicated for use in inflamed hemorrhoids, post-irradiation (factitial) proctitis, as an adjunct in the treatment of chronic ulcerative colitis, cryptitis, other inflammatory conditions of anorectum, and pruritus ani. a1822a4e-7fd6-4f03-8846-9d24833caf3f 34070-3 "
+      ],
+      "warnings": []
+    },
+    "dailymed": {
+      "setid": "3a29006f-9124-45e7-84a2-48f08bbb5f9c"
+    }
+  },
+  {
+    "slug": "acetazolamide",
+    "name": "acetazolamide",
+    "rxcui": "167",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "INDICATIONS & USAGE SECTION INDICATIONS AND USAGE For adjunctive treatment of: edema due to congestive heart failure; drug-induced edema; centrencephalic epilepsies (petit mal, unlocalized seizures); chronic simple (open-angle) glaucoma, secondary glaucoma, and preoperatively in acute angle-closure glaucoma where delay of surgery is desired in order to lower intraocular pressure. Acetazolamide Tablets are also indicated for the prevention or amelioration of symptoms associated with acute mountain sickness in climbers attempting rapid ascent and in those who are very susceptible to acute mountain sickness despite gradual ascent. Section_3 4a045659-c2f3-5f73-e063-6394a90a373a 34070-3 "
+      ],
+      "warnings": [
+        "WARNINGS SECTION WARNINGS Fatalities have occurred, although rarely, due to severe reactions to sulfonamides including Stevens-Johnson syndrome, toxic epidermal necrolysis, fulminant hepatic necrosis, agranulocytosis, aplastic anemia, and other blood dyscrasias, and anaphylaxis. Sensitizations may recur when a sulfonamide is readministered irrespective of the route of administration. If signs of hypersensitivity or other serious reactions occur, discontinue use of this drug. Caution is advised for patients receiving concomitant high-dose aspirin and acetazolamide, as anorexia, tachypnea, lethargy, metabolic acidosis, coma and death have been reported. Section_5 4a04542f-f69f-59f5-e063-6394a90ab55d 42232-9 "
+      ]
+    },
+    "dailymed": {
+      "setid": "4a03f35d-bfcb-77ff-e063-6294a90a4f06"
+    }
+  },
+  {
+    "slug": "acetiamine",
+    "name": "acetiamine",
+    "rxcui": "236300",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetic-acid",
+    "name": "acetic acid",
+    "rxcui": "168",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [
+        "INDICATIONS & USAGE SECTION INDICATIONS AND USAGE Leuprolide acetate injection is indicated in the palliative treatment of advanced prostatic cancer. ID12 ID11 a80a0bb7-3360-4f46-ae2d-e479e5188edb 34070-3 "
+      ],
+      "warnings": [
+        "WARNINGS SECTION WARNINGS Initially, leuprolide acetate injection, like other LH-RH agonists, causes increases in serum levels of testosterone. Transient worsening of symptoms, or the occurrence of additional signs and symptoms of prostate cancer, may develop during the first few weeks of leuprolide acetate injection treatment. Patients may experience a temporary increase in bone pain, which can be managed symptomatically. As with other LH-RH agonists, ureteral obstruction and spinal cord compression have been observed, which may contribute to paralysis with or without fatal complications. ID16 Safe use of leuprolide acetate in pregnancy has not been established clinically. Leuprolide acetate injection may cause fetal harm. Periodic monitoring of serum testosterone and prostate-specific antigen (PSA) levels is recommended, especially if the anticipated clinical or biochemical response to"
+      ]
+    },
+    "dailymed": {
+      "setid": "35634415-000f-47db-9bd7-9e16eef3f02e"
+    }
+  },
+  {
+    "slug": "acetic-anhydride",
+    "name": "acetic anhydride",
+    "rxcui": "1370450",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetic-monoethanolamide",
+    "name": "acetic monoethanolamide",
+    "rxcui": "1311639",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetohexamide",
+    "name": "acetohexamide",
+    "rxcui": "173",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetohydroxamic-acid",
+    "name": "acetohydroxamic acid",
+    "rxcui": "16728",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetoin",
+    "name": "acetoin",
+    "rxcui": "2683094",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetone",
+    "name": "acetone",
+    "rxcui": "178",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetophenazine",
+    "name": "acetophenazine",
+    "rxcui": "16735",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetophenone",
+    "name": "acetophenone",
+    "rxcui": "2467143",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetoxolone",
+    "name": "acetoxolone",
+    "rxcui": "16784",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetyl-arginine",
+    "name": "acetyl arginine",
+    "rxcui": "2469242",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetyl-cedrene",
+    "name": "acetyl cedrene",
+    "rxcui": "2289006",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetyl-coenzyme-a",
+    "name": "acetyl coenzyme A",
+    "rxcui": "1490796",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetyl-farnesylcysteine",
+    "name": "acetyl farnesylcysteine",
+    "rxcui": "1868830",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetyl-glutamic-acid",
+    "name": "acetyl glutamic acid",
+    "rxcui": "2001205",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetyl-salicylate",
+    "name": "acetyl salicylate",
+    "rxcui": "91101",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetylated-lanolin",
+    "name": "acetylated lanolin",
+    "rxcui": "1789515",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetylcarnitine",
+    "name": "acetylcarnitine",
+    "rxcui": "193",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetylcellulose",
+    "name": "acetylcellulose",
+    "rxcui": "1425216",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetylcholine",
+    "name": "acetylcholine",
+    "rxcui": "194",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetylcholinesterase",
+    "name": "acetylcholinesterase",
+    "rxcui": "195",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetylcysteine",
+    "name": "acetylcysteine",
+    "rxcui": "197",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetyldigitoxin",
+    "name": "acetyldigitoxin",
+    "rxcui": "132871",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetyldigoxins",
+    "name": "acetyldigoxins",
+    "rxcui": "199",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetylene",
+    "name": "acetylene",
+    "rxcui": "200",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetylglucosamine",
+    "name": "acetylglucosamine",
+    "rxcui": "1362871",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetyltributyl-citrate",
+    "name": "acetyltributyl citrate",
+    "rxcui": "1362881",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetyltriethyl-citrate",
+    "name": "acetyltriethyl citrate",
+    "rxcui": "1311603",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acetyltryptophanate",
+    "name": "acetyltryptophanate",
+    "rxcui": "1366817",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acexamic-acid",
+    "name": "acexamic acid",
+    "rxcui": "15978",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "achillea-millefolium-oil",
+    "name": "Achillea millefolium oil",
+    "rxcui": "1740240",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acipimox",
+    "name": "acipimox",
+    "rxcui": "16817",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acitretin",
+    "name": "acitretin",
+    "rxcui": "16818",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aclarubicin",
+    "name": "aclarubicin",
+    "rxcui": "239",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aclidinium",
+    "name": "aclidinium",
+    "rxcui": "1303098",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acoltremon",
+    "name": "acoltremon",
+    "rxcui": "2716801",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aconitate",
+    "name": "aconitate",
+    "rxcui": "1721299",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aconite",
+    "name": "aconite",
+    "rxcui": "242",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aconitine",
+    "name": "aconitine",
+    "rxcui": "1441664",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aconitum-napellus-extract",
+    "name": "Aconitum napellus extract",
+    "rxcui": "1310220",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acoramidis",
+    "name": "acoramidis",
+    "rxcui": "2698312",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acorus-calamus-extract",
+    "name": "Acorus calamus extract",
+    "rxcui": "1310280",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acriflavine",
+    "name": "acriflavine",
+    "rxcui": "249",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acrisorcin",
+    "name": "acrisorcin",
+    "rxcui": "89729",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acrivastine",
+    "name": "acrivastine",
+    "rxcui": "19959",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acrylamide",
+    "name": "acrylamide",
+    "rxcui": "1368125",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acrylate",
+    "name": "acrylate",
+    "rxcui": "1364500",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acryloyldimethyltaurate",
+    "name": "acryloyldimethyltaurate",
+    "rxcui": "1370664",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "activated-attapulgite",
+    "name": "activated attapulgite",
+    "rxcui": "133050",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "activated-charcoal",
+    "name": "activated charcoal",
+    "rxcui": "272",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acv-tripeptide",
+    "name": "ACV tripeptide",
+    "rxcui": "1551571",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "acyclovir",
+    "name": "acyclovir",
+    "rxcui": "281",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adagrasib",
+    "name": "adagrasib",
+    "rxcui": "2625882",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adalimumab",
+    "name": "adalimumab",
+    "rxcui": "327361",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adapalene",
+    "name": "adapalene",
+    "rxcui": "60223",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adefovir",
+    "name": "adefovir",
+    "rxcui": "16521",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adenine",
+    "name": "adenine",
+    "rxcui": "290",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adenosine",
+    "name": "adenosine",
+    "rxcui": "296",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adenosine-triphosphate",
+    "name": "adenosine triphosphate",
+    "rxcui": "318",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adiphenine",
+    "name": "adiphenine",
+    "rxcui": "333",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adipic-acid",
+    "name": "adipic acid",
+    "rxcui": "17050",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adonis-vernalis-extract",
+    "name": "Adonis vernalis extract",
+    "rxcui": "1342649",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adrafinil",
+    "name": "adrafinil",
+    "rxcui": "45938",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adrenal-cortex-extract",
+    "name": "adrenal cortex extract",
+    "rxcui": "91413",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adrenalone",
+    "name": "adrenalone",
+    "rxcui": "17073",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aducanumab",
+    "name": "aducanumab",
+    "rxcui": "2557217",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "advantame",
+    "name": "advantame",
+    "rxcui": "1591894",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "adzuki-bean-extract",
+    "name": "adzuki bean extract",
+    "rxcui": "1735031",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aethusa-cynapium-extract",
+    "name": "Aethusa cynapium extract",
+    "rxcui": "1351000",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "afamelanotide",
+    "name": "afamelanotide",
+    "rxcui": "2262250",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "afamitresgene-autoleucel",
+    "name": "afamitresgene autoleucel",
+    "rxcui": "2690256",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "afatinib",
+    "name": "afatinib",
+    "rxcui": "1430438",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aficamten",
+    "name": "aficamten",
+    "rxcui": "2731469",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aflibercept",
+    "name": "aflibercept",
+    "rxcui": "1232150",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "afoxolaner",
+    "name": "afoxolaner",
+    "rxcui": "1442093",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "african-pygeum-extract",
+    "name": "African Pygeum extract",
+    "rxcui": "580117",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "agalsidase-alfa",
+    "name": "agalsidase alfa",
+    "rxcui": "2691830",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "agalsidase-beta",
+    "name": "agalsidase beta",
+    "rxcui": "338817",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "agar",
+    "name": "agar",
+    "rxcui": "397",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "agaric-acid",
+    "name": "agaric acid",
+    "rxcui": "1441428",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "agarum-clathratum-extract",
+    "name": "Agarum clathratum extract",
+    "rxcui": "1331688",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "agatolimod",
+    "name": "agatolimod",
+    "rxcui": "2665622",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "agave-tequilana-inulin",
+    "name": "Agave tequilana inulin",
+    "rxcui": "2714500",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "agave-tequilana-juice",
+    "name": "Agave tequilana juice",
+    "rxcui": "2122086",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "air",
+    "name": "air",
+    "rxcui": "411",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aji-pepper-extract",
+    "name": "aji pepper extract",
+    "rxcui": "1311143",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ajmalicine",
+    "name": "ajmalicine",
+    "rxcui": "17205",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ajmaline",
+    "name": "ajmaline",
+    "rxcui": "423",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ajowan-oil",
+    "name": "ajowan oil",
+    "rxcui": "1855063",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "akebia-stem-extract",
+    "name": "Akebia stem extract",
+    "rxcui": "2166038",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "akkermansia-muciniphila",
+    "name": "Akkermansia muciniphila",
+    "rxcui": "2729260",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alanine",
+    "name": "alanine",
+    "rxcui": "426",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alanylglutamine",
+    "name": "alanylglutamine",
+    "rxcui": "1359422",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alarelin",
+    "name": "alarelin",
+    "rxcui": "2641623",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alaria-esculenta-extract",
+    "name": "Alaria esculenta extract",
+    "rxcui": "1358846",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alatrofloxacin",
+    "name": "alatrofloxacin",
+    "rxcui": "141440",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "albendazole",
+    "name": "albendazole",
+    "rxcui": "430",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "albiglutide",
+    "name": "albiglutide",
+    "rxcui": "1534763",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "albuterol",
+    "name": "albuterol",
+    "rxcui": "435",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alcaftadine",
+    "name": "alcaftadine",
+    "rxcui": "1000082",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alcaligenes-faecalis",
+    "name": "Alcaligenes faecalis",
+    "rxcui": "1316425",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alcea-rosea-root-extract",
+    "name": "Alcea rosea root extract",
+    "rxcui": "1799146",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alclometasone",
+    "name": "alclometasone",
+    "rxcui": "108088",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alcloxa",
+    "name": "alcloxa",
+    "rxcui": "1305554",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alcuronium",
+    "name": "alcuronium",
+    "rxcui": "460",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aldesleukin",
+    "name": "aldesleukin",
+    "rxcui": "70223",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aldioxa",
+    "name": "aldioxa",
+    "rxcui": "23161",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aldosterone",
+    "name": "aldosterone",
+    "rxcui": "1312358",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alectinib",
+    "name": "alectinib",
+    "rxcui": "1727455",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alefacept",
+    "name": "alefacept",
+    "rxcui": "299635",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alemtuzumab",
+    "name": "alemtuzumab",
+    "rxcui": "117055",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alendronate",
+    "name": "alendronate",
+    "rxcui": "46041",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alexitol",
+    "name": "alexitol",
+    "rxcui": "644634",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alfacalcidol",
+    "name": "alfacalcidol",
+    "rxcui": "12062",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alfalfa-oil",
+    "name": "alfalfa oil",
+    "rxcui": "323994",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alfalfa-pollen-extract",
+    "name": "alfalfa pollen extract",
+    "rxcui": "852634",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alfalfa-preparation",
+    "name": "alfalfa preparation",
+    "rxcui": "285243",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alfalfa-seed-extract",
+    "name": "alfalfa seed extract",
+    "rxcui": "1306199",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alfalfa-top-extract",
+    "name": "alfalfa top extract",
+    "rxcui": "1668214",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alfatradiol",
+    "name": "alfatradiol",
+    "rxcui": "1926478",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alfaxalone",
+    "name": "alfaxalone",
+    "rxcui": "1544577",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alfentanil",
+    "name": "alfentanil",
+    "rxcui": "480",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alfuzosin",
+    "name": "alfuzosin",
+    "rxcui": "17300",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "algestone",
+    "name": "algestone",
+    "rxcui": "595",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alginate",
+    "name": "alginate",
+    "rxcui": "1370451",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alginic-acid",
+    "name": "alginic acid",
+    "rxcui": "17305",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alglucerase",
+    "name": "alglucerase",
+    "rxcui": "46049",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alglucosidase-alfa",
+    "name": "alglucosidase alfa",
+    "rxcui": "629565",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alibendol",
+    "name": "alibendol",
+    "rxcui": "236219",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alirocumab",
+    "name": "alirocumab",
+    "rxcui": "1659152",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aliskiren",
+    "name": "aliskiren",
+    "rxcui": "325646",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alitretinoin",
+    "name": "alitretinoin",
+    "rxcui": "81864",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alizapride",
+    "name": "alizapride",
+    "rxcui": "17311",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "all-trans-retinol",
+    "name": "all-trans-retinol",
+    "rxcui": "1367187",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allantoin",
+    "name": "allantoin",
+    "rxcui": "508",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allantoin-ascorbate",
+    "name": "allantoin ascorbate",
+    "rxcui": "2559842",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allethrin",
+    "name": "allethrin",
+    "rxcui": "513",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allicin",
+    "name": "allicin",
+    "rxcui": "2729790",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allium-cepa-bulb-extract",
+    "name": "Allium cepa bulb extract",
+    "rxcui": "2695867",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allium-cepa-whole-extract",
+    "name": "Allium cepa whole extract",
+    "rxcui": "1313308",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allobarbital",
+    "name": "allobarbital",
+    "rxcui": "516",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alloin",
+    "name": "alloin",
+    "rxcui": "17354",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allopurinol",
+    "name": "allopurinol",
+    "rxcui": "519",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alloxan",
+    "name": "alloxan",
+    "rxcui": "2466730",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allscale-pollen-extract",
+    "name": "allscale pollen extract",
+    "rxcui": "897304",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allspice-oil",
+    "name": "allspice oil",
+    "rxcui": "2373647",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allura-red-ac-dye",
+    "name": "Allura red AC dye",
+    "rxcui": "1310600",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allyl-acrylate",
+    "name": "allyl acrylate",
+    "rxcui": "1788869",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allyl-alcohol",
+    "name": "allyl alcohol",
+    "rxcui": "2385331",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allyl-amyl-glycolate",
+    "name": "allyl amyl glycolate",
+    "rxcui": "2566287",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allyl-cyclohexaneacetate",
+    "name": "allyl cyclohexaneacetate",
+    "rxcui": "2557380",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allyl-cyclohexanebutyrate",
+    "name": "allyl cyclohexanebutyrate",
+    "rxcui": "2584843",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allyl-heptanoate",
+    "name": "allyl heptanoate",
+    "rxcui": "2383533",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allyl-hexanoate",
+    "name": "allyl hexanoate",
+    "rxcui": "1807113",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allyl-methacrylate",
+    "name": "allyl methacrylate",
+    "rxcui": "2203551",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allyl-pentaerythritol",
+    "name": "allyl pentaerythritol",
+    "rxcui": "2003177",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allyl-sucrose",
+    "name": "allyl sucrose",
+    "rxcui": "1307102",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allyl-sulfide",
+    "name": "allyl sulfide",
+    "rxcui": "17376",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allylestrenol",
+    "name": "allylestrenol",
+    "rxcui": "525",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "allylthiourea",
+    "name": "allylthiourea",
+    "rxcui": "1318494",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alminoprofen",
+    "name": "alminoprofen",
+    "rxcui": "17387",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "almitrine",
+    "name": "almitrine",
+    "rxcui": "528",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "almond-allergenic-extract",
+    "name": "almond allergenic extract",
+    "rxcui": "892507",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "almond-oil",
+    "name": "almond oil",
+    "rxcui": "1305638",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "almotriptan",
+    "name": "almotriptan",
+    "rxcui": "279645",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aloe-emodin",
+    "name": "Aloe emodin",
+    "rxcui": "2561527",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aloe-extract",
+    "name": "aloe extract",
+    "rxcui": "91263",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aloe-polysaccharide",
+    "name": "aloe polysaccharide",
+    "rxcui": "476786",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aloe-vera-flower-extract",
+    "name": "aloe vera flower extract",
+    "rxcui": "1309199",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aloe-vera-leaf-extract",
+    "name": "aloe vera leaf extract",
+    "rxcui": "1306128",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aloe-vera-preparation",
+    "name": "Aloe vera preparation",
+    "rxcui": "318340",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aloe-vera-whole-extract",
+    "name": "Aloe vera whole extract",
+    "rxcui": "1312539",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alogliptin",
+    "name": "alogliptin",
+    "rxcui": "1368001",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aloglutamol",
+    "name": "aloglutamol",
+    "rxcui": "17392",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alosetron",
+    "name": "alosetron",
+    "rxcui": "85248",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aloxiprin",
+    "name": "aloxiprin",
+    "rxcui": "17393",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpelisib",
+    "name": "alpelisib",
+    "rxcui": "2169285",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-bisabolene",
+    "name": "alpha bisabolene",
+    "rxcui": "2675320",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-glucosidase",
+    "name": "alpha glucosidase",
+    "rxcui": "2475361",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-hydroxy-acids",
+    "name": "alpha hydroxy acids",
+    "rxcui": "236797",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-ionone",
+    "name": "alpha ionone",
+    "rxcui": "1859172",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-tocopherol",
+    "name": "alpha tocopherol",
+    "rxcui": "237099",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-aminobutyrate",
+    "name": "alpha-aminobutyrate",
+    "rxcui": "2464937",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-amylase",
+    "name": "alpha-amylase",
+    "rxcui": "560",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-arbutin",
+    "name": "alpha-arbutin",
+    "rxcui": "1363429",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-asarone",
+    "name": "alpha-asarone",
+    "rxcui": "2375532",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-cyclodextrin",
+    "name": "alpha-cyclodextrin",
+    "rxcui": "1362882",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-d-glucopyranose",
+    "name": "alpha-d-glucopyranose",
+    "rxcui": "1800492",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-damascone",
+    "name": "alpha-damascone",
+    "rxcui": "2398332",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-eleostearic-acid",
+    "name": "alpha-eleostearic acid",
+    "rxcui": "2630219",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-hexylcinnamaldehyde",
+    "name": "alpha-hexylcinnamaldehyde",
+    "rxcui": "1311811",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-isomethylionone",
+    "name": "alpha-isomethylionone",
+    "rxcui": "1368186",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-ketoglutaric-acid",
+    "name": "alpha-ketoglutaric acid",
+    "rxcui": "17511",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-lactose",
+    "name": "alpha-lactose",
+    "rxcui": "2359362",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-pinene",
+    "name": "alpha-pinene",
+    "rxcui": "2362183",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-terpineol",
+    "name": "alpha-terpineol",
+    "rxcui": "1371307",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpha-tocopherylquinone",
+    "name": "alpha-tocopherylquinone",
+    "rxcui": "1376149",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alphaprodine",
+    "name": "alphaprodine",
+    "rxcui": "594",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alpine-strawberry-extract",
+    "name": "Alpine strawberry extract",
+    "rxcui": "1328308",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alprazolam",
+    "name": "alprazolam",
+    "rxcui": "596",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alprenolol",
+    "name": "alprenolol",
+    "rxcui": "597",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alprostadil",
+    "name": "alprostadil",
+    "rxcui": "598",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alseroxylon",
+    "name": "alseroxylon",
+    "rxcui": "599",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alteplase",
+    "name": "alteplase",
+    "rxcui": "8410",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alteromonas-macleodii",
+    "name": "Alteromonas macleodii",
+    "rxcui": "1551569",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "althiazide",
+    "name": "althiazide",
+    "rxcui": "17599",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "altrenogest",
+    "name": "altrenogest",
+    "rxcui": "1314612",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "altretamine",
+    "name": "altretamine",
+    "rxcui": "5296",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminium-triglycinate",
+    "name": "aluminium triglycinate",
+    "rxcui": "1659193",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum",
+    "name": "aluminum",
+    "rxcui": "1311504",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-acetate",
+    "name": "aluminum acetate",
+    "rxcui": "17609",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-acetotartrate",
+    "name": "aluminum acetotartrate",
+    "rxcui": "46239",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-aspirin",
+    "name": "aluminum aspirin",
+    "rxcui": "611",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-bromide",
+    "name": "aluminum bromide",
+    "rxcui": "2272620",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-carbonate",
+    "name": "aluminum carbonate",
+    "rxcui": "89858",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-cation",
+    "name": "aluminum cation",
+    "rxcui": "1546162",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-chloride",
+    "name": "aluminum chloride",
+    "rxcui": "46241",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-chlorohydrate",
+    "name": "aluminum chlorohydrate",
+    "rxcui": "17610",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-dilinoleate",
+    "name": "aluminum dilinoleate",
+    "rxcui": "2121673",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-dimyristate",
+    "name": "aluminum dimyristate",
+    "rxcui": "1305555",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-distearate",
+    "name": "aluminum distearate",
+    "rxcui": "1307778",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-fluoride",
+    "name": "aluminum fluoride",
+    "rxcui": "2273602",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-hydrate",
+    "name": "aluminum hydrate",
+    "rxcui": "1305556",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-hydride",
+    "name": "aluminum hydride",
+    "rxcui": "1540524",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-hydroxide",
+    "name": "aluminum hydroxide",
+    "rxcui": "612",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-hydroxyphosphate",
+    "name": "aluminum hydroxyphosphate",
+    "rxcui": "1423457",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-iodide",
+    "name": "aluminum iodide",
+    "rxcui": "2280603",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-nitrate",
+    "name": "aluminum nitrate",
+    "rxcui": "2360133",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-oxide",
+    "name": "aluminum oxide",
+    "rxcui": "615",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-phosphate",
+    "name": "aluminum phosphate",
+    "rxcui": "17618",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-silicate",
+    "name": "aluminum silicate",
+    "rxcui": "1362917",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-stearate",
+    "name": "aluminum stearate",
+    "rxcui": "46243",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-subacetate",
+    "name": "aluminum subacetate",
+    "rxcui": "235461",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-sulfate",
+    "name": "aluminum sulfate",
+    "rxcui": "17621",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aluminum-tristearate",
+    "name": "aluminum tristearate",
+    "rxcui": "1363698",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alverine",
+    "name": "alverine",
+    "rxcui": "17627",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "alvimopan",
+    "name": "alvimopan",
+    "rxcui": "480639",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amanita-muscaria-extract",
+    "name": "Amanita muscaria extract",
+    "rxcui": "1311039",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amanita-phalloides",
+    "name": "Amanita phalloides",
+    "rxcui": "1858554",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amantadine",
+    "name": "amantadine",
+    "rxcui": "620",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amaranth-acid",
+    "name": "amaranth acid",
+    "rxcui": "1546381",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amaranth-dye",
+    "name": "amaranth dye",
+    "rxcui": "1433189",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ambenonium",
+    "name": "ambenonium",
+    "rxcui": "623",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amber",
+    "name": "amber",
+    "rxcui": "1311393",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ambergris",
+    "name": "ambergris",
+    "rxcui": "1311494",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ambrein",
+    "name": "ambrein",
+    "rxcui": "2584842",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ambrisentan",
+    "name": "ambrisentan",
+    "rxcui": "358274",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ambroxol",
+    "name": "ambroxol",
+    "rxcui": "625",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amcinonide",
+    "name": "amcinonide",
+    "rxcui": "17652",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amdinocillin",
+    "name": "amdinocillin",
+    "rxcui": "626",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amdinocillin-pivoxil",
+    "name": "amdinocillin pivoxil",
+    "rxcui": "627",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amentoflavone",
+    "name": "amentoflavone",
+    "rxcui": "2643210",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "american-eel-preparation",
+    "name": "American eel preparation",
+    "rxcui": "2375518",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "american-ginseng-root",
+    "name": "American ginseng root",
+    "rxcui": "259473",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amezinium",
+    "name": "amezinium",
+    "rxcui": "17665",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amidoline",
+    "name": "amidoline",
+    "rxcui": "17684",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amifampridine",
+    "name": "amifampridine",
+    "rxcui": "2106338",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amifostine",
+    "name": "amifostine",
+    "rxcui": "4126",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amikacin",
+    "name": "amikacin",
+    "rxcui": "641",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amilomer",
+    "name": "amilomer",
+    "rxcui": "259399",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amiloride",
+    "name": "amiloride",
+    "rxcui": "644",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amiloxate",
+    "name": "amiloxate",
+    "rxcui": "1426854",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminacrine",
+    "name": "aminacrine",
+    "rxcui": "645",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminaphthone",
+    "name": "aminaphthone",
+    "rxcui": "46276",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amineptin",
+    "name": "amineptin",
+    "rxcui": "17698",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminobenzoate",
+    "name": "aminobenzoate",
+    "rxcui": "143980",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminobutyrate",
+    "name": "aminobutyrate",
+    "rxcui": "618257",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminocaproate",
+    "name": "aminocaproate",
+    "rxcui": "113373",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminoethylphosphinic-acid",
+    "name": "aminoethylphosphinic acid",
+    "rxcui": "1540525",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminoglutethimide",
+    "name": "aminoglutethimide",
+    "rxcui": "677",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminohydroxybutyric-acid",
+    "name": "aminohydroxybutyric acid",
+    "rxcui": "236512",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminolevulinate",
+    "name": "aminolevulinate",
+    "rxcui": "155002",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminolevulinic-acid",
+    "name": "aminolevulinic acid",
+    "rxcui": "683",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminomethyl-propanediol",
+    "name": "aminomethyl propanediol",
+    "rxcui": "1307680",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminometradine",
+    "name": "aminometradine",
+    "rxcui": "1440266",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminopentamide",
+    "name": "aminopentamide",
+    "rxcui": "1006397",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminophylline",
+    "name": "aminophylline",
+    "rxcui": "689",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminopromazine",
+    "name": "aminopromazine",
+    "rxcui": "2462496",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminopropanediol",
+    "name": "aminopropanediol",
+    "rxcui": "2050415",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminopropazine-fumarate",
+    "name": "aminopropazine fumarate",
+    "rxcui": "1440268",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminopterin",
+    "name": "aminopterin",
+    "rxcui": "1440264",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminopyrine",
+    "name": "aminopyrine",
+    "rxcui": "695",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminoquinuride",
+    "name": "aminoquinuride",
+    "rxcui": "17747",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminosalicylate",
+    "name": "aminosalicylate",
+    "rxcui": "113374",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aminosalicylic-acid",
+    "name": "aminosalicylic acid",
+    "rxcui": "7833",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amiodarone",
+    "name": "amiodarone",
+    "rxcui": "703",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amisulpride",
+    "name": "amisulpride",
+    "rxcui": "46303",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amitraz",
+    "name": "amitraz",
+    "rxcui": "17763",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amitriptyline",
+    "name": "amitriptyline",
+    "rxcui": "704",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amivantamab",
+    "name": "amivantamab",
+    "rxcui": "2549199",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amlexanox",
+    "name": "amlexanox",
+    "rxcui": "46307",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amlodipine",
+    "name": "amlodipine",
+    "rxcui": "17767",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonia",
+    "name": "ammonia",
+    "rxcui": "1299884",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammoniac",
+    "name": "ammoniac",
+    "rxcui": "1314236",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium",
+    "name": "ammonium",
+    "rxcui": "709",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-acetate",
+    "name": "ammonium acetate",
+    "rxcui": "1362883",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-benzoate",
+    "name": "ammonium benzoate",
+    "rxcui": "1312540",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-bromide",
+    "name": "ammonium bromide",
+    "rxcui": "1313309",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-carbonate",
+    "name": "ammonium carbonate",
+    "rxcui": "1310190",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-chloride",
+    "name": "ammonium chloride",
+    "rxcui": "712",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-ferrous-sulfate",
+    "name": "ammonium ferrous sulfate",
+    "rxcui": "17784",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-hydroxide",
+    "name": "ammonium hydroxide",
+    "rxcui": "1362884",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-hypophosphite",
+    "name": "ammonium hypophosphite",
+    "rxcui": "2360135",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-iodide",
+    "name": "ammonium iodide",
+    "rxcui": "1720161",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-ion",
+    "name": "ammonium ion",
+    "rxcui": "1313310",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-lauryl-sulfate",
+    "name": "ammonium lauryl sulfate",
+    "rxcui": "1424667",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-methacrylate",
+    "name": "ammonium methacrylate",
+    "rxcui": "1988680",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-phosphate",
+    "name": "ammonium phosphate",
+    "rxcui": "17792",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-salicylate",
+    "name": "ammonium salicylate",
+    "rxcui": "236220",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-silicofluoride",
+    "name": "ammonium silicofluoride",
+    "rxcui": "314494",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-stearate",
+    "name": "ammonium stearate",
+    "rxcui": "1312975",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-sulfate",
+    "name": "ammonium sulfate",
+    "rxcui": "1362695",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-valerate",
+    "name": "ammonium valerate",
+    "rxcui": "1441545",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ammonium-xylenesulfonate",
+    "name": "ammonium xylenesulfonate",
+    "rxcui": "1423272",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amobarbital",
+    "name": "amobarbital",
+    "rxcui": "719",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amodiaquine",
+    "name": "amodiaquine",
+    "rxcui": "720",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amoeba-proteus",
+    "name": "Amoeba proteus",
+    "rxcui": "1313311",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amonafide",
+    "name": "amonafide",
+    "rxcui": "1440270",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amoproxan",
+    "name": "amoproxan",
+    "rxcui": "1440271",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amorolfine",
+    "name": "amorolfine",
+    "rxcui": "17804",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amosulalol",
+    "name": "amosulalol",
+    "rxcui": "2667256",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amoxapine",
+    "name": "amoxapine",
+    "rxcui": "722",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amoxicillin",
+    "name": "amoxicillin",
+    "rxcui": "723",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amphetamine",
+    "name": "amphetamine",
+    "rxcui": "725",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amphetaminil",
+    "name": "amphetaminil",
+    "rxcui": "17813",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amphotericin",
+    "name": "amphotericin",
+    "rxcui": "42527",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amphotericin-b",
+    "name": "amphotericin B",
+    "rxcui": "732",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ampicillin",
+    "name": "ampicillin",
+    "rxcui": "733",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amprenavir",
+    "name": "amprenavir",
+    "rxcui": "228656",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amprolium",
+    "name": "amprolium",
+    "rxcui": "1006654",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amsacrine",
+    "name": "amsacrine",
+    "rxcui": "739",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amygdalin",
+    "name": "amygdalin",
+    "rxcui": "1371051",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amyl-acetate",
+    "name": "amyl acetate",
+    "rxcui": "1370452",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amyl-cinnamal",
+    "name": "amyl cinnamal",
+    "rxcui": "1311606",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amyl-nitrite",
+    "name": "amyl nitrite",
+    "rxcui": "742",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amyl-salicylate",
+    "name": "amyl salicylate",
+    "rxcui": "236149",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amylase",
+    "name": "amylase",
+    "rxcui": "743",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amylmetacresol",
+    "name": "amylmetacresol",
+    "rxcui": "236248",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amylocaine",
+    "name": "amylocaine",
+    "rxcui": "40660",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amylopectin",
+    "name": "amylopectin",
+    "rxcui": "1368128",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "amyris-balsamifera-oil",
+    "name": "Amyris balsamifera oil",
+    "rxcui": "1305639",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anacaulase",
+    "name": "anacaulase",
+    "rxcui": "2626723",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anacystis-nidulans",
+    "name": "Anacystis nidulans",
+    "rxcui": "2200639",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anaerococcus-tetradius",
+    "name": "Anaerococcus tetradius",
+    "rxcui": "1592903",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anagrelide",
+    "name": "anagrelide",
+    "rxcui": "596724",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anakinra",
+    "name": "anakinra",
+    "rxcui": "72435",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anamu-preparation",
+    "name": "anamu preparation",
+    "rxcui": "283537",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anaplasma-phagocytophilum",
+    "name": "Anaplasma phagocytophilum",
+    "rxcui": "2168766",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anastrozole",
+    "name": "anastrozole",
+    "rxcui": "84857",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anazolene-acid",
+    "name": "anazolene acid",
+    "rxcui": "1440972",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ancestim",
+    "name": "ancestim",
+    "rxcui": "140502",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anchovy-preparation",
+    "name": "anchovy preparation",
+    "rxcui": "1310517",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ancrod",
+    "name": "ancrod",
+    "rxcui": "772",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ancylostoma-caninum",
+    "name": "Ancylostoma caninum",
+    "rxcui": "2469251",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "andexanet-alfa",
+    "name": "andexanet alfa",
+    "rxcui": "2045114",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "androstenedione",
+    "name": "androstenedione",
+    "rxcui": "784",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "androsterone",
+    "name": "androsterone",
+    "rxcui": "1312359",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anemone-americana-extract",
+    "name": "Anemone americana extract",
+    "rxcui": "1311411",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anemone-nemorosa-extract",
+    "name": "Anemone nemorosa extract",
+    "rxcui": "1310266",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anethole",
+    "name": "anethole",
+    "rxcui": "17881",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anethole-trithione",
+    "name": "anethole trithione",
+    "rxcui": "820",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "angelica-gigas-root-oil",
+    "name": "Angelica gigas root oil",
+    "rxcui": "1541881",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "angelica-root-oil",
+    "name": "Angelica root oil",
+    "rxcui": "1305640",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "angelica-seed-extract",
+    "name": "Angelica seed extract",
+    "rxcui": "1606330",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "angelica-seed-oil",
+    "name": "Angelica seed oil",
+    "rxcui": "1305641",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "angelicin",
+    "name": "angelicin",
+    "rxcui": "2690789",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "angiotensin-ii",
+    "name": "angiotensin II",
+    "rxcui": "1999003",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "angostura-bark-extract",
+    "name": "Angostura bark extract",
+    "rxcui": "1322552",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anhydrovitamin-a",
+    "name": "anhydrovitamin A",
+    "rxcui": "2669473",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anhydroxylitol",
+    "name": "anhydroxylitol",
+    "rxcui": "1307762",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anidulafungin",
+    "name": "anidulafungin",
+    "rxcui": "341018",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anifrolumab",
+    "name": "anifrolumab",
+    "rxcui": "2565265",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anileridine",
+    "name": "anileridine",
+    "rxcui": "17933",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aniline",
+    "name": "aniline",
+    "rxcui": "1441546",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aniracetam",
+    "name": "aniracetam",
+    "rxcui": "17939",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anisacril",
+    "name": "anisacril",
+    "rxcui": "1311637",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anisate",
+    "name": "anisate",
+    "rxcui": "1370666",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anise-oil",
+    "name": "anise oil",
+    "rxcui": "90926",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anise-seed-extract",
+    "name": "anise seed extract",
+    "rxcui": "1309292",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anisindione",
+    "name": "anisindione",
+    "rxcui": "17941",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anisole",
+    "name": "anisole",
+    "rxcui": "2594597",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anisotropine",
+    "name": "anisotropine",
+    "rxcui": "89780",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anistreplase",
+    "name": "anistreplase",
+    "rxcui": "40028",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anisum-extract",
+    "name": "anisum extract",
+    "rxcui": "1320407",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anisyl-acetate",
+    "name": "anisyl acetate",
+    "rxcui": "2605801",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anisyl-alcohol",
+    "name": "anisyl alcohol",
+    "rxcui": "1424668",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "annatto-extract",
+    "name": "annatto extract",
+    "rxcui": "1313764",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ansuvimab",
+    "name": "ansuvimab",
+    "rxcui": "2472152",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "antazoline",
+    "name": "antazoline",
+    "rxcui": "865",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anthralin",
+    "name": "anthralin",
+    "rxcui": "873",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anthraquinone-glycoside",
+    "name": "anthraquinone glycoside",
+    "rxcui": "283538",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "anthrax-immune-globulin",
+    "name": "anthrax immune globulin",
+    "rxcui": "1722336",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "antiaris-toxicara-resin",
+    "name": "Antiaris toxicara resin",
+    "rxcui": "1370298",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "antimony",
+    "name": "antimony",
+    "rxcui": "1311407",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "antimony-arsenate",
+    "name": "antimony arsenate",
+    "rxcui": "1313314",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "antimony-pentasulfide",
+    "name": "antimony pentasulfide",
+    "rxcui": "1337969",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "antimony-sulfate",
+    "name": "antimony sulfate",
+    "rxcui": "2564026",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "antimony-tartrate-ion",
+    "name": "antimony tartrate ion",
+    "rxcui": "2384445",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "antimony-triiodide",
+    "name": "antimony triiodide",
+    "rxcui": "1423913",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "antimony-trioxide",
+    "name": "antimony trioxide",
+    "rxcui": "2477431",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "antimony-trisulfide",
+    "name": "antimony trisulfide",
+    "rxcui": "1316091",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "antipyrine",
+    "name": "antipyrine",
+    "rxcui": "1001",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "antithrombin-iii",
+    "name": "antithrombin III",
+    "rxcui": "1009",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apaflurane",
+    "name": "apaflurane",
+    "rxcui": "1368129",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apalutamide",
+    "name": "apalutamide",
+    "rxcui": "1999574",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apazone",
+    "name": "apazone",
+    "rxcui": "1029",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aphanizomenon-flos-aquae",
+    "name": "Aphanizomenon flos-aquae",
+    "rxcui": "1310848",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apigenin",
+    "name": "apigenin",
+    "rxcui": "1368130",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apiole",
+    "name": "apiole",
+    "rxcui": "314506",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apis-cerana-whole-extract",
+    "name": "Apis cerana whole extract",
+    "rxcui": "2590180",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apixaban",
+    "name": "apixaban",
+    "rxcui": "1364430",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apocarotenal",
+    "name": "apocarotenal",
+    "rxcui": "1376342",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apomorphine",
+    "name": "apomorphine",
+    "rxcui": "1043",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apple-allergenic-extract",
+    "name": "apple allergenic extract",
+    "rxcui": "891771",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apple-cider",
+    "name": "apple cider",
+    "rxcui": "2593711",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apple-cider-vinegar",
+    "name": "apple cider vinegar",
+    "rxcui": "360262",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apple-extract",
+    "name": "apple extract",
+    "rxcui": "1424865",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apple-fruit-oil",
+    "name": "apple fruit oil",
+    "rxcui": "1485785",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apple-juice",
+    "name": "apple juice",
+    "rxcui": "1358965",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apple-pectin",
+    "name": "apple pectin",
+    "rxcui": "283540",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apple-peel-extract",
+    "name": "apple peel extract",
+    "rxcui": "2625124",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apple-seed-extract",
+    "name": "apple seed extract",
+    "rxcui": "1369395",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apple-seed-oil",
+    "name": "apple seed oil",
+    "rxcui": "1799009",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apple-wood-extract",
+    "name": "apple wood extract",
+    "rxcui": "2479556",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apraclonidine",
+    "name": "apraclonidine",
+    "rxcui": "14845",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apremilast",
+    "name": "apremilast",
+    "rxcui": "1492727",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aprepitant",
+    "name": "aprepitant",
+    "rxcui": "358255",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apricot-extract",
+    "name": "apricot extract",
+    "rxcui": "1353891",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apricot-fruit-oil",
+    "name": "apricot fruit oil",
+    "rxcui": "1428854",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apricot-juice",
+    "name": "apricot juice",
+    "rxcui": "1307043",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "apricot-kernel-oil",
+    "name": "apricot kernel oil",
+    "rxcui": "1318515",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aprindine",
+    "name": "aprindine",
+    "rxcui": "1054",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aprinocarsen",
+    "name": "aprinocarsen",
+    "rxcui": "2634355",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aprobarbital",
+    "name": "aprobarbital",
+    "rxcui": "17381",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aprocitentan",
+    "name": "aprocitentan",
+    "rxcui": "2679059",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aprolium",
+    "name": "aprolium",
+    "rxcui": "1546166",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aprotinin",
+    "name": "aprotinin",
+    "rxcui": "1056",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "aqua-regia",
+    "name": "aqua regia",
+    "rxcui": "1537801",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "arabica-coffee-oil",
+    "name": "arabica coffee oil",
+    "rxcui": "1362134",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "arachidate",
+    "name": "arachidate",
+    "rxcui": "1716332",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "arachidonate",
+    "name": "arachidonate",
+    "rxcui": "1368625",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "arachidyl-alcohol",
+    "name": "arachidyl alcohol",
+    "rxcui": "1368131",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "arachidyl-behenate",
+    "name": "arachidyl behenate",
+    "rxcui": "1314266",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "arachidyl-glucoside",
+    "name": "arachidyl glucoside",
+    "rxcui": "1368132",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "arachidyl-propionate",
+    "name": "arachidyl propionate",
+    "rxcui": "1306211",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "arbekacin",
+    "name": "arbekacin",
+    "rxcui": "26397",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "arbutamine",
+    "name": "arbutamine",
+    "rxcui": "61609",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "arbutin",
+    "name": "arbutin",
+    "rxcui": "1367175",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "archangelenone",
+    "name": "archangelenone",
+    "rxcui": "2667257",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "arctium-lappa-fruit-oil",
+    "name": "Arctium lappa fruit oil",
+    "rxcui": "1541708",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "arctium-lappa-root-oil",
+    "name": "Arctium lappa root oil",
+    "rxcui": "1866039",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "ardeparin",
+    "name": "ardeparin",
+    "rxcui": "87866",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "arformoterol",
+    "name": "arformoterol",
+    "rxcui": "304962",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "argan-oil",
+    "name": "argan oil",
+    "rxcui": "1305642",
+    "rxnormTty": "IN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "abacavir-sulfate",
+    "name": "abacavir sulfate",
+    "rxcui": "221052",
+    "rxnormTty": "PIN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  },
+  {
+    "slug": "a-phedrin",
+    "name": "A-Phedrin",
+    "rxcui": "214907",
+    "rxnormTty": "BN",
+    "publish": true,
+    "rxOnly": true,
+    "generic": "",
+    "class": "",
+    "category": "",
+    "usedFor": [],
+    "alternatives": [],
+    "label": {
+      "indications": [],
+      "warnings": []
+    }
+  }
+]
