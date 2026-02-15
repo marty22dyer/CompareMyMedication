@@ -80,62 +80,144 @@ export default async function ComparePage({ params }: Props) {
   };
 
   return (
-    <main className="comparePage">
-      <Breadcrumbs 
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Compare" },
-          { label: `${data.a.name} vs ${data.b.name}` }
-        ]}
-      />
-      
+    <main className="compare-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="compareHero">
-        <h1 className="compareH1">{data.a.name} vs {data.b.name}</h1>
-        <p className="compareSub">
-          {data.summary.disclaimer}
-        </p>
+      {/* Hero Section with Side-by-Side Cards */}
+      <section className="compare-hero">
+        <div className="compare-hero-content">
+          <h1 className="compare-title">
+            <span className="compare-drug-name">{data.a.name}</span>
+            <span className="compare-vs">vs ⚡</span>
+            <span className="compare-drug-name">{data.b.name}</span>
+          </h1>
+          
+          <div className="compare-cards">
+            {/* Drug A Card */}
+            <div className="compare-card compare-card-left">
+              <div className="compare-card-header">
+                <h2>{data.a.name}</h2>
+                <p className="compare-card-subtitle">{data.a.class || "Medication"}</p>
+              </div>
+              
+              <div className="compare-card-body">
+                <div className="compare-info-row">
+                  <span className="compare-label">💊 Generic:</span>
+                  <span className="compare-value">{data.a.generic ? "Available" : "Brand only"}</span>
+                </div>
+                {data.a.generic && (
+                  <div className="compare-generic-name">{data.a.generic}</div>
+                )}
+              </div>
+              
+              <a 
+                href={`https://www.goodrx.com/${data.a.slug}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="compare-cta-button compare-cta-primary"
+              >
+                See cheapest price for {data.a.name} →
+              </a>
+            </div>
 
-        <div className="compareTopLinks">
-          <a className="comparePill" href={`/drug/${data.a.slug}`}>{data.a.name} overview</a>
-          <a className="comparePill" href={`/drug/${data.b.slug}`}>{data.b.name} overview</a>
-          <a className="comparePill" href={`/drug/${data.a.slug}/generic`}>Generic for {data.a.name}</a>
-          <a className="comparePill" href={`/drug/${data.b.slug}/generic`}>Generic for {data.b.name}</a>
+            {/* Drug B Card */}
+            <div className="compare-card compare-card-right">
+              <div className="compare-card-header">
+                <h2>{data.b.name}</h2>
+                <p className="compare-card-subtitle">{data.b.class || "Medication"}</p>
+              </div>
+              
+              <div className="compare-card-body">
+                <div className="compare-info-row">
+                  <span className="compare-label">💊 Generic:</span>
+                  <span className="compare-value">{data.b.generic ? "Available" : "Brand only"}</span>
+                </div>
+                {data.b.generic && (
+                  <div className="compare-generic-name">{data.b.generic}</div>
+                )}
+              </div>
+              
+              <a 
+                href={`https://www.goodrx.com/${data.b.slug}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="compare-cta-button compare-cta-secondary"
+              >
+                See cheapest price for {data.b.name} →
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="compareBody">
-        <h2>Quick comparison</h2>
-
-        <div className="cmpTable">
-          <div className="cmpHeader">
-            <div />
-            <div className="cmpHeadCell">{data.a.name}</div>
-            <div className="cmpHeadCell">{data.b.name}</div>
+      {/* Comparison Sections */}
+      <section className="compare-body">
+        <div className="compare-section">
+          <h2 className="compare-section-title">📊 Quick Comparison</h2>
+          
+          <div className="compare-table">
+            <div className="compare-table-row compare-table-header">
+              <div className="compare-table-cell"></div>
+              <div className="compare-table-cell">{data.a.name}</div>
+              <div className="compare-table-cell">{data.b.name}</div>
+            </div>
+            
+            <div className="compare-table-row">
+              <div className="compare-table-cell compare-table-label">Generic name</div>
+              <div className="compare-table-cell">{data.a.generic || "—"}</div>
+              <div className="compare-table-cell">{data.b.generic || "—"}</div>
+            </div>
+            
+            <div className="compare-table-row">
+              <div className="compare-table-cell compare-table-label">Drug class</div>
+              <div className="compare-table-cell">{data.a.class || "—"}</div>
+              <div className="compare-table-cell">{data.b.class || "—"}</div>
+            </div>
+            
+            <div className="compare-table-row">
+              <div className="compare-table-cell compare-table-label">Commonly used for</div>
+              <div className="compare-table-cell">{data.a.usedFor?.slice(0, 2).join(", ") || "—"}</div>
+              <div className="compare-table-cell">{data.b.usedFor?.slice(0, 2).join(", ") || "—"}</div>
+            </div>
           </div>
-
-          {row("Generic name", data.a.generic || "—", data.b.generic || "—")}
-          {row("Drug class", data.a.class || "—", data.b.class || "—")}
-          {row("Commonly used for", (data.a.usedFor?.slice(0, 3).join(", ") || "—"), (data.b.usedFor?.slice(0, 3).join(", ") || "—"))}
         </div>
 
-        <h2>Key takeaways</h2>
-        <ul className="compareList">
-          <li>{data.summary.sameClass ? "Both drugs are in the same drug class." : "These drugs are in different drug classes."}</li>
-          <li>Generic names differ: <strong>{data.a.generic || "—"}</strong> vs <strong>{data.b.generic || "—"}</strong>.</li>
-          <li>Cost can vary widely by insurance/pharmacy; use coupon links to compare.</li>
-        </ul>
+        <div className="compare-section">
+          <h2 className="compare-section-title">💡 Key Takeaways</h2>
+          <div className="compare-takeaways">
+            <div className="compare-takeaway">
+              <span className="compare-takeaway-icon">🔍</span>
+              <p>{data.summary.sameClass ? "Both drugs are in the same drug class." : "These drugs are in different drug classes."}</p>
+            </div>
+            <div className="compare-takeaway">
+              <span className="compare-takeaway-icon">💊</span>
+              <p>Generic names: <strong>{data.a.generic || data.a.name}</strong> vs <strong>{data.b.generic || data.b.name}</strong></p>
+            </div>
+            <div className="compare-takeaway">
+              <span className="compare-takeaway-icon">💰</span>
+              <p>Cost can vary widely by insurance and pharmacy. Use the buttons above to compare prices.</p>
+            </div>
+          </div>
+        </div>
 
-        <h2>Cost & savings (placeholder)</h2>
-        <p className="compareP">
-          This section is where affiliate pricing links will live (GoodRx/SingleCare/Amazon Pharmacy).
-          For now, keep it informational: "Check local prices and coupons".
-        </p>
+        <div className="compare-section">
+          <h2 className="compare-section-title">🏥 Best if you want...</h2>
+          <div className="compare-recommendations">
+            <div className="compare-recommendation">
+              <h3>💊 {data.a.name}</h3>
+              <p>{data.a.usedFor?.[0] || "Consult your healthcare provider"}</p>
+              <a href={`/drug/${data.a.slug}`} className="compare-learn-more">Learn more →</a>
+            </div>
+            <div className="compare-recommendation">
+              <h3>💊 {data.b.name}</h3>
+              <p>{data.b.usedFor?.[0] || "Consult your healthcare provider"}</p>
+              <a href={`/drug/${data.b.slug}`} className="compare-learn-more">Learn more →</a>
+            </div>
+          </div>
+        </div>
 
-        <div className="compareCtas">
-          <a className="compareCta" href="/compare">Compare another medication</a>
-          <a className="compareCta ghost" href={`/drug/${data.a.slug}`}>Back to {data.a.name}</a>
+        <div className="compare-disclaimer">
+          <p><strong>⚕️ Medical Disclaimer:</strong> This comparison is for informational purposes only and should not be used as a substitute for professional medical advice. Always consult your healthcare provider before starting, stopping, or changing any medication.</p>
         </div>
       </section>
     </main>
