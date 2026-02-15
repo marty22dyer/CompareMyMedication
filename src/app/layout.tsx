@@ -25,7 +25,7 @@ export default function RootLayout({
 
         {/* HEADER */}
         <header className="w-full border-b bg-white shadow-sm">
-          <div className="w-full px-6 py-4 flex items-center justify-between">
+          <div className="w-full px-6 py-4 flex items-center justify-center">
             <Link href="/" className="flex items-center gap-2">
               <Image
                 src="/CompareMyMedication_logo.png"
@@ -35,15 +35,6 @@ export default function RootLayout({
                 priority
               />
             </Link>
-
-            <nav className="flex gap-6 text-sm font-medium">
-              <Link href="/compare" className="hover:text-blue-600">
-                Compare
-              </Link>
-              <Link href="/drug/wegovy" className="hover:text-blue-600">
-                Browse Drugs
-              </Link>
-            </nav>
           </div>
         </header>
 
