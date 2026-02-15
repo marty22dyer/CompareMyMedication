@@ -104,63 +104,6 @@ export default function Home() {
   </div>
 </section>
 
-      {/* Popular Comparisons */}
-      <section className="cmm-popular">
-        <div className="cmm-popular__inner">
-          <h2 className="sectionTitle">Popular Comparisons</h2>
-          <p className="cmm-sub2">See what others are comparing</p>
-          
-          <div className="cmm-popular__grid">
-            <div className="cmm-popbox">
-              <a className="cmm-popitem" href="/compare/viagra-vs-cialis">
-                <div className="cmm-popicon">🔷</div>
-                <span>Viagra</span>
-                <span className="cmm-vs">vs</span>
-                <span>Cialis</span>
-              </a>
-              <div className="cmm-divider"></div>
-              <a className="cmm-popitem" href="/compare/advil-vs-tylenol">
-                <div className="cmm-popicon">🔶</div>
-                <span>Advil</span>
-                <span className="cmm-vs">vs</span>
-                <span>Tylenol</span>
-              </a>
-              <div className="cmm-divider"></div>
-              <a className="cmm-popitem" href="/compare/prozac-vs-zoloft">
-                <div className="cmm-popicon">🔷</div>
-                <span>Prozac</span>
-                <span className="cmm-vs">vs</span>
-                <span>Zoloft</span>
-              </a>
-            </div>
-            <div className="cmm-popbox">
-              <a className="cmm-popitem" href="/compare/lipitor-vs-crestor">
-                <div className="cmm-popicon">🔶</div>
-                <span>Lipitor</span>
-                <span className="cmm-vs">vs</span>
-                <span>Crestor</span>
-              </a>
-              <div className="cmm-divider"></div>
-              <a className="cmm-popitem" href="/compare/nexium-vs-prilosec">
-                <div className="cmm-popicon">🔷</div>
-                <span>Nexium</span>
-                <span className="cmm-vs">vs</span>
-                <span>Prilosec</span>
-              </a>
-              <div className="cmm-divider"></div>
-              <a className="cmm-popitem" href="/compare/xanax-vs-ativan">
-                <div className="cmm-popicon">🔶</div>
-                <span>Xanax</span>
-                <span className="cmm-vs">vs</span>
-                <span>Ativan</span>
-              </a>
-            </div>
-          </div>
-          
-          <div className="sectionTitle sectionTitleSmall">Popular Comparisons</div>
-          <div className="cmm-sub2">See what others are comparing</div>
-          </div>
-      </section>
 
       {/* Footer */}
       <footer className="cmm-footer">
