@@ -265,6 +265,49 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
           )}
         </div>
 
+        {/* Brand Names / Generic Versions Section */}
+        {((drug.brandNames && drug.brandNames.length > 0) || (drug.genericVersions && drug.genericVersions.length > 0)) && (
+          <div className="drug-section">
+            <h2 className="drug-section-title">
+              <span className="drug-section-icon">🔗</span>
+              Related Medications
+            </h2>
+            <div className="drug-section-content">
+              {drug.brandNames && drug.brandNames.length > 0 && (
+                <div className="drug-related-group">
+                  <h3 className="drug-subsection-title">Brand Names:</h3>
+                  <div className="drug-pills">
+                    {drug.brandNames.slice(0, 10).map((brandName: string, idx: number) => {
+                      const brandSlug = brandName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+                      return (
+                        <Link key={idx} href={`/drug/${brandSlug}`} className="drug-pill">
+                          {brandName}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+              {drug.genericVersions && drug.genericVersions.length > 0 && (
+                <div className="drug-related-group">
+                  <h3 className="drug-subsection-title">Generic Versions:</h3>
+                  <div className="drug-pills">
+                    {drug.genericVersions.slice(0, 10).map((slug: string, idx: number) => {
+                      const relatedDrug = bySlug(slug);
+                      if (!relatedDrug) return null;
+                      return (
+                        <Link key={idx} href={`/drug/${slug}`} className="drug-pill">
+                          {relatedDrug.name}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
         {/* Action Buttons */}
         <div className="drug-action-buttons">
           <Link href="/compare" className="drug-action-btn drug-action-btn-primary">

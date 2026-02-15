@@ -15,6 +15,9 @@ export type Drug = {
   category?: string;
   usedFor?: string[];
   alternatives?: string[];
+  brandNames?: string[];
+  genericVersions?: string[];
+  sameClass?: string[];
   dailymed?: { setid?: string; source?: string };
   label?: { 
     indications?: string[]; 
