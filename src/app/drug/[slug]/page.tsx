@@ -67,12 +67,22 @@ export default function DrugPage({ params }: Props) {
     publisher: { "@type": "Organization", name: "CompareMyMedication" },
   };
 
-  return (
-    <main className="comparePage">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+  const alts = (d.alternatives ?? [])
+    .map((s) => bySlug(s))
+    .filter(Boolean) as NonNullable<ReturnType<typeof bySlug>>[];
 
+  return (
+    <>
+      <Breadcrumbs 
+        items={[
+          { label: "Home", href: "/" },
+          { label: d.name }
+        ]}
+      />
+      
+      {/* HERO */}
       <section className="compareHero">
-        <h1 className="compareH1">{name}</h1>
+        <h1 className="compareH1">{d.name}</h1>
         <p className="compareSub">
           Informational tool only; not medical advice. Always consult a healthcare professional.
         </p>
@@ -84,7 +94,7 @@ export default function DrugPage({ params }: Props) {
             <div className="compareQuickRow"><span>Class:</span> <strong>{drugClass}</strong></div>
             <div className="compareQuickRow">
               <span>Generic page:</span>
-              <strong><a href={`/drug/${d.slug}/generic`}>View</a></strong>
+              <strong><Link href={`/drug/${d.slug}/generic`}>View</Link></strong>
             </div>
           </div>
 
@@ -103,7 +113,71 @@ export default function DrugPage({ params }: Props) {
         </div>
       </section>
 
+      {/* BODY */}
       <section className="compareBody">
+        <div className="cmpTable">
+          <div className="cmpHeader">
+            <div />
+            <div className="cmpHeadCell">{d.name}</div>
+            <div className="cmpHeadCell">Details</div>
+          </div>
+
+          <div className="cmpRow">
+            <div className="cmpLabel">Generic</div>
+            <div className="cmpCell">{d.generic || "—"}</div>
+            <div className="cmpCell">Non-brand name</div>
+          </div>
+
+          <div className="cmpRow">
+            <div className="cmpLabel">Class</div>
+            <div className="cmpCell">{d.class || "—"}</div>
+            <div className="cmpCell">Drug class</div>
+          </div>
+
+          <div className="cmpRow">
+            <div className="cmpLabel">Category</div>
+            <div className="cmpCell">{d.category || "—"}</div>
+            <div className="cmpCell">Therapeutic area</div>
+          </div>
+        </div>
+
+        {/* Alternatives (styled like pills/buttons) */}
+        {alts.length > 0 ? (
+          <>
+            <h2>Alternatives</h2>
+            <div className="compareTopLinks">
+              <Link className="comparePill" href="/compare">
+                Browse comparisons
+              </Link>
+              <Link className="comparePill" href={`/compare/${d.slug}-vs-${alts[0].slug}`}>
+                Compare {d.name}
+              </Link>
+            </div>
+            <div className="compareLinks">
+              {alts.map((a) => (
+                <Link key={a.slug} className="comparePill" href={`/drug/${a.slug}`}>
+                  {a.name}
+                </Link>
+              ))}
+            </div>
+          </>
+        ) : null}
+
+        {/* FDA label sections (only when present) */}
+        {d.label?.indications?.length ? (
+          <>
+            <h2>What is {d.name} used for?</h2>
+            <p className="compareP">{d.label.indications[0]}</p>
+          </>
+        ) : null}
+
+        {d.label?.warnings?.length ? (
+          <>
+            <h2>Warnings</h2>
+            <p className="compareP">{d.label.warnings[0]}</p>
+          </>
+        ) : null}
+
         <h2>Overview</h2>
         <p className="compareP">{summary}</p>
 
@@ -116,9 +190,9 @@ export default function DrugPage({ params }: Props) {
         <h2>Compare {name} to</h2>
         <div className="compareLinks">
           {compareTo.map(x => (
-            <a key={x.slug} href={`/compare/${d.slug}-vs-${x.slug}`}>
+            <Link key={x.slug} href={`/compare/${d.slug}-vs-${x.slug}`}>
               {name} vs {x.name}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -126,7 +200,7 @@ export default function DrugPage({ params }: Props) {
         {same.length ? (
           <div className="compareLinks">
             {same.map(x => (
-              <a key={x.slug} href={`/drug/${x.slug}`}>{x.name}</a>
+              <Link key={x.slug} href={`/drug/${x.slug}`}>{x.name}</Link>
             ))}
           </div>
         ) : (
@@ -138,6 +212,10 @@ export default function DrugPage({ params }: Props) {
           Do not start, stop, or switch medications without medical guidance. Side effects and interactions differ per person.
         </p>
       </section>
-    </main>
+
+      <a href="#top" className="back-to-top" aria-label="Back to top">
+        ↑
+      </a>
+    </>
   );
 }
