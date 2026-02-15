@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='0%25'><stop offset='0%25' style='stop-color:%23003d7a'/><stop offset='50%25' style='stop-color:%23003d7a'/><stop offset='50%25' style='stop-color:%2340c4d4'/><stop offset='100%25' style='stop-color:%2340c4d4'/></linearGradient></defs><rect x='12' y='16' width='40' height='32' rx='16' fill='url(%23g1)'/><rect x='30' y='16' width='4' height='32' fill='white' opacity='0.3'/><text x='32' y='44' font-size='24' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'>$</text></svg>" />
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><defs><linearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='0%25'><stop offset='0%25' style='stop-color:%23003d7a'/><stop offset='50%25' style='stop-color:%23003d7a'/><stop offset='50%25' style='stop-color:%2340c4d4'/><stop offset='100%25' style='stop-color:%2340c4d4'/></linearGradient></defs><rect x='24' y='32' width='80' height='64' rx='32' fill='url(%23g1)'/><rect x='60' y='32' width='8' height='64' fill='white' opacity='0.3'/><text x='64' y='88' font-size='48' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'>$</text></svg>" />
       </head>
       <body>
         <header className="cmm-nav">
