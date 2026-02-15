@@ -111,8 +111,8 @@ export default function Home() {
           This tool provides general information and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
         </p>
         <div className="cmm-footer__links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
           <a href="#">Contact</a>
           <a href="#">About</a>
         </div>
