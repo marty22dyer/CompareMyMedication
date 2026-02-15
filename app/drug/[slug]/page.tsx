@@ -32,8 +32,7 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
   
   // Additional info
   const dosageForm = drug.ndcData?.dosage_form || drug.goodrxData?.dosage_form || "tablet, capsule";
-  const controlledStatus = drug.controlledSubstance ? "Schedule II" : "Not controlled";
-  const pregnancyCategory = drug.pregnancyCategory || drug.openfdaData?.pregnancy_category || "Consult doctor";
+  const manufacturer = drug.ndcData?.labeler_name || drug.openfdaData?.manufacturer || null;
   
   const alts = (drug.alternatives ?? [])
     .map((s: string) => bySlug(s))
@@ -110,17 +109,13 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
               <div className="drug-snapshot-value">{category}</div>
             </div>
             <div className="drug-snapshot-row">
-              <div className="drug-snapshot-label">Controlled Status</div>
-              <div className="drug-snapshot-value">{controlledStatus}</div>
-            </div>
-            <div className="drug-snapshot-row">
               <div className="drug-snapshot-label">Forms Available</div>
               <div className="drug-snapshot-value">{dosageForm}</div>
             </div>
-            {pregnancyCategory !== "Consult doctor" && (
+            {manufacturer && (
               <div className="drug-snapshot-row">
-                <div className="drug-snapshot-label">Pregnancy Category</div>
-                <div className="drug-snapshot-value">{pregnancyCategory}</div>
+                <div className="drug-snapshot-label">Manufacturer</div>
+                <div className="drug-snapshot-value">{manufacturer}</div>
               </div>
             )}
           </div>
