@@ -13204,7 +13204,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": true,
-    "generic": "",
+    "generic": "ibuprofen",
     "class": "Medication",
     "category": "other",
     "usedFor": [],
@@ -14775,7 +14775,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "diclofenac",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -14796,7 +14796,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "diphenhydramine / naproxen",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -15636,7 +15636,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "acetaminophen / oxycodone",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -20970,7 +20970,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "aspirin",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -20991,7 +20991,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "aspirin",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -21012,7 +21012,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "aspirin",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -21033,7 +21033,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "aspirin",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -23931,7 +23931,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "diphenhydramine / ibuprofen",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -23986,7 +23986,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "aspirin / acetaminophen / caffeine",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -24007,7 +24007,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "aspirin / acetaminophen",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -24028,7 +24028,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "acetaminophen / caffeine",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -24049,7 +24049,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "acetaminophen / diphenhydramine",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -24070,7 +24070,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "aspirin / acetaminophen / diphenhydramine",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -24091,7 +24091,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "acetaminophen / caffeine",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -24112,7 +24112,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "acetaminophen / caffeine",
     "class": "Pain-relievers",
     "category": "pain-relievers",
     "usedFor": [
@@ -24155,7 +24155,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "diphenhydramine / phenylephrine",
     "class": "Allergy",
     "category": "allergy",
     "usedFor": [
@@ -24177,7 +24177,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "camphor",
     "class": "Allergy",
     "category": "allergy",
     "usedFor": [
@@ -24199,7 +24199,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "diphenhydramine / zinc acetate",
     "class": "Allergy",
     "category": "allergy",
     "usedFor": [
@@ -24221,7 +24221,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "diphenhydramine / phenylephrine",
     "class": "Allergy",
     "category": "allergy",
     "usedFor": [
@@ -27367,7 +27367,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "ketotifen",
     "class": "Allergy",
     "category": "allergy",
     "usedFor": [
@@ -27389,7 +27389,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "loratadine / pseudoephedrine",
     "class": "Allergy",
     "category": "allergy",
     "usedFor": [
@@ -28506,7 +28506,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "cetirizine / pseudoephedrine",
     "class": "Allergy",
     "category": "allergy",
     "usedFor": [
@@ -29386,7 +29386,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "fexofenadine / pseudoephedrine",
     "class": "Allergy",
     "category": "allergy",
     "usedFor": [
@@ -29892,7 +29892,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "bismuth subsalicylate",
     "class": "Gi",
     "category": "gi",
     "usedFor": [
@@ -29914,7 +29914,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "calcium carbonate",
     "class": "Gi",
     "category": "gi",
     "usedFor": [
@@ -30090,7 +30090,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "loperamide",
     "class": "Gi",
     "category": "gi",
     "usedFor": [
@@ -30112,7 +30112,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "loperamide / simethicone",
     "class": "Gi",
     "category": "gi",
     "usedFor": [
@@ -30134,7 +30134,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "loperamide / simethicone",
     "class": "Gi",
     "category": "gi",
     "usedFor": [
@@ -32092,7 +32092,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "famotidine",
     "class": "Gi",
     "category": "gi",
     "usedFor": [
@@ -33104,7 +33104,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "oxymetazoline",
     "class": "Cold-flu",
     "category": "cold-flu",
     "usedFor": [
@@ -33126,7 +33126,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "phenylephrine",
     "class": "Cold-flu",
     "category": "cold-flu",
     "usedFor": [
@@ -33280,7 +33280,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": true,
-    "generic": "",
+    "generic": "triprolidine / pseudoephedrine",
     "class": "Medication",
     "category": "other",
     "usedFor": [],
@@ -36289,7 +36289,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": false,
-    "generic": "",
+    "generic": "dextromethorphan",
     "class": "Cold-flu",
     "category": "cold-flu",
     "usedFor": [
@@ -38863,7 +38863,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": true,
-    "generic": "",
+    "generic": "clonazepam",
     "class": "Medication",
     "category": "other",
     "usedFor": [],
@@ -40240,7 +40240,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": true,
-    "generic": "",
+    "generic": "histamine / menthol",
     "class": "Medication",
     "category": "other",
     "usedFor": [],
@@ -43244,7 +43244,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": true,
-    "generic": "",
+    "generic": "piperonyl butoxide / pyrethrins",
     "class": "Medication",
     "category": "other",
     "usedFor": [],
@@ -49025,7 +49025,7 @@
     "rxnormTty": "BN",
     "publish": true,
     "rxOnly": true,
-    "generic": "",
+    "generic": "desvenlafaxine",
     "class": "Medication",
     "category": "other",
     "usedFor": [],
