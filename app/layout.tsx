@@ -38,12 +38,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <header className="cmm-nav">
-          <div className="cmm-nav__inner">
+          <div className="cmm-nav__inner" style={{ justifyContent: 'center' }}>
             <SiteLogo />
-            <div className={`cmm-links ${isMobileMenuOpen ? 'mobile-active' : ''}`}>
-              <Link href="/compare" className="cmm-link">Compare</Link>
-              <Link href="/about" className="cmm-link">About</Link>
-            </div>
           </div>
         </header>
         {children}
