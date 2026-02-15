@@ -6,6 +6,7 @@ import commonMeds from "../data/common-meds-enriched.json";
 export type Drug = {
   slug: string;
   name: string;
+  technicalName?: string;
   rxcui?: string;
   rxnormTty?: string;
   publish?: boolean;
