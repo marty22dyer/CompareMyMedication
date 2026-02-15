@@ -55,7 +55,7 @@ async function queryRxNorm(drugName) {
     const propsData = await propsResponse.json();
 
     // Step 3: Get related drugs (brand/generic relationships)
-    const relatedUrl = `${RXNORM_BASE_URL}/rxcui/${rxcui}/related.json?tty=BN+IN`;
+    const relatedUrl = `${RXNORM_BASE_URL}/rxcui/${rxcui}/related.json?tty=BN+IN+SCD+SBD`;
     const relatedResponse = await fetch(relatedUrl);
     
     let brandNames = [];
@@ -72,6 +72,34 @@ async function queryRxNorm(drugName) {
           } else if (group.tty === 'IN' && group.conceptProperties) {
             // Generic/ingredient name
             genericName = group.conceptProperties[0]?.name;
+          } else if ((group.tty === 'SCD' || group.tty === 'SBD') && group.conceptProperties && !genericName) {
+            // If no ingredient found, try to extract from clinical drug name
+            const clinicalDrug = group.conceptProperties[0]?.name;
+            if (clinicalDrug) {
+              // Extract generic part before dosage info
+              const match = clinicalDrug.match(/^([^0-9]+)/);
+              if (match) {
+                genericName = match[1].trim();
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    // If still no generic name and this is a brand name, try getting ingredients directly
+    if (!genericName && properties.TTY === 'BN') {
+      const ingredientUrl = `${RXNORM_BASE_URL}/rxcui/${rxcui}/related.json?tty=IN`;
+      const ingredientResponse = await fetch(ingredientUrl);
+      if (ingredientResponse.ok) {
+        const ingredientData = await ingredientResponse.json();
+        if (ingredientData.relatedGroup?.conceptGroup) {
+          for (const group of ingredientData.relatedGroup.conceptGroup) {
+            if (group.tty === 'IN' && group.conceptProperties) {
+              const ingredients = group.conceptProperties.map(p => p.name);
+              genericName = ingredients.join(' / ');
+              break;
+            }
           }
         }
       }
