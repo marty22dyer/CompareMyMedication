@@ -1,113 +1,124 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { bySlug } from "../../../lib/drugs";
-import Breadcrumbs from "../../../components/Breadcrumbs";
-
-function canonCompare(a: string, b: string) {
-  return [a, b].sort().join("-vs-");
-}
 
 export default function DrugPage({ params }: { params: { slug: string } }) {
   const drug = bySlug(params.slug);
   if (!drug) return notFound();
 
+  const name = drug.name;
+  const generic = drug.generic || "—";
+  const drugClass = drug.class || "—";
+  const conditions = drug.conditions || [];
+  
   const alts = (drug.alternatives ?? [])
-    .map((s) => bySlug(s))
+    .map((s: string) => bySlug(s))
     .filter(Boolean) as NonNullable<ReturnType<typeof bySlug>>[];
 
   return (
-    <main className="comparePage">
-      <Breadcrumbs 
-        items={[
-          { label: "Home", href: "/" },
-          { label: drug.name }
-        ]}
-      />
-      
-      {/* SAME HERO STYLE AS COMPARE */}
-      <section className="compareHero">
-        <h1 className="compareH1">{drug.name}</h1>
-        <p className="compareSub">
-          Informational tool only; not medical advice. Always consult a healthcare professional.
-        </p>
-
-        <div className="compareTopLinks">
-          <Link className="comparePill" href="/compare">
-            Browse comparisons
-          </Link>
-
-          {alts.length > 0 ? (
-            <Link
-              className="comparePill"
-              href={`/compare/${canonCompare(drug.slug, alts[0].slug)}`}
-            >
-              Compare {drug.name}
-            </Link>
-          ) : null}
+    <div className="drug-page">
+      {/* Hero Section */}
+      <div className="drug-hero">
+        <div className="drug-hero-content">
+          <div className="drug-breadcrumb">
+            <Link href="/" className="drug-breadcrumb-link">Home</Link>
+            <span className="drug-breadcrumb-separator">›</span>
+            <span className="drug-breadcrumb-current">{name}</span>
+          </div>
+          
+          <h1 className="drug-title">{name}</h1>
+          
+          {drug.generic && (
+            <p className="drug-generic">
+              Generic: <strong>{generic}</strong>
+            </p>
+          )}
+          
+          <p className="drug-disclaimer">
+            ⚕️ Informational tool only; not medical advice. Always consult a healthcare professional.
+          </p>
         </div>
-      </section>
+      </div>
 
-      {/* SAME BODY STYLE AS COMPARE */}
-      <section className="compareBody">
-        <div className="cmpTable">
-          <div className="cmpHeader">
-            <div />
-            <div className="cmpHeadCell">{drug.name}</div>
-            <div className="cmpHeadCell">Details</div>
-          </div>
-
-          <div className="cmpRow">
-            <div className="cmpLabel">Generic</div>
-            <div className="cmpCell">{drug.generic || "—"}</div>
-            <div className="cmpCell">Non-brand name</div>
-          </div>
-
-          <div className="cmpRow">
-            <div className="cmpLabel">Class</div>
-            <div className="cmpCell">{drug.class || "—"}</div>
-            <div className="cmpCell">Drug class</div>
-          </div>
-
-          <div className="cmpRow">
-            <div className="cmpLabel">Category</div>
-            <div className="cmpCell">{drug.category || "—"}</div>
-            <div className="cmpCell">Therapeutic area</div>
+      {/* Main Content */}
+      <div className="drug-content">
+        {/* Key Facts Card */}
+        <div className="drug-card drug-card-primary">
+          <h2 className="drug-card-title">📊 Key Facts</h2>
+          <div className="drug-facts-grid">
+            <div className="drug-fact">
+              <div className="drug-fact-label">Generic Name</div>
+              <div className="drug-fact-value">{generic}</div>
+            </div>
+            <div className="drug-fact">
+              <div className="drug-fact-label">Drug Class</div>
+              <div className="drug-fact-value">{drugClass}</div>
+            </div>
+            <div className="drug-fact">
+              <div className="drug-fact-label">Category</div>
+              <div className="drug-fact-value">{drug.category || "Not specified"}</div>
+            </div>
           </div>
         </div>
 
-        {/* Alternatives (styled like pills/buttons) */}
-        {alts.length > 0 ? (
-          <>
-            <h2>Alternatives</h2>
-            <div className="compareTopLinks">
-              {alts.map((a) => (
-                <Link key={a.slug} className="comparePill" href={`/drug/${a.slug}`}>
-                  {a.name}
-                </Link>
+        {/* Commonly Used For */}
+        {conditions.length > 0 && (
+          <div className="drug-card">
+            <h2 className="drug-card-title">💊 Commonly Used For</h2>
+            <div className="drug-conditions">
+              {conditions.slice(0, 8).map((condition: string, idx: number) => (
+                <span key={idx} className="drug-condition-tag">
+                  {condition}
+                </span>
               ))}
             </div>
-          </>
-        ) : null}
+          </div>
+        )}
 
-        {/* FDA label sections (only when present) */}
-        {drug.label?.indications?.length ? (
-          <>
-            <h2>What is {drug.name} used for?</h2>
-            <p className="compareP">{drug.label.indications[0]}</p>
-          </>
-        ) : null}
+        {/* Alternatives */}
+        {alts.length > 0 && (
+          <div className="drug-card">
+            <h2 className="drug-card-title">🔄 Similar Medications</h2>
+            <div className="drug-similar-list">
+              {alts.map((a: any, idx: number) => (
+                <span key={a.slug}>
+                  <Link href={`/drug/${a.slug}`} className="drug-similar-link">
+                    {a.name}
+                  </Link>
+                  {idx < alts.length - 1 && <span className="drug-similar-separator"> • </span>}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
 
-        {drug.label?.warnings?.length ? (
-          <>
-            <h2>Warnings</h2>
-            <p className="compareP">{drug.label.warnings[0]}</p>
-          </>
-        ) : null}
-      </section>
-      
-      <a href="#top" className="back-to-top" aria-label="Back to top">
+        {/* FDA Label Info */}
+        {drug.label?.indications?.length && (
+          <div className="drug-card">
+            <h2 className="drug-card-title">What is {name} used for?</h2>
+            <p className="drug-text">{drug.label.indications[0]}</p>
+          </div>
+        )}
+
+        {drug.label?.warnings?.length && (
+          <div className="drug-card drug-card-warning">
+            <h2 className="drug-card-title">⚠️ Warnings</h2>
+            <p className="drug-text">{drug.label.warnings[0]}</p>
+          </div>
+        )}
+
+        {/* Safety Note */}
+        <div className="drug-card drug-card-info">
+          <h2 className="drug-card-title">Safety Note</h2>
+          <p className="drug-text">
+            Do not start, stop, or switch medications without medical guidance. Side effects and interactions differ per person.
+          </p>
+        </div>
+      </div>
+
+      <a href="#top" className="drug-back-to-top" aria-label="Back to top">
         ↑
       </a>
-    </main>
+    </div>
   );
 }
