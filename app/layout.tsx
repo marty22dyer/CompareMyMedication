@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-export function SiteLogo() {
+function SiteLogo() {
   return (
     <Link href="/" className="flex items-center gap-2">
       <Image
