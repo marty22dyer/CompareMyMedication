@@ -33,7 +33,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 //   return drugs.map((d) => ({ slug: d.slug }));
 // }
 
-export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
 export default function GenericPage({ params }: Props) {

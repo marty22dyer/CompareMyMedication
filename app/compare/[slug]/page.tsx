@@ -90,7 +90,6 @@ function row(label: string, a: string, b: string) {
 //   return allCompareSlugs().map((slug) => ({ slug }));
 // }
 
-export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
 export default async function ComparePage({ params }: Props) {
