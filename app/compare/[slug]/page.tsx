@@ -84,9 +84,13 @@ function row(label: string, a: string, b: string) {
   );
 }
 
-export function generateStaticParams() {
-  return allCompareSlugs().map((slug) => ({ slug }));
-}
+// Disabled to prevent 740k static pages at build time
+// Pages will be generated on-demand instead
+// export function generateStaticParams() {
+//   return allCompareSlugs().map((slug) => ({ slug }));
+// }
+
+export const dynamic = 'force-dynamic';
 
 export default async function ComparePage({ params }: Props) {
   const data = getCompare(params.slug);
