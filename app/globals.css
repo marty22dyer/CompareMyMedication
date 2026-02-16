@@ -994,8 +994,8 @@
 }
 
 .cmp-hero {
-  background: white;
-  padding: 40px 20px 60px;
+  background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+  padding: 48px 20px 64px;
   border-bottom: 1px solid #e5e7eb;
 }
 
@@ -1006,24 +1006,25 @@
 
 .cmp-main-title {
   text-align: center;
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 900;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
   flex-wrap: wrap;
-  color: #1e293b;
+  color: #0f172a;
+  letter-spacing: -0.02em;
 }
 
 .cmp-drug-a,
 .cmp-drug-b {
-  color: #1e293b;
+  color: #0f172a;
 }
 
 .cmp-vs-text {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
   color: #64748b;
 }
@@ -1031,60 +1032,136 @@
 .cmp-hero-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-bottom: 32px;
+  gap: 28px;
+  margin-bottom: 36px;
 }
 
 .cmp-hero-card {
   background: white;
   border: 2px solid #e5e7eb;
-  border-radius: 16px;
+  border-radius: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.cmp-hero-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: #cbd5e1;
+}
+
+.cmp-drug-badge {
+  padding: 16px 24px;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+.cmp-badge-green {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.cmp-badge-blue {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.cmp-card-content {
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  flex: 1;
 }
 
 .cmp-stars {
-  font-size: 20px;
+  font-size: 22px;
   color: #f59e0b;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .cmp-generic-status {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cmp-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: #10b981;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.cmp-dollar {
+  font-size: 18px;
+  color: #f59e0b;
+  font-weight: 900;
+}
+
+.cmp-drug-class {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+  padding: 8px 12px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .cmp-price-btn {
-  display: block;
-  text-align: center;
-  padding: 14px 20px;
-  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  margin: 0 24px 24px;
+  border-radius: 12px;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   text-decoration: none;
   color: white;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cmp-btn-icon {
+  font-size: 18px;
 }
 
 .cmp-btn-green {
-  background: #10b981;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
 }
 
 .cmp-btn-green:hover {
-  background: #059669;
-  transform: translateY(-1px);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
 }
 
 .cmp-btn-blue {
-  background: #3b82f6;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
 }
 
 .cmp-btn-blue:hover {
-  background: #2563eb;
-  transform: translateY(-1px);
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
 }
 
 .cmp-which-better {
@@ -1104,17 +1181,24 @@
 
 .cmp-section {
   background: white;
-  border-radius: 16px;
-  padding: 32px;
-  margin-bottom: 24px;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 28px;
   border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.cmp-section:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .cmp-section-title {
-  font-size: 24px;
-  font-weight: 800;
-  color: #1e293b;
-  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
 }
 
 .cmp-comparison-table {

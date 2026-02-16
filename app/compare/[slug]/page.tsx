@@ -95,9 +95,17 @@ export default async function ComparePage({ params }: Props) {
           <div className="cmp-hero-cards">
             {/* Drug A Card */}
             <div className="cmp-hero-card">
-              <div className="cmp-stars">★★★★☆</div>
-              <div className="cmp-generic-status">
-                $ {data.a.generic ? "Generic available" : "Brand only"}
+              <div className="cmp-drug-badge cmp-badge-green">{data.a.name}</div>
+              <div className="cmp-card-content">
+                <div className="cmp-stars">★★★★☆</div>
+                <div className="cmp-generic-status">
+                  {data.a.generic ? (
+                    <><span className="cmp-check">✓</span> Generic available</>
+                  ) : (
+                    <><span className="cmp-dollar">$$$</span> Brand only</>
+                  )}
+                </div>
+                <div className="cmp-drug-class">{data.a.class || "Medication"}</div>
               </div>
               <a 
                 href={`https://www.goodrx.com/${data.a.slug}`} 
@@ -105,15 +113,24 @@ export default async function ComparePage({ params }: Props) {
                 rel="noopener noreferrer"
                 className="cmp-price-btn cmp-btn-green"
               >
-                See cheapest price for {data.a.name} →
+                <span className="cmp-btn-icon">💰</span>
+                See cheapest price →
               </a>
             </div>
 
             {/* Drug B Card */}
             <div className="cmp-hero-card">
-              <div className="cmp-stars">★★★★☆</div>
-              <div className="cmp-generic-status">
-                {data.b.generic ? "$ Generic available" : "$$$ Brand only"}
+              <div className="cmp-drug-badge cmp-badge-blue">{data.b.name}</div>
+              <div className="cmp-card-content">
+                <div className="cmp-stars">★★★★☆</div>
+                <div className="cmp-generic-status">
+                  {data.b.generic ? (
+                    <><span className="cmp-check">✓</span> Generic available</>
+                  ) : (
+                    <><span className="cmp-dollar">$$$</span> Brand only</>
+                  )}
+                </div>
+                <div className="cmp-drug-class">{data.b.class || "Medication"}</div>
               </div>
               <a 
                 href={`https://www.goodrx.com/${data.b.slug}`} 
@@ -121,7 +138,8 @@ export default async function ComparePage({ params }: Props) {
                 rel="noopener noreferrer"
                 className="cmp-price-btn cmp-btn-blue"
               >
-                See cheapest price for {data.b.name} →
+                <span className="cmp-btn-icon">💰</span>
+                See cheapest price →
               </a>
             </div>
           </div>
