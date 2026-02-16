@@ -80,144 +80,143 @@ export default async function ComparePage({ params }: Props) {
   };
 
   return (
-    <main className="compare-page">
+    <main className="compare-page-v2">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* Hero Section with Side-by-Side Cards */}
-      <section className="compare-hero">
-        <div className="compare-hero-content">
-          <h1 className="compare-title">
-            <span className="compare-drug-name">{data.a.name}</span>
-            <span className="compare-vs">vs ⚡</span>
-            <span className="compare-drug-name">{data.b.name}</span>
+      {/* Hero Section */}
+      <section className="cmp-hero">
+        <div className="cmp-container">
+          <h1 className="cmp-main-title">
+            <span className="cmp-drug-a">{data.a.name}</span>
+            <span className="cmp-vs-text">vs</span>
+            <span className="cmp-drug-b">{data.b.name}</span>
           </h1>
           
-          <div className="compare-cards">
+          <div className="cmp-hero-cards">
             {/* Drug A Card */}
-            <div className="compare-card compare-card-left">
-              <div className="compare-card-header">
-                <h2>{data.a.name}</h2>
-                <p className="compare-card-subtitle">{data.a.class || "Medication"}</p>
+            <div className="cmp-hero-card">
+              <div className="cmp-stars">★★★★☆</div>
+              <div className="cmp-generic-status">
+                $ {data.a.generic ? "Generic available" : "Brand only"}
               </div>
-              
-              <div className="compare-card-body">
-                <div className="compare-info-row">
-                  <span className="compare-label">💊 Generic:</span>
-                  <span className="compare-value">{data.a.generic ? "Available" : "Brand only"}</span>
-                </div>
-                {data.a.generic && (
-                  <div className="compare-generic-name">{data.a.generic}</div>
-                )}
-              </div>
-              
               <a 
                 href={`https://www.goodrx.com/${data.a.slug}`} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="compare-cta-button compare-cta-primary"
+                className="cmp-price-btn cmp-btn-green"
               >
                 See cheapest price for {data.a.name} →
               </a>
             </div>
 
             {/* Drug B Card */}
-            <div className="compare-card compare-card-right">
-              <div className="compare-card-header">
-                <h2>{data.b.name}</h2>
-                <p className="compare-card-subtitle">{data.b.class || "Medication"}</p>
+            <div className="cmp-hero-card">
+              <div className="cmp-stars">★★★★☆</div>
+              <div className="cmp-generic-status">
+                {data.b.generic ? "$ Generic available" : "$$$ Brand only"}
               </div>
-              
-              <div className="compare-card-body">
-                <div className="compare-info-row">
-                  <span className="compare-label">💊 Generic:</span>
-                  <span className="compare-value">{data.b.generic ? "Available" : "Brand only"}</span>
-                </div>
-                {data.b.generic && (
-                  <div className="compare-generic-name">{data.b.generic}</div>
-                )}
-              </div>
-              
               <a 
                 href={`https://www.goodrx.com/${data.b.slug}`} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="compare-cta-button compare-cta-secondary"
+                className="cmp-price-btn cmp-btn-blue"
               >
                 See cheapest price for {data.b.name} →
               </a>
             </div>
           </div>
+
+          <div className="cmp-which-better">
+            Which works better for YOU? →
+          </div>
         </div>
       </section>
 
-      {/* Comparison Sections */}
-      <section className="compare-body">
-        <div className="compare-section">
-          <h2 className="compare-section-title">📊 Quick Comparison</h2>
+      {/* Comparison Body */}
+      <section className="cmp-body">
+        <div className="cmp-container">
           
-          <div className="compare-table">
-            <div className="compare-table-row compare-table-header">
-              <div className="compare-table-cell"></div>
-              <div className="compare-table-cell">{data.a.name}</div>
-              <div className="compare-table-cell">{data.b.name}</div>
-            </div>
-            
-            <div className="compare-table-row">
-              <div className="compare-table-cell compare-table-label">Generic name</div>
-              <div className="compare-table-cell">{data.a.generic || "—"}</div>
-              <div className="compare-table-cell">{data.b.generic || "—"}</div>
-            </div>
-            
-            <div className="compare-table-row">
-              <div className="compare-table-cell compare-table-label">Drug class</div>
-              <div className="compare-table-cell">{data.a.class || "—"}</div>
-              <div className="compare-table-cell">{data.b.class || "—"}</div>
-            </div>
-            
-            <div className="compare-table-row">
-              <div className="compare-table-cell compare-table-label">Commonly used for</div>
-              <div className="compare-table-cell">{data.a.usedFor?.slice(0, 2).join(", ") || "—"}</div>
-              <div className="compare-table-cell">{data.b.usedFor?.slice(0, 2).join(", ") || "—"}</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="compare-section">
-          <h2 className="compare-section-title">💡 Key Takeaways</h2>
-          <div className="compare-takeaways">
-            <div className="compare-takeaway">
-              <span className="compare-takeaway-icon">🔍</span>
-              <p>{data.summary.sameClass ? "Both drugs are in the same drug class." : "These drugs are in different drug classes."}</p>
-            </div>
-            <div className="compare-takeaway">
-              <span className="compare-takeaway-icon">💊</span>
-              <p>Generic names: <strong>{data.a.generic || data.a.name}</strong> vs <strong>{data.b.generic || data.b.name}</strong></p>
-            </div>
-            <div className="compare-takeaway">
-              <span className="compare-takeaway-icon">💰</span>
-              <p>Cost can vary widely by insurance and pharmacy. Use the buttons above to compare prices.</p>
+          {/* Quick Comparison Table */}
+          <div className="cmp-section">
+            <h2 className="cmp-section-title">Quick Comparison</h2>
+            <div className="cmp-comparison-table">
+              <div className="cmp-table-row cmp-table-header">
+                <div className="cmp-table-cell"></div>
+                <div className="cmp-table-cell"><strong>{data.a.name}</strong></div>
+                <div className="cmp-table-cell"><strong>{data.b.name}</strong></div>
+              </div>
+              <div className="cmp-table-row">
+                <div className="cmp-table-cell cmp-table-label">Generic name</div>
+                <div className="cmp-table-cell">{data.a.generic || "—"}</div>
+                <div className="cmp-table-cell">{data.b.generic || "—"}</div>
+              </div>
+              <div className="cmp-table-row">
+                <div className="cmp-table-cell cmp-table-label">Drug class</div>
+                <div className="cmp-table-cell">{data.a.class || "—"}</div>
+                <div className="cmp-table-cell">{data.b.class || "—"}</div>
+              </div>
+              <div className="cmp-table-row">
+                <div className="cmp-table-cell cmp-table-label">Used for</div>
+                <div className="cmp-table-cell">{data.a.usedFor?.slice(0, 2).join(", ") || "—"}</div>
+                <div className="cmp-table-cell">{data.b.usedFor?.slice(0, 2).join(", ") || "—"}</div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="compare-section">
-          <h2 className="compare-section-title">🏥 Best if you want...</h2>
-          <div className="compare-recommendations">
-            <div className="compare-recommendation">
-              <h3>💊 {data.a.name}</h3>
-              <p>{data.a.usedFor?.[0] || "Consult your healthcare provider"}</p>
-              <a href={`/drug/${data.a.slug}`} className="compare-learn-more">Learn more →</a>
-            </div>
-            <div className="compare-recommendation">
-              <h3>💊 {data.b.name}</h3>
-              <p>{data.b.usedFor?.[0] || "Consult your healthcare provider"}</p>
-              <a href={`/drug/${data.b.slug}`} className="compare-learn-more">Learn more →</a>
+          {/* Cost Comparison */}
+          <div className="cmp-section">
+            <h2 className="cmp-section-title">Cost Comparison</h2>
+            <div className="cmp-cost-grid">
+              <div className="cmp-cost-card">
+                <h3 className="cmp-cost-drug-name">{data.a.name}</h3>
+                <div className="cmp-cost-row">
+                  <span className="cmp-cost-label">Typical monthly cost</span>
+                  <span className="cmp-cost-value">Check GoodRx</span>
+                </div>
+              </div>
+              <div className="cmp-cost-card">
+                <h3 className="cmp-cost-drug-name">{data.b.name}</h3>
+                <div className="cmp-cost-row">
+                  <span className="cmp-cost-label">Typical monthly cost</span>
+                  <span className="cmp-cost-value">Check GoodRx</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="compare-disclaimer">
-          <p><strong>⚕️ Medical Disclaimer:</strong> This comparison is for informational purposes only and should not be used as a substitute for professional medical advice. Always consult your healthcare provider before starting, stopping, or changing any medication.</p>
+          {/* Best If You Want */}
+          <div className="cmp-section">
+            <h2 className="cmp-section-title">Best if you want...</h2>
+            <div className="cmp-best-grid">
+              <div className="cmp-best-card">
+                <div className="cmp-best-header">
+                  <span className="cmp-best-icon">💊</span>
+                  <h3>{data.a.name}</h3>
+                  <span className="cmp-best-arrow">→</span>
+                </div>
+                <div className="cmp-best-info">
+                  <span className="cmp-warning-icon">⚠️</span>
+                  <span>{data.a.usedFor?.[0] || "Consult your healthcare provider"}</span>
+                </div>
+              </div>
+              <div className="cmp-best-card">
+                <div className="cmp-best-header">
+                  <span className="cmp-best-icon">💊</span>
+                  <h3>{data.b.name}</h3>
+                  <span className="cmp-best-arrow">→</span>
+                </div>
+                <div className="cmp-best-info">
+                  <span className="cmp-warning-icon">⚠️</span>
+                  <span>{data.b.usedFor?.[0] || "Consult your healthcare provider"}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Disclaimer */}
+          <div className="cmp-disclaimer">
+            <strong>⚕️ Medical Disclaimer:</strong> This comparison is for informational purposes only and should not be used as a substitute for professional medical advice. Always consult your healthcare provider before starting, stopping, or changing any medication.
+          </div>
         </div>
       </section>
     </main>
