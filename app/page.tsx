@@ -237,10 +237,9 @@ export default function Home() {
             {/* Single Drug Search */}
             <form onSubmit={handleSingleSearch} className="home-single-search" ref={inputSingleRef}>
               <span className="home-search-icon">🔍</span>
-              <span className="home-search-text">Just researching one medication?</span>
               <input
                 type="text"
-                placeholder="Search drug information"
+                placeholder="Just researching one medication? Search drug information"
                 value={singleDrug}
                 onChange={(e) => handleSingleDrugChange(e.target.value)}
                 className="home-search-input"
