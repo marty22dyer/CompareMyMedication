@@ -24,6 +24,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en">
+      <head>
+        <meta name="impact-site-verification" content="59d46921-987d-46c9-baaa-658e9360b1e5" />
+      </head>
       <body>
         <header className="cmm-nav">
           <div className="cmm-nav__inner" style={{ justifyContent: 'center' }}>
