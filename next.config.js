@@ -6,9 +6,8 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  output: 'standalone',
-  experimental: {
-    isrMemoryCacheSize: 0,
+  generateBuildId: async () => {
+    return 'build-' + Date.now()
   },
 };
 
