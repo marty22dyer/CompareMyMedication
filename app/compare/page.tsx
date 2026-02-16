@@ -2,6 +2,8 @@ import { redirect } from "next/navigation";
 import { getPopularDrugs, comparisonTargets, bySlug } from "../../lib/drugs-optimized";
 import SearchBox from "../../components/SearchBox";
 
+export const runtime = 'edge';
+
 function toSlug(name: string) {
   return name.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
