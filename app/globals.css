@@ -1695,16 +1695,22 @@
 .home-single-input-wrapper {
   flex: 1;
   position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
 }
 
 .home-search-input {
   width: 100%;
+  flex: 1;
   border: none;
   background: transparent;
   font-size: 15px;
   color: #0f172a;
   outline: none;
   font-weight: 600;
+  padding: 0;
+  margin: 0;
 }
 
 .home-search-input::placeholder {
