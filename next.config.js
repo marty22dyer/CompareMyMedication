@@ -6,6 +6,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  output: 'standalone',
+  experimental: {
+    isrMemoryCacheSize: 0,
+  },
 };
 
 module.exports = nextConfig;
