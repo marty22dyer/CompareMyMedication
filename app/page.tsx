@@ -148,89 +148,91 @@ export default function Home() {
             </h2>
             
             {/* Comparison Tool */}
-            <form onSubmit={handleCompare} className="home-compare-tool">
-              <div className="home-compare-inputs">
-                <div className="home-drug-input-wrapper" ref={inputARef}>
-                  <div className="home-drug-input">
-                    <span className="home-drug-icon">💊</span>
-                    <input
-                      type="text"
-                      placeholder="Adderall"
-                      value={drugA}
-                      onChange={(e) => handleDrugAChange(e.target.value)}
-                      className="home-input"
-                      autoComplete="off"
-                    />
-                  </div>
-                  {showSuggestionsA && suggestionsA.length > 0 && (
-                    <div className="home-autocomplete">
-                      {suggestionsA.map((drug) => (
-                        <div
-                          key={drug}
-                          className="home-autocomplete-item"
-                          onClick={() => selectDrugA(drug)}
-                        >
-                          💊 {drug}
-                        </div>
-                      ))}
+            <div className="home-compare-tool-container">
+              <form onSubmit={handleCompare} className="home-compare-tool">
+                <div className="home-compare-inputs">
+                  <div className="home-drug-input-wrapper" ref={inputARef}>
+                    <div className="home-drug-input">
+                      <span className="home-drug-icon">💊</span>
+                      <input
+                        type="text"
+                        placeholder="Adderall"
+                        value={drugA}
+                        onChange={(e) => handleDrugAChange(e.target.value)}
+                        className="home-input"
+                        autoComplete="off"
+                      />
                     </div>
-                  )}
-                </div>
-                <span className="home-vs">vs</span>
-                <div className="home-drug-input-wrapper" ref={inputBRef}>
-                  <div className="home-drug-input">
-                    <span className="home-drug-icon">💊</span>
-                    <input
-                      type="text"
-                      placeholder="Vyvanse"
-                      value={drugB}
-                      onChange={(e) => handleDrugBChange(e.target.value)}
-                      className="home-input"
-                      autoComplete="off"
-                    />
+                    {showSuggestionsA && suggestionsA.length > 0 && (
+                      <div className="home-autocomplete">
+                        {suggestionsA.map((drug) => (
+                          <div
+                            key={drug}
+                            className="home-autocomplete-item"
+                            onClick={() => selectDrugA(drug)}
+                          >
+                            💊 {drug}
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                  {showSuggestionsB && suggestionsB.length > 0 && (
-                    <div className="home-autocomplete">
-                      {suggestionsB.map((drug) => (
-                        <div
-                          key={drug}
-                          className="home-autocomplete-item"
-                          onClick={() => selectDrugB(drug)}
-                        >
-                          💊 {drug}
-                        </div>
-                      ))}
+                  <span className="home-vs">vs</span>
+                  <div className="home-drug-input-wrapper" ref={inputBRef}>
+                    <div className="home-drug-input">
+                      <span className="home-drug-icon">💊</span>
+                      <input
+                        type="text"
+                        placeholder="Vyvanse"
+                        value={drugB}
+                        onChange={(e) => handleDrugBChange(e.target.value)}
+                        className="home-input"
+                        autoComplete="off"
+                      />
                     </div>
-                  )}
+                    {showSuggestionsB && suggestionsB.length > 0 && (
+                      <div className="home-autocomplete">
+                        {suggestionsB.map((drug) => (
+                          <div
+                            key={drug}
+                            className="home-autocomplete-item"
+                            onClick={() => selectDrugB(drug)}
+                          >
+                            💊 {drug}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-              <button type="submit" className="home-compare-btn">
-                Compare
-              </button>
-            </form>
+                <button type="submit" className="home-compare-btn">
+                  Compare
+                </button>
+              </form>
 
-            {/* Popular Comparisons */}
-            <div className="home-popular">
-              <span className="home-popular-label">Popular comparisons</span>
-              <div className="home-popular-pills">
-                <a href="/compare/adderall-vs-vyvanse" className="home-pill">
-                  <span className="home-pill-dot"></span>
-                  Adderall vs Vyvanse
-                </a>
-                <a href="/compare/ozempic-vs-wegovy" className="home-pill">
-                  <span className="home-pill-dot"></span>
-                  Ozempic vs Wegovy
-                </a>
-                <a href="/compare/zoloft-vs-lexapro" className="home-pill">
-                  <span className="home-pill-dot"></span>
-                  Zoloft vs Lexapro
-                </a>
-                <a href="/compare/metformin-vs-ozempic" className="home-pill">
-                  <span className="home-pill-dot"></span>
-                  Metformin vs Ozempic
-                </a>
-                <button className="home-pill-nav">♡</button>
-                <button className="home-pill-nav">→</button>
+              {/* Popular Comparisons - Inside Tool */}
+              <div className="home-popular-inside">
+                <span className="home-popular-label">Popular comparisons</span>
+                <div className="home-popular-pills">
+                  <a href="/compare/adderall-vs-vyvanse" className="home-pill">
+                    <span className="home-pill-dot"></span>
+                    Adderall vs Vyvanse
+                  </a>
+                  <a href="/compare/ozempic-vs-wegovy" className="home-pill">
+                    <span className="home-pill-dot"></span>
+                    Ozempic vs Wegovy
+                  </a>
+                  <a href="/compare/zoloft-vs-lexapro" className="home-pill">
+                    <span className="home-pill-dot"></span>
+                    Zoloft vs Lexapro
+                  </a>
+                  <a href="/compare/metformin-vs-ozempic" className="home-pill">
+                    <span className="home-pill-dot"></span>
+                    Metformin vs Ozempic
+                  </a>
+                  <button className="home-pill-nav">♡</button>
+                  <button className="home-pill-nav">→</button>
+                </div>
               </div>
             </div>
 

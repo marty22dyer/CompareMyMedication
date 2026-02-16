@@ -1458,22 +1458,26 @@
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
 }
 
-.home-compare-tool {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.home-compare-tool-container {
   background: white;
-  padding: 16px;
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
   margin-bottom: 32px;
   border: 3px solid #e5e7eb;
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
-.home-compare-tool:hover {
+.home-compare-tool-container:hover {
   box-shadow: 0 12px 48px rgba(0, 0, 0, 0.18);
   border-color: #cbd5e1;
+}
+
+.home-compare-tool {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
 }
 
 .home-compare-inputs {
@@ -1592,13 +1596,15 @@
   box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
 }
 
-.home-popular {
-  margin-bottom: 32px;
+.home-popular-inside {
+  padding: 16px;
+  border-top: 2px solid #f1f5f9;
+  background: #f8fafc;
 }
 
 .home-popular-label {
   display: block;
-  font-size: 15px;
+  font-size: 14px;
   color: #64748b;
   margin-bottom: 12px;
   font-weight: 600;
