@@ -238,29 +238,27 @@ export default function Home() {
             <form onSubmit={handleSingleSearch} className="home-single-search" ref={inputSingleRef}>
               <span className="home-search-icon">🔍</span>
               <span className="home-search-text">Just researching one medication?</span>
-              <div className="home-single-input-wrapper">
-                <input
-                  type="text"
-                  placeholder="Search drug information"
-                  value={singleDrug}
-                  onChange={(e) => handleSingleDrugChange(e.target.value)}
-                  className="home-search-input"
-                  autoComplete="off"
-                />
-                {showSuggestionsSingle && suggestionsSingle.length > 0 && (
-                  <div className="home-autocomplete home-autocomplete-single">
-                    {suggestionsSingle.map((drug) => (
-                      <div
-                        key={drug}
-                        className="home-autocomplete-item"
-                        onClick={() => selectSingleDrug(drug)}
-                      >
-                        💊 {drug}
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
+              <input
+                type="text"
+                placeholder="Search drug information"
+                value={singleDrug}
+                onChange={(e) => handleSingleDrugChange(e.target.value)}
+                className="home-search-input"
+                autoComplete="off"
+              />
+              {showSuggestionsSingle && suggestionsSingle.length > 0 && (
+                <div className="home-autocomplete home-autocomplete-single">
+                  {suggestionsSingle.map((drug) => (
+                    <div
+                      key={drug}
+                      className="home-autocomplete-item"
+                      onClick={() => selectSingleDrug(drug)}
+                    >
+                      💊 {drug}
+                    </div>
+                  ))}
+                </div>
+              )}
               <button type="submit" className="home-search-btn">Search</button>
             </form>
           </div>
