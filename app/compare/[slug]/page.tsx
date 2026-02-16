@@ -1,18 +1,49 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { allCompareSlugs } from "../../../lib/compare";
+import { bySlug } from "../../../lib/drugs";
 import Breadcrumbs from "../../../components/Breadcrumbs";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3001";
 
-async function getCompare(slug: string) {
+function getCompare(slug: string) {
   const [a, b] = slug.split("-vs-");
-  const res = await fetch(`${SITE}/api/compare?a=${a}&b=${b}`, {
-    next: { revalidate: 60 * 60 }, // cache 1 hour
-  });
+  
+  const A = bySlug(a);
+  const B = bySlug(b);
 
-  if (!res.ok) return null;
-  return res.json();
+  if (!A || !B) return null;
+
+  const sameClass = A.class && B.class && A.class === B.class;
+  const genericSame = A.generic === B.generic;
+
+  return {
+    slug,
+    a: {
+      slug: A.slug,
+      name: A.name,
+      generic: A.generic,
+      class: A.class,
+      usedFor: A.usedFor,
+    },
+    b: {
+      slug: B.slug,
+      name: B.name,
+      generic: B.generic,
+      class: B.class,
+      usedFor: B.usedFor,
+    },
+    summary: {
+      sameClass,
+      genericSame,
+      keyDifferences: [
+        { field: "generic", a: A.generic || null, b: B.generic || null },
+        { field: "class", a: A.class || null, b: B.class || null },
+        { field: "usedFor", a: A.usedFor?.slice(0, 5) || [], b: B.usedFor?.slice(0, 5) || [] },
+      ],
+      disclaimer: "Informational only; not medical advice. Consult a healthcare professional.",
+    },
+  };
 }
 
 type Props = { params: { slug: string } };
@@ -20,7 +51,7 @@ type Props = { params: { slug: string } };
 const canonicalUrl = (slug: string) => `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3001"}/compare/${slug}`;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const data = await getCompare(params.slug);
+  const data = getCompare(params.slug);
   if (!data) {
     return { title: "Comparison not found", robots: { index: false, follow: true } };
   }
@@ -58,7 +89,7 @@ export function generateStaticParams() {
 }
 
 export default async function ComparePage({ params }: Props) {
-  const data = await getCompare(params.slug);
+  const data = getCompare(params.slug);
   if (!data) return notFound();
 
   // enforce canonical alphabetical order
