@@ -237,41 +237,72 @@ export default function Home() {
             </div>
 
             {/* Single Drug Search */}
-            <form onSubmit={handleSingleSearch} className="home-single-search" ref={inputSingleRef}>
-              <span className="home-search-icon">🔍</span>
-              <input
-                type="text"
-                placeholder="Just researching one medication? Search drug information"
-                value={singleDrug}
-                onChange={(e) => handleSingleDrugChange(e.target.value)}
-                className="home-search-input"
-                autoComplete="off"
-                style={{ 
-                  flex: 1, 
-                  width: '100%', 
-                  border: 'none', 
-                  outline: 'none',
-                  boxShadow: 'none',
-                  background: 'transparent',
-                  padding: 0,
-                  margin: 0
-                }}
-              />
-              {showSuggestionsSingle && suggestionsSingle.length > 0 && (
-                <div className="home-autocomplete home-autocomplete-single">
-                  {suggestionsSingle.map((drug) => (
-                    <div
-                      key={drug}
-                      className="home-autocomplete-item"
-                      onClick={() => selectSingleDrug(drug)}
-                    >
-                      💊 {drug}
-                    </div>
-                  ))}
+            <div className="home-single-search-container">
+              <form onSubmit={handleSingleSearch} className="home-single-search" ref={inputSingleRef}>
+                <span className="home-search-icon">🔍</span>
+                <input
+                  type="text"
+                  placeholder="Just researching one medication? Search drug information"
+                  value={singleDrug}
+                  onChange={(e) => handleSingleDrugChange(e.target.value)}
+                  className="home-search-input"
+                  autoComplete="off"
+                  style={{ 
+                    flex: 1, 
+                    width: '100%', 
+                    border: 'none', 
+                    outline: 'none',
+                    boxShadow: 'none',
+                    background: 'transparent',
+                    padding: 0,
+                    margin: 0
+                  }}
+                />
+                {showSuggestionsSingle && suggestionsSingle.length > 0 && (
+                  <div className="home-autocomplete home-autocomplete-single">
+                    {suggestionsSingle.map((drug) => (
+                      <div
+                        key={drug}
+                        className="home-autocomplete-item"
+                        onClick={() => selectSingleDrug(drug)}
+                      >
+                        💊 {drug}
+                      </div>
+                    ))}
+                  </div>
+                )}
+                <button type="submit" className="home-search-btn">Search</button>
+              </form>
+
+              {/* Popular Drug Searches - Inside Search */}
+              <div className="home-popular-drugs">
+                <span className="home-popular-label">Popular drug searches</span>
+                <div className="home-popular-pills">
+                  <a href="/drug/ozempic" className="home-pill">
+                    <span className="home-pill-dot"></span>
+                    Ozempic
+                  </a>
+                  <a href="/drug/wegovy" className="home-pill">
+                    <span className="home-pill-dot"></span>
+                    Wegovy
+                  </a>
+                  <a href="/drug/adderall" className="home-pill">
+                    <span className="home-pill-dot"></span>
+                    Adderall
+                  </a>
+                  <a href="/drug/metformin" className="home-pill">
+                    <span className="home-pill-dot"></span>
+                    Metformin
+                  </a>
+                  <a href="/drug/lexapro" className="home-pill">
+                    <span className="home-pill-dot"></span>
+                    Lexapro
+                  </a>
+                  <button className="home-pill-nav">♡</button>
+                  <button className="home-pill-nav">→</button>
                 </div>
-              )}
-              <button type="submit" className="home-search-btn">Search</button>
-            </form>
+              </div>
+            </div>
           </div>
         </section>
 
