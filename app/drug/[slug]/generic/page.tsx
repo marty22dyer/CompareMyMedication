@@ -27,9 +27,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export function generateStaticParams() {
-  return drugs.map((d) => ({ slug: d.slug }));
-}
+// Disabled to prevent generating thousands of static pages at build time
+// Pages will be generated on-demand instead
+// export function generateStaticParams() {
+//   return drugs.map((d) => ({ slug: d.slug }));
+// }
+
+export const dynamic = 'force-dynamic';
 
 export default function GenericPage({ params }: Props) {
   const d = bySlug(params.slug);
