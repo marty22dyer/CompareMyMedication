@@ -245,7 +245,16 @@ export default function Home() {
                 onChange={(e) => handleSingleDrugChange(e.target.value)}
                 className="home-search-input"
                 autoComplete="off"
-                style={{ flex: 1, width: '100%', border: 'none', background: 'transparent' }}
+                style={{ 
+                  flex: 1, 
+                  width: '100%', 
+                  border: 'none', 
+                  outline: 'none',
+                  boxShadow: 'none',
+                  background: 'transparent',
+                  padding: 0,
+                  margin: 0
+                }}
               />
               {showSuggestionsSingle && suggestionsSingle.length > 0 && (
                 <div className="home-autocomplete home-autocomplete-single">
