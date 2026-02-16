@@ -50,8 +50,20 @@ export default function Home() {
         {/* Hero Section */}
         <section className="home-hero">
           <div className="home-container">
+            {/* Trust Badges */}
+            <div className="home-trust-badges">
+              <span className="home-badge">✓ 100% Free</span>
+              <span className="home-badge">✓ No Sign-up</span>
+              <span className="home-badge">✓ FDA Data</span>
+            </div>
+
             <h1 className="home-title">Compare Medications</h1>
             <p className="home-subtitle">What works better & how much will I pay?</p>
+            
+            {/* Value Proposition */}
+            <h2 className="home-value-prop">
+              Find cheaper alternatives & save up to 80% on prescriptions
+            </h2>
             
             {/* Comparison Tool */}
             <form onSubmit={handleCompare} className="home-compare-tool">
