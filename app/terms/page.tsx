@@ -16,7 +16,7 @@ export default function TermsOfService() {
         <section className="legal-section">
           <h2>1. Acceptance of Terms</h2>
           <p>
-            Welcome to CompareMyMedication. By accessing or using our website at comparemymedication.com (the "Website"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our Website.
+            Welcome to CompareMyMedication, owned and operated by MAD Designs LLC. By accessing or using our website at comparemymedication.com (the "Website"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our Website.
           </p>
           <p>
             We reserve the right to modify these Terms at any time. Your continued use of the Website after any changes constitutes acceptance of the new Terms.

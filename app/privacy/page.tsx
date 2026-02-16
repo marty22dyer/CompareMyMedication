@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
         <section className="legal-section">
           <h2>1. Introduction</h2>
           <p>
-            Welcome to CompareMyMedication ("we," "our," or "us"). We are committed to protecting your privacy and ensuring you have a positive experience on our website. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website comparemymedication.com.
+            Welcome to CompareMyMedication ("we," "our," or "us"), owned and operated by MAD Designs LLC. We are committed to protecting your privacy and ensuring you have a positive experience on our website. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website comparemymedication.com.
           </p>
           <p>
             Please read this Privacy Policy carefully. By using our website, you agree to the collection and use of information in accordance with this policy.
