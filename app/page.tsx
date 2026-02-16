@@ -1,7 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+
+// Common drugs for autocomplete
+const COMMON_DRUGS = [
+  "Adderall", "Advil", "Albuterol", "Ambien", "Amoxicillin",
+  "Atorvastatin", "Azithromycin", "Benadryl", "Cialis", "Claritin",
+  "Crestor", "Cymbalta", "Eliquis", "Gabapentin", "Hydrocodone",
+  "Ibuprofen", "Lantus", "Lexapro", "Lipitor", "Lisinopril",
+  "Losartan", "Lyrica", "Metformin", "Metoprolol", "Nexium",
+  "Norco", "Omeprazole", "Ozempic", "Percocet", "Phentermine",
+  "Prednisone", "Prozac", "Semaglutide", "Synthroid", "Tramadol",
+  "Trazodone", "Tylenol", "Viagra", "Vicodin", "Vyvanse",
+  "Wegovy", "Wellbutrin", "Xanax", "Zoloft", "Zyrtec"
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -20,6 +33,75 @@ export default function Home() {
   const [drugA, setDrugA] = useState("");
   const [drugB, setDrugB] = useState("");
   const [singleDrug, setSingleDrug] = useState("");
+  
+  const [suggestionsA, setSuggestionsA] = useState<string[]>([]);
+  const [suggestionsB, setSuggestionsB] = useState<string[]>([]);
+  const [suggestionsSingle, setSuggestionsSingle] = useState<string[]>([]);
+  
+  const [showSuggestionsA, setShowSuggestionsA] = useState(false);
+  const [showSuggestionsB, setShowSuggestionsB] = useState(false);
+  const [showSuggestionsSingle, setShowSuggestionsSingle] = useState(false);
+  
+  const inputARef = useRef<HTMLDivElement>(null);
+  const inputBRef = useRef<HTMLDivElement>(null);
+  const inputSingleRef = useRef<HTMLFormElement>(null);
+
+  const getSuggestions = (query: string) => {
+    if (!query) return [];
+    return COMMON_DRUGS.filter(drug => 
+      drug.toLowerCase().startsWith(query.toLowerCase())
+    ).slice(0, 5);
+  };
+
+  const handleDrugAChange = (value: string) => {
+    setDrugA(value);
+    setSuggestionsA(getSuggestions(value));
+    setShowSuggestionsA(value.length > 0);
+  };
+
+  const handleDrugBChange = (value: string) => {
+    setDrugB(value);
+    setSuggestionsB(getSuggestions(value));
+    setShowSuggestionsB(value.length > 0);
+  };
+
+  const handleSingleDrugChange = (value: string) => {
+    setSingleDrug(value);
+    setSuggestionsSingle(getSuggestions(value));
+    setShowSuggestionsSingle(value.length > 0);
+  };
+
+  const selectDrugA = (drug: string) => {
+    setDrugA(drug);
+    setShowSuggestionsA(false);
+  };
+
+  const selectDrugB = (drug: string) => {
+    setDrugB(drug);
+    setShowSuggestionsB(false);
+  };
+
+  const selectSingleDrug = (drug: string) => {
+    setSingleDrug(drug);
+    setShowSuggestionsSingle(false);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (inputARef.current && !inputARef.current.contains(event.target as Node)) {
+        setShowSuggestionsA(false);
+      }
+      if (inputBRef.current && !inputBRef.current.contains(event.target as Node)) {
+        setShowSuggestionsB(false);
+      }
+      if (inputSingleRef.current && !inputSingleRef.current.contains(event.target as Node)) {
+        setShowSuggestionsSingle(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const handleCompare = (e: React.FormEvent) => {
     e.preventDefault();
@@ -68,26 +150,58 @@ export default function Home() {
             {/* Comparison Tool */}
             <form onSubmit={handleCompare} className="home-compare-tool">
               <div className="home-compare-inputs">
-                <div className="home-drug-input">
-                  <span className="home-drug-icon">💊</span>
-                  <input
-                    type="text"
-                    placeholder="Adderall"
-                    value={drugA}
-                    onChange={(e) => setDrugA(e.target.value)}
-                    className="home-input"
-                  />
+                <div className="home-drug-input-wrapper" ref={inputARef}>
+                  <div className="home-drug-input">
+                    <span className="home-drug-icon">💊</span>
+                    <input
+                      type="text"
+                      placeholder="Adderall"
+                      value={drugA}
+                      onChange={(e) => handleDrugAChange(e.target.value)}
+                      className="home-input"
+                      autoComplete="off"
+                    />
+                  </div>
+                  {showSuggestionsA && suggestionsA.length > 0 && (
+                    <div className="home-autocomplete">
+                      {suggestionsA.map((drug) => (
+                        <div
+                          key={drug}
+                          className="home-autocomplete-item"
+                          onClick={() => selectDrugA(drug)}
+                        >
+                          💊 {drug}
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
                 <span className="home-vs">vs</span>
-                <div className="home-drug-input">
-                  <span className="home-drug-icon">💊</span>
-                  <input
-                    type="text"
-                    placeholder="Vyvanse"
-                    value={drugB}
-                    onChange={(e) => setDrugB(e.target.value)}
-                    className="home-input"
-                  />
+                <div className="home-drug-input-wrapper" ref={inputBRef}>
+                  <div className="home-drug-input">
+                    <span className="home-drug-icon">💊</span>
+                    <input
+                      type="text"
+                      placeholder="Vyvanse"
+                      value={drugB}
+                      onChange={(e) => handleDrugBChange(e.target.value)}
+                      className="home-input"
+                      autoComplete="off"
+                    />
+                  </div>
+                  {showSuggestionsB && suggestionsB.length > 0 && (
+                    <div className="home-autocomplete">
+                      {suggestionsB.map((drug) => (
+                        <div
+                          key={drug}
+                          className="home-autocomplete-item"
+                          onClick={() => selectDrugB(drug)}
+                        >
+                          💊 {drug}
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
               <button type="submit" className="home-compare-btn">
@@ -121,16 +235,32 @@ export default function Home() {
             </div>
 
             {/* Single Drug Search */}
-            <form onSubmit={handleSingleSearch} className="home-single-search">
+            <form onSubmit={handleSingleSearch} className="home-single-search" ref={inputSingleRef}>
               <span className="home-search-icon">🔍</span>
               <span className="home-search-text">Just researching one medication?</span>
-              <input
-                type="text"
-                placeholder="Search drug information"
-                value={singleDrug}
-                onChange={(e) => setSingleDrug(e.target.value)}
-                className="home-search-input"
-              />
+              <div className="home-single-input-wrapper">
+                <input
+                  type="text"
+                  placeholder="Search drug information"
+                  value={singleDrug}
+                  onChange={(e) => handleSingleDrugChange(e.target.value)}
+                  className="home-search-input"
+                  autoComplete="off"
+                />
+                {showSuggestionsSingle && suggestionsSingle.length > 0 && (
+                  <div className="home-autocomplete home-autocomplete-single">
+                    {suggestionsSingle.map((drug) => (
+                      <div
+                        key={drug}
+                        className="home-autocomplete-item"
+                        onClick={() => selectSingleDrug(drug)}
+                      >
+                        💊 {drug}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
               <button type="submit" className="home-search-btn">Search</button>
             </form>
           </div>
