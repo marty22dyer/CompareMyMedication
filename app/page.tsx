@@ -286,6 +286,10 @@ export default function Home() {
                     <span className="home-pill-dot"></span>
                     Wegovy
                   </a>
+                  <a href="/drug/zepbound" className="home-pill">
+                    <span className="home-pill-dot"></span>
+                    Zepbound
+                  </a>
                   <a href="/drug/adderall" className="home-pill">
                     <span className="home-pill-dot"></span>
                     Adderall
