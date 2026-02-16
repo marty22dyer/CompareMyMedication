@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import CookieConsent from "../components/CookieConsent";
 
 function SiteLogo() {
   return (
@@ -71,6 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </p>
           </div>
         </footer>
+        <CookieConsent />
       </body>
     </html>
   );
