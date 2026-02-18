@@ -593,9 +593,56 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Reduce hero padding on mobile */
+  .hero-section {
+    padding: 40px 20px !important;
+  }
+
+  /* Make tabs smaller but still visible */
+  .home-search-tabs {
+    gap: 8px;
+    margin: 16px 0 12px 0;
+  }
+
+  .home-search-tab {
+    padding: 10px 20px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* Improve autocomplete visibility on mobile */
+  .home-autocomplete-primary,
+  .home-autocomplete {
+    font-size: 16px !important;
+    max-height: 250px;
+  }
+
+  .home-autocomplete-item {
+    padding: 14px 16px !important;
+    font-size: 16px !important;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .home-autocomplete-item:last-child {
+    border-bottom: none;
+  }
+
+  /* Reduce spacing */
   .home-stats-bar {
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
+    margin: 16px 0 12px 0;
+    padding: 16px;
+  }
+
+  .home-search-container {
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+
+  .home-compare-tool-container {
+    margin-top: 24px;
+    padding-top: 24px;
   }
 
   .home-steps {
