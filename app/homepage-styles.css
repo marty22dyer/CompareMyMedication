@@ -119,6 +119,7 @@
   box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
+/* Autocomplete for single search */
 .home-autocomplete-primary {
   position: absolute;
   top: 100%;
@@ -131,6 +132,28 @@
   z-index: 1000;
   max-height: 300px;
   overflow-y: auto;
+}
+
+.home-autocomplete-primary-item {
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a202c;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.home-autocomplete-primary-item:last-child {
+  border-bottom: none;
+}
+
+.home-autocomplete-primary-item:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
 }
 
 /* History Button */
@@ -650,16 +673,27 @@
   .home-autocomplete {
     font-size: 16px !important;
     max-height: 250px;
+    border: 2px solid #667eea !important;
   }
 
-  .home-autocomplete-item {
+  .home-autocomplete-item,
+  .home-autocomplete-primary-item {
     padding: 14px 16px !important;
     font-size: 16px !important;
-    border-bottom: 1px solid #f0f0f0;
+    color: #1a202c !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #e2e8f0;
   }
 
-  .home-autocomplete-item:last-child {
+  .home-autocomplete-item:last-child,
+  .home-autocomplete-primary-item:last-child {
     border-bottom: none;
+  }
+
+  .home-autocomplete-item:hover,
+  .home-autocomplete-primary-item:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
   }
 
   /* Reduce spacing */

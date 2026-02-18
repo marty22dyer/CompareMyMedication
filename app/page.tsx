@@ -296,11 +296,11 @@ export default function Home() {
                     autoComplete="off"
                   />
                   {showSuggestionsSingle && suggestionsSingle.length > 0 && (
-                    <div className="home-autocomplete home-autocomplete-primary">
+                    <div className="home-autocomplete-primary">
                       {suggestionsSingle.map((drug) => (
                         <div
                           key={drug}
-                          className="home-autocomplete-item"
+                          className="home-autocomplete-primary-item"
                           onClick={() => selectSingleDrug(drug)}
                         >
                           💊 {drug}
