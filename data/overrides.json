@@ -88,5 +88,239 @@
     "category": "adhd",
     "usedFor": ["ADHD", "Narcolepsy"],
     "alternatives": ["vyvanse", "concerta", "ritalin"]
+  },
+  {
+    "slug": "zepbound",
+    "name": "Zepbound",
+    "generic": "tirzepatide",
+    "class": "GLP-1 receptor agonist",
+    "category": "weight-loss",
+    "usedFor": ["Weight loss", "Obesity"],
+    "alternatives": ["wegovy", "mounjaro", "saxenda", "ozempic"]
+  },
+  {
+    "slug": "phentermine",
+    "name": "Phentermine",
+    "generic": "phentermine",
+    "class": "appetite suppressant",
+    "category": "weight-loss",
+    "usedFor": ["Weight loss", "Obesity"],
+    "alternatives": ["wegovy", "saxenda", "contrave", "qsymia"]
+  },
+  {
+    "slug": "vyvanse",
+    "name": "Vyvanse",
+    "generic": "lisdexamfetamine",
+    "class": "CNS stimulant",
+    "category": "adhd",
+    "usedFor": ["ADHD", "Binge eating disorder"],
+    "alternatives": ["adderall", "concerta", "ritalin", "strattera"]
+  },
+  {
+    "slug": "xanax",
+    "name": "Xanax",
+    "generic": "alprazolam",
+    "class": "benzodiazepine",
+    "category": "anxiety",
+    "usedFor": ["Anxiety", "Panic disorder"],
+    "alternatives": ["ativan", "klonopin", "valium"]
+  },
+  {
+    "slug": "lexapro",
+    "name": "Lexapro",
+    "generic": "escitalopram",
+    "class": "SSRI",
+    "category": "depression",
+    "usedFor": ["Depression", "Anxiety"],
+    "alternatives": ["zoloft", "prozac", "celexa", "paxil"]
+  },
+  {
+    "slug": "zoloft",
+    "name": "Zoloft",
+    "generic": "sertraline",
+    "class": "SSRI",
+    "category": "depression",
+    "usedFor": ["Depression", "Anxiety", "OCD", "PTSD"],
+    "alternatives": ["lexapro", "prozac", "paxil", "celexa"]
+  },
+  {
+    "slug": "prozac",
+    "name": "Prozac",
+    "generic": "fluoxetine",
+    "class": "SSRI",
+    "category": "depression",
+    "usedFor": ["Depression", "Anxiety", "OCD"],
+    "alternatives": ["zoloft", "lexapro", "paxil", "celexa"]
+  },
+  {
+    "slug": "wellbutrin",
+    "name": "Wellbutrin",
+    "generic": "bupropion",
+    "class": "NDRI",
+    "category": "depression",
+    "usedFor": ["Depression", "Smoking cessation"],
+    "alternatives": ["lexapro", "zoloft", "prozac", "cymbalta"]
+  },
+  {
+    "slug": "cymbalta",
+    "name": "Cymbalta",
+    "generic": "duloxetine",
+    "class": "SNRI",
+    "category": "depression",
+    "usedFor": ["Depression", "Anxiety", "Chronic pain", "Fibromyalgia"],
+    "alternatives": ["effexor", "pristiq", "lexapro", "zoloft"]
+  },
+  {
+    "slug": "gabapentin",
+    "name": "Gabapentin",
+    "generic": "gabapentin",
+    "class": "anticonvulsant",
+    "category": "pain",
+    "usedFor": ["Nerve pain", "Seizures", "Restless leg syndrome"],
+    "alternatives": ["lyrica", "neurontin"]
+  },
+  {
+    "slug": "lyrica",
+    "name": "Lyrica",
+    "generic": "pregabalin",
+    "class": "anticonvulsant",
+    "category": "pain",
+    "usedFor": ["Nerve pain", "Fibromyalgia", "Seizures"],
+    "alternatives": ["gabapentin", "neurontin"]
+  },
+  {
+    "slug": "synthroid",
+    "name": "Synthroid",
+    "generic": "levothyroxine",
+    "class": "thyroid hormone",
+    "category": "thyroid",
+    "usedFor": ["Hypothyroidism"],
+    "alternatives": ["levoxyl", "tirosint", "unithroid"]
+  },
+  {
+    "slug": "eliquis",
+    "name": "Eliquis",
+    "generic": "apixaban",
+    "class": "anticoagulant",
+    "category": "blood-thinner",
+    "usedFor": ["Blood clot prevention", "Atrial fibrillation"],
+    "alternatives": ["xarelto", "pradaxa", "warfarin"]
+  },
+  {
+    "slug": "losartan",
+    "name": "Losartan",
+    "generic": "losartan",
+    "class": "ARB",
+    "category": "blood-pressure",
+    "usedFor": ["High blood pressure", "Diabetic nephropathy"],
+    "alternatives": ["lisinopril", "valsartan", "olmesartan"]
+  },
+  {
+    "slug": "omeprazole",
+    "name": "Omeprazole",
+    "generic": "omeprazole",
+    "class": "PPI",
+    "category": "acid-reflux",
+    "usedFor": ["GERD", "Heartburn", "Stomach ulcers"],
+    "alternatives": ["prilosec", "nexium", "protonix"]
+  },
+  {
+    "slug": "nexium",
+    "name": "Nexium",
+    "generic": "esomeprazole",
+    "class": "PPI",
+    "category": "acid-reflux",
+    "usedFor": ["GERD", "Heartburn", "Stomach ulcers"],
+    "alternatives": ["omeprazole", "prilosec", "protonix"]
+  },
+  {
+    "slug": "tramadol",
+    "name": "Tramadol",
+    "generic": "tramadol",
+    "class": "opioid analgesic",
+    "category": "pain",
+    "usedFor": ["Moderate to severe pain"],
+    "alternatives": ["hydrocodone", "oxycodone", "codeine"]
+  },
+  {
+    "slug": "prednisone",
+    "name": "Prednisone",
+    "generic": "prednisone",
+    "class": "corticosteroid",
+    "category": "inflammation",
+    "usedFor": ["Inflammation", "Autoimmune conditions", "Allergies"],
+    "alternatives": ["methylprednisolone", "dexamethasone"]
+  },
+  {
+    "slug": "albuterol",
+    "name": "Albuterol",
+    "generic": "albuterol",
+    "class": "bronchodilator",
+    "category": "asthma",
+    "usedFor": ["Asthma", "COPD", "Bronchospasm"],
+    "alternatives": ["proventil", "ventolin", "xopenex"]
+  },
+  {
+    "slug": "trazodone",
+    "name": "Trazodone",
+    "generic": "trazodone",
+    "class": "antidepressant",
+    "category": "sleep",
+    "usedFor": ["Insomnia", "Depression"],
+    "alternatives": ["ambien", "lunesta", "remeron"]
+  },
+  {
+    "slug": "ambien",
+    "name": "Ambien",
+    "generic": "zolpidem",
+    "class": "sedative-hypnotic",
+    "category": "sleep",
+    "usedFor": ["Insomnia"],
+    "alternatives": ["lunesta", "trazodone", "sonata"]
+  },
+  {
+    "slug": "crestor",
+    "name": "Crestor",
+    "generic": "rosuvastatin",
+    "class": "statin",
+    "category": "cholesterol",
+    "usedFor": ["High cholesterol"],
+    "alternatives": ["lipitor", "atorvastatin", "zocor"]
+  },
+  {
+    "slug": "metoprolol",
+    "name": "Metoprolol",
+    "generic": "metoprolol",
+    "class": "beta blocker",
+    "category": "blood-pressure",
+    "usedFor": ["High blood pressure", "Angina", "Heart failure"],
+    "alternatives": ["atenolol", "carvedilol", "propranolol"]
+  },
+  {
+    "slug": "amlodipine",
+    "name": "Amlodipine",
+    "generic": "amlodipine",
+    "class": "calcium channel blocker",
+    "category": "blood-pressure",
+    "usedFor": ["High blood pressure", "Angina"],
+    "alternatives": ["norvasc", "diltiazem", "nifedipine"]
+  },
+  {
+    "slug": "amoxicillin",
+    "name": "Amoxicillin",
+    "generic": "amoxicillin",
+    "class": "antibiotic",
+    "category": "infection",
+    "usedFor": ["Bacterial infections"],
+    "alternatives": ["augmentin", "azithromycin", "cephalexin"]
+  },
+  {
+    "slug": "azithromycin",
+    "name": "Azithromycin",
+    "generic": "azithromycin",
+    "class": "antibiotic",
+    "category": "infection",
+    "usedFor": ["Bacterial infections"],
+    "alternatives": ["zithromax", "amoxicillin", "doxycycline"]
   }
 ]
