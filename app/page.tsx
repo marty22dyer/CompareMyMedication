@@ -120,9 +120,18 @@ export default function Home() {
 
   const getSuggestions = (query: string) => {
     if (!query) return [];
-    return COMMON_DRUGS.filter(drug => 
-      drug.toLowerCase().startsWith(query.toLowerCase())
-    ).slice(0, 5);
+    const q = query.toLowerCase();
+    const seen = new Set<string>();
+    const results: string[] = [];
+    for (const drug of COMMON_DRUGS) {
+      const key = drug.toLowerCase();
+      if (key.startsWith(q) && !seen.has(key)) {
+        seen.add(key);
+        results.push(drug);
+        if (results.length >= 6) break;
+      }
+    }
+    return results;
   };
 
   const handleDrugAChange = (value: string) => {

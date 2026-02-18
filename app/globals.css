@@ -1539,8 +1539,9 @@
   gap: 10px;
   font-size: 15px;
   font-weight: 600;
-  color: #475569;
+  color: #1a202c;
   border-bottom: 1px solid #f1f5f9;
+  background: white;
 }
 
 .home-autocomplete-item:last-child {
