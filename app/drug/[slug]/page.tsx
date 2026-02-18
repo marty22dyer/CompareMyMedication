@@ -87,6 +87,7 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
   const manufacturer = drug.ndcData?.labeler_name || drug.openfdaData?.manufacturer || null;
   
   const alts = (drug.alternatives ?? [])
+    .filter((s: string) => s !== params.slug)
     .map((s: string) => bySlug(s))
     .filter(Boolean) as NonNullable<ReturnType<typeof bySlug>>[];
 
