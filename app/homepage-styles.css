@@ -598,16 +598,28 @@
     padding: 40px 20px !important;
   }
 
-  /* Make tabs smaller but still visible */
+  /* Make tabs prominent and clearly visible on mobile */
   .home-search-tabs {
-    gap: 8px;
-    margin: 16px 0 12px 0;
+    gap: 10px;
+    margin: 20px 16px 16px 16px;
+    display: flex !important;
   }
 
   .home-search-tab {
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 12px 24px;
+    font-size: 15px;
     white-space: nowrap;
+    flex: 1;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+  }
+
+  .home-search-tab.active {
+    background: white !important;
+    color: #667eea !important;
+    border-color: white !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
   }
 
   /* Improve autocomplete visibility on mobile */
