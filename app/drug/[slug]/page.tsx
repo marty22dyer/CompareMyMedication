@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { bySlug } from "../../../lib/drugs";
 import { useState } from "react";
+import FDADrugInfo from "../../../components/FDADrugInfo";
 
 export default function DrugPage({ params }: { params: { slug: string } }) {
   const drug = bySlug(params.slug);
@@ -319,6 +320,9 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
             Find Cheaper Alternative
           </a>
         </div>
+
+        {/* FDA Drug Information */}
+        <FDADrugInfo drugName={name} />
         
         {/* SEO Disclaimer */}
         <div className="drug-seo-disclaimer">
