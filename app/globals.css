@@ -1466,7 +1466,8 @@
   margin-bottom: 32px;
   border: 3px solid #e5e7eb;
   transition: all 0.3s ease;
-  overflow: hidden;
+  overflow: visible;
+  padding: 16px;
 }
 
 .home-compare-tool-container:hover {
@@ -1971,11 +1972,6 @@
   margin-top: 16px;
 }
 
-.home-compare-tool-container {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
 
 .home-popular-drugs {
   padding: 16px;

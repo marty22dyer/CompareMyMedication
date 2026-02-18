@@ -86,10 +86,19 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
   const dosageForm = drug.ndcData?.dosage_form || drug.goodrxData?.dosage_form || "tablet, capsule";
   const manufacturer = drug.ndcData?.labeler_name || drug.openfdaData?.manufacturer || null;
   
-  const alts = (drug.alternatives ?? [])
-    .filter((s: string) => s !== params.slug)
-    .map((s: string) => bySlug(s))
-    .filter(Boolean) as NonNullable<ReturnType<typeof bySlug>>[];
+  const alts = (() => {
+    const seen = new Set<string>();
+    return (drug.alternatives ?? [])
+      .filter((s: string) => s !== params.slug)
+      .map((s: string) => bySlug(s))
+      .filter(Boolean)
+      .filter((d: any) => {
+        const key = d.name.toLowerCase();
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      }) as NonNullable<ReturnType<typeof bySlug>>[];
+  })();
 
   const toggleSection = (section: string) => {
     setExpandedSection(expandedSection === section ? null : section);
