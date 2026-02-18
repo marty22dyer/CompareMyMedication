@@ -347,25 +347,39 @@ export default function Home() {
                           href={search.type === 'drug' ? `/drug/${search.slug}` : `/compare/${search.slug}`}
                           className="home-pill home-pill-recent"
                         >
-                          {search.type === 'drug' ? '💊' : '⚖️'} {search.name}
+                          {search.name}
                         </a>
                       ))}
                     </div>
                   </div>
                 )}
 
-                {/* Popular Drug Searches */}
-                <div className="home-popular-searches">
-                  <span className="home-popular-label">Popular drugs:</span>
-                  <div className="home-popular-pills">
-                    <a href="/drug/ozempic" className="home-pill home-pill-drug">Ozempic</a>
-                    <a href="/drug/wegovy" className="home-pill home-pill-drug">Wegovy</a>
-                    <a href="/drug/zepbound" className="home-pill home-pill-drug">Zepbound</a>
-                    <a href="/drug/adderall" className="home-pill home-pill-drug">Adderall</a>
-                    <a href="/drug/metformin" className="home-pill home-pill-drug">Metformin</a>
-                    <a href="/drug/lexapro" className="home-pill home-pill-drug">Lexapro</a>
-                  </div>
-                </div>
+                {/* Popular Drug Searches - hide any already in recent searches */}
+                {(() => {
+                  const recentSlugs = new Set(recentSearches.map(s => s.slug));
+                  const popularDrugs = [
+                    { href: '/drug/ozempic', slug: 'ozempic', label: 'Ozempic' },
+                    { href: '/drug/wegovy', slug: 'wegovy', label: 'Wegovy' },
+                    { href: '/drug/zepbound', slug: 'zepbound', label: 'Zepbound' },
+                    { href: '/drug/adderall', slug: 'adderall', label: 'Adderall' },
+                    { href: '/drug/metformin', slug: 'metformin', label: 'Metformin' },
+                    { href: '/drug/lexapro', slug: 'lexapro', label: 'Lexapro' },
+                    { href: '/drug/lipitor', slug: 'lipitor', label: 'Lipitor' },
+                    { href: '/drug/xanax', slug: 'xanax', label: 'Xanax' },
+                    { href: '/drug/zoloft', slug: 'zoloft', label: 'Zoloft' },
+                  ].filter(d => !recentSlugs.has(d.slug));
+                  if (popularDrugs.length === 0) return null;
+                  return (
+                    <div className="home-popular-searches">
+                      <span className="home-popular-label">Popular drugs:</span>
+                      <div className="home-popular-pills">
+                        {popularDrugs.slice(0, 6).map(d => (
+                          <a key={d.slug} href={d.href} className="home-pill home-pill-drug">{d.label}</a>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })()}
               </div>
             )}
             
