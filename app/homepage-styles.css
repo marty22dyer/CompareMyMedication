@@ -617,37 +617,48 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  /* Minimal hero padding on mobile */
+  /* Ultra-minimal hero padding on mobile */
   .home-hero {
-    padding: 16px 16px 32px !important;
+    padding: 12px 16px 24px !important;
   }
 
   /* Minimal trust badges spacing */
   .home-trust-badges {
-    margin-bottom: 16px !important;
+    margin-bottom: 12px !important;
   }
 
-  /* Extremely tight title spacing */
+  /* Ultra-tight title spacing */
   .home-title {
-    margin-bottom: 8px !important;
-    font-size: 28px !important;
+    margin-bottom: 6px !important;
+    font-size: 26px !important;
+    line-height: 1.2 !important;
   }
 
   .home-subtitle {
-    margin-bottom: 12px !important;
-    font-size: 16px !important;
+    margin-bottom: 8px !important;
+    font-size: 15px !important;
+    line-height: 1.4 !important;
   }
 
-  /* Minimal stats bar spacing */
+  /* Ultra-minimal stats bar spacing */
   .home-stats-bar {
-    margin: 12px 0 8px 0 !important;
-    padding: 16px !important;
+    margin: 8px 0 6px 0 !important;
+    padding: 12px !important;
+    gap: 32px !important;
+  }
+
+  .home-stat-number {
+    font-size: 24px !important;
+  }
+
+  .home-stat-label {
+    font-size: 12px !important;
   }
 
   /* Make tabs prominent and clearly visible on mobile */
   .home-search-tabs {
-    gap: 10px;
-    margin: 8px 16px 8px 16px !important;
+    gap: 8px;
+    margin: 6px 16px 8px 16px !important;
     display: flex !important;
   }
 
