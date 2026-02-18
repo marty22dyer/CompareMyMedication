@@ -617,73 +617,84 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  /* Ultra-minimal hero padding on mobile */
+  /* Reduce hero padding - bring search closer to title */
   .home-hero {
-    padding: 12px 16px 24px !important;
+    padding: 20px 16px 32px !important;
   }
 
-  /* Minimal trust badges spacing */
   .home-trust-badges {
-    margin-bottom: 12px !important;
+    margin-bottom: 10px !important;
   }
 
-  /* Ultra-tight title spacing */
   .home-title {
-    margin-bottom: 6px !important;
     font-size: 26px !important;
     line-height: 1.2 !important;
+    margin-bottom: 6px !important;
   }
 
   .home-subtitle {
-    margin-bottom: 8px !important;
     font-size: 15px !important;
-    line-height: 1.4 !important;
+    margin-bottom: 10px !important;
   }
 
-  /* Ultra-minimal stats bar spacing */
   .home-stats-bar {
-    margin: 8px 0 6px 0 !important;
-    padding: 12px !important;
-    gap: 32px !important;
+    flex-direction: row !important;
+    gap: 24px !important;
+    margin: 10px 0 8px 0 !important;
+    padding: 12px 16px !important;
   }
 
   .home-stat-number {
-    font-size: 24px !important;
+    font-size: 22px !important;
   }
 
   .home-stat-label {
-    font-size: 12px !important;
+    font-size: 11px !important;
   }
 
-  /* Make tabs prominent and clearly visible on mobile */
+  /* Tabs */
   .home-search-tabs {
-    gap: 8px;
-    margin: 6px 16px 8px 16px !important;
     display: flex !important;
+    gap: 8px !important;
+    margin: 8px 0 10px 0 !important;
   }
 
   .home-search-tab {
-    padding: 12px 24px;
-    font-size: 15px;
-    white-space: nowrap;
-    flex: 1;
-    text-align: center;
-    border: 2px solid rgba(255, 255, 255, 0.5) !important;
-    background: rgba(255, 255, 255, 0.15) !important;
+    flex: 1 !important;
+    padding: 10px 8px !important;
+    font-size: 14px !important;
+    white-space: nowrap !important;
+    text-align: center !important;
   }
 
-  .home-search-tab.active {
-    background: white !important;
-    color: #667eea !important;
-    border-color: white !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  /* Fix search bar - prevent overflow */
+  .home-primary-search {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 6px 6px 6px 12px !important;
+    max-width: 100% !important;
   }
 
-  /* Improve autocomplete visibility on mobile */
+  .home-search-input-primary {
+    font-size: 15px !important;
+    min-width: 0 !important;
+  }
+
+  .home-search-btn-primary {
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+
+  .home-search-container {
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* Autocomplete on mobile */
   .home-autocomplete-primary,
   .home-autocomplete {
-    font-size: 16px !important;
-    max-height: 250px;
     border: 2px solid #667eea !important;
   }
 
@@ -693,12 +704,6 @@
     font-size: 16px !important;
     color: #1a202c !important;
     font-weight: 600 !important;
-    border-bottom: 1px solid #e2e8f0;
-  }
-
-  .home-autocomplete-item:last-child,
-  .home-autocomplete-primary-item:last-child {
-    border-bottom: none;
   }
 
   .home-autocomplete-item:hover,
@@ -707,24 +712,13 @@
     color: white !important;
   }
 
-  /* Reduce spacing */
-  .home-stats-bar {
-    flex-direction: column;
-    gap: 16px;
-    margin: 16px 0 12px 0;
-    padding: 16px;
-  }
-
-  .home-search-container {
-    margin-top: 12px;
-    margin-bottom: 24px;
-  }
-
+  /* Compare tool */
   .home-compare-tool-container {
-    margin-top: 24px;
-    padding-top: 24px;
+    margin-top: 16px !important;
+    padding-top: 16px !important;
   }
 
+  /* Rest of page */
   .home-steps {
     flex-direction: column;
   }
