@@ -21,12 +21,75 @@ const jsonLd = {
   "@type": "WebSite",
   name: "CompareMyMedication",
   url: "https://comparemymedication.com/",
+  description: "Compare 238+ prescription medications side-by-side. Find cheaper alternatives, check prices, and save up to 80% on prescriptions. FDA-verified data.",
   potentialAction: {
     "@type": "SearchAction",
     target: "https://comparemymedication.com/compare?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is CompareMyMedication free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! CompareMyMedication is 100% free with no sign-up required. You can compare medications, check prices, and find alternatives without creating an account or providing any personal information."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is the medication pricing information?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our pricing data is sourced from real pharmacy prices and updated regularly. Prices may vary by location, pharmacy, and insurance coverage. We recommend checking with your local pharmacy for the most current pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does the drug information come from?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All drug information is sourced from the FDA's official database, including drug labels, indications, warnings, and adverse events. This ensures you receive accurate, government-verified medical information."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I save money by switching medications?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many people save 50-80% by switching to generic alternatives or finding lower-cost options in the same drug class. Always consult your doctor before making any medication changes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you store my medical information?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We do not collect, store, or share any personal medical information. Your searches are private and anonymous. We only use Google Analytics to understand site usage."
+      }
+    }
+  ]
+};
+
+const DRUG_CATEGORIES = [
+  { name: "Diabetes", icon: "🩸", slug: "diabetes-medications", count: 25 },
+  { name: "Weight Loss", icon: "⚖️", slug: "weight-loss-drugs", count: 12 },
+  { name: "ADHD", icon: "🧠", slug: "adhd-medications", count: 15 },
+  { name: "Depression & Anxiety", icon: "💭", slug: "depression-anxiety", count: 28 },
+  { name: "Blood Pressure", icon: "❤️", slug: "blood-pressure", count: 22 },
+  { name: "Cholesterol", icon: "📊", slug: "cholesterol", count: 18 },
+  { name: "Pain Relief", icon: "💊", slug: "pain-relief", count: 20 },
+  { name: "Antibiotics", icon: "🦠", slug: "antibiotics", count: 16 },
+  { name: "Heart Medications", icon: "💗", slug: "heart-medications", count: 14 },
+  { name: "Thyroid", icon: "🔬", slug: "thyroid", count: 8 },
+  { name: "Asthma & COPD", icon: "🫁", slug: "asthma-copd", count: 12 },
+  { name: "Birth Control", icon: "💊", slug: "birth-control", count: 10 },
+];
 
 export default function Home() {
   const router = useRouter();
@@ -127,6 +190,10 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       
       <main className="home-page">
         {/* Hero Section */}
@@ -139,13 +206,24 @@ export default function Home() {
               <span className="home-badge">✓ FDA Data</span>
             </div>
 
-            <h1 className="home-title">Compare Medications</h1>
-            <p className="home-subtitle">What works better & how much will I pay?</p>
+            <h1 className="home-title">Compare 238+ Medications & Save Up to 80%</h1>
+            <p className="home-subtitle">Find cheaper alternatives, compare effectiveness, and check real prices - all backed by FDA data</p>
             
-            {/* Value Proposition */}
-            <h2 className="home-value-prop">
-              Find cheaper alternatives & save up to 80% on prescriptions
-            </h2>
+            {/* Stats Bar */}
+            <div className="home-stats-bar">
+              <div className="home-stat">
+                <div className="home-stat-number">238+</div>
+                <div className="home-stat-label">Medications</div>
+              </div>
+              <div className="home-stat">
+                <div className="home-stat-number">50K+</div>
+                <div className="home-stat-label">Comparisons</div>
+              </div>
+              <div className="home-stat">
+                <div className="home-stat-number">80%</div>
+                <div className="home-stat-label">Avg Savings</div>
+              </div>
+            </div>
             
             {/* Comparison Tool */}
             <div className="home-compare-tool-container">
@@ -310,26 +388,146 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Feature Cards */}
-        <section className="home-features">
+        {/* How It Works Section */}
+        <section className="home-how-it-works">
           <div className="home-container">
-            <div className="home-feature-grid">
-              <div className="home-feature-card">
-                <div className="home-feature-icon home-icon-green">✓</div>
-                <h3 className="home-feature-title">Which works better?</h3>
-                <p className="home-feature-text">Side-by-side effectiveness & duration</p>
+            <h2 className="home-section-title">How It Works</h2>
+            <div className="home-steps">
+              <div className="home-step">
+                <div className="home-step-number">1</div>
+                <div className="home-step-icon">🔍</div>
+                <h3 className="home-step-title">Search or Compare</h3>
+                <p className="home-step-text">Enter one medication to learn more, or compare two drugs side-by-side</p>
               </div>
-              
-              <div className="home-feature-card">
-                <div className="home-feature-icon home-icon-yellow">$</div>
-                <h3 className="home-feature-title">What will I pay?</h3>
-                <p className="home-feature-text">Realistic price ranges & savings options</p>
+              <div className="home-step-arrow">→</div>
+              <div className="home-step">
+                <div className="home-step-number">2</div>
+                <div className="home-step-icon">📊</div>
+                <h3 className="home-step-title">View Comparison</h3>
+                <p className="home-step-text">See effectiveness, side effects, pricing, and FDA-verified information</p>
               </div>
-              
-              <div className="home-feature-card">
-                <div className="home-feature-icon home-icon-blue">💊</div>
-                <h3 className="home-feature-title">Are there cheaper alternatives?</h3>
-                <p className="home-feature-text">Generics & equivalent medications</p>
+              <div className="home-step-arrow">→</div>
+              <div className="home-step">
+                <div className="home-step-number">3</div>
+                <div className="home-step-icon">💰</div>
+                <h3 className="home-step-title">Save Money</h3>
+                <p className="home-step-text">Find cheaper alternatives and save up to 80% on your prescriptions</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Drug Categories Section */}
+        <section className="home-categories">
+          <div className="home-container">
+            <h2 className="home-section-title">Browse by Category</h2>
+            <p className="home-section-subtitle">Explore medications by condition or drug class</p>
+            <div className="home-category-grid">
+              {DRUG_CATEGORIES.map((category) => (
+                <a key={category.slug} href={`/category/${category.slug}`} className="home-category-card">
+                  <div className="home-category-icon">{category.icon}</div>
+                  <h3 className="home-category-name">{category.name}</h3>
+                  <p className="home-category-count">{category.count} medications</p>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us Section */}
+        <section className="home-why-choose">
+          <div className="home-container">
+            <h2 className="home-section-title">Why Choose CompareMyMedication?</h2>
+            <div className="home-benefits-grid">
+              <div className="home-benefit">
+                <div className="home-benefit-icon">✓</div>
+                <h3 className="home-benefit-title">FDA-Verified Data</h3>
+                <p className="home-benefit-text">All drug information comes directly from the FDA's official database, ensuring accuracy and reliability</p>
+              </div>
+              <div className="home-benefit">
+                <div className="home-benefit-icon">✓</div>
+                <h3 className="home-benefit-title">100% Free Forever</h3>
+                <p className="home-benefit-text">No hidden fees, no subscriptions, no credit card required. Compare medications completely free</p>
+              </div>
+              <div className="home-benefit">
+                <div className="home-benefit-icon">✓</div>
+                <h3 className="home-benefit-title">Privacy First</h3>
+                <p className="home-benefit-text">No sign-up required. We don't collect, store, or share your medical information. Your searches are anonymous</p>
+              </div>
+              <div className="home-benefit">
+                <div className="home-benefit-icon">✓</div>
+                <h3 className="home-benefit-title">Real Pricing Data</h3>
+                <p className="home-benefit-text">See actual price ranges from pharmacies, not estimates. Find the best deals and save money</p>
+              </div>
+              <div className="home-benefit">
+                <div className="home-benefit-icon">✓</div>
+                <h3 className="home-benefit-title">Easy to Understand</h3>
+                <p className="home-benefit-text">Complex medical information simplified into clear comparisons anyone can understand</p>
+              </div>
+              <div className="home-benefit">
+                <div className="home-benefit-icon">✓</div>
+                <h3 className="home-benefit-title">Always Updated</h3>
+                <p className="home-benefit-text">Drug information and pricing updated regularly to ensure you have the latest data</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* SEO Content Section */}
+        <section className="home-content">
+          <div className="home-container">
+            <div className="home-content-wrapper">
+              <h2 className="home-content-title">Understanding Medication Comparisons</h2>
+              <div className="home-content-text">
+                <p>Comparing medications is an essential step in making informed healthcare decisions. With prescription drug costs rising every year, finding the right medication at the right price has never been more important. CompareMyMedication helps you navigate the complex world of prescription drugs by providing side-by-side comparisons of effectiveness, side effects, and pricing.</p>
+                
+                <h3>Why Compare Medications?</h3>
+                <p>When your doctor prescribes a medication, you might wonder if there are alternatives that work just as well but cost less. Generic medications, for example, contain the same active ingredients as brand-name drugs but typically cost 50-80% less. By comparing medications in the same drug class, you can find options that fit your budget without compromising your health.</p>
+                
+                <h3>How to Find Cheaper Alternatives</h3>
+                <p>Finding cheaper medication alternatives doesn't mean settling for lower quality. The FDA requires generic medications to meet the same rigorous standards as brand-name drugs. Our comparison tool shows you all available alternatives, including generics and medications in the same therapeutic class. You can compare prices across different pharmacies and find discount programs that can save you hundreds of dollars per year.</p>
+                
+                <h3>Generic vs Brand Name: What's the Difference?</h3>
+                <p>Generic medications are bioequivalent to brand-name drugs, meaning they work the same way in your body. The main differences are the inactive ingredients (like fillers and dyes) and the price. Brand-name drugs are more expensive because manufacturers invest heavily in research, development, and marketing. Once a drug's patent expires, other companies can produce generic versions at a fraction of the cost.</p>
+                
+                <h3>Making Informed Decisions</h3>
+                <p>Our platform provides comprehensive information including FDA-approved indications, common side effects, drug interactions, and dosing guidelines. This information helps you have more productive conversations with your healthcare provider about which medication is right for you. Remember, while cost is important, the most effective medication for your specific condition should be the primary consideration.</p>
+                
+                <h3>Save Money on Prescriptions</h3>
+                <p>Americans spend over $350 billion on prescription medications annually. By comparing medications and choosing cost-effective alternatives, you can significantly reduce your healthcare expenses. Our tool shows you real pricing data from pharmacies, helping you find the best deals in your area. Many people save $500-$2,000 per year by switching to generic alternatives or finding lower-cost options in the same drug class.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="home-faq">
+          <div className="home-container">
+            <h2 className="home-section-title">Frequently Asked Questions</h2>
+            <div className="home-faq-grid">
+              <div className="home-faq-item">
+                <h3 className="home-faq-question">Is CompareMyMedication free to use?</h3>
+                <p className="home-faq-answer">Yes! CompareMyMedication is 100% free with no sign-up required. You can compare medications, check prices, and find alternatives without creating an account or providing any personal information.</p>
+              </div>
+              <div className="home-faq-item">
+                <h3 className="home-faq-question">How accurate is the medication pricing information?</h3>
+                <p className="home-faq-answer">Our pricing data is sourced from real pharmacy prices and updated regularly. Prices may vary by location, pharmacy, and insurance coverage. We recommend checking with your local pharmacy for the most current pricing.</p>
+              </div>
+              <div className="home-faq-item">
+                <h3 className="home-faq-question">Where does the drug information come from?</h3>
+                <p className="home-faq-answer">All drug information is sourced from the FDA's official database, including drug labels, indications, warnings, and adverse events. This ensures you receive accurate, government-verified medical information.</p>
+              </div>
+              <div className="home-faq-item">
+                <h3 className="home-faq-question">Can I save money by switching medications?</h3>
+                <p className="home-faq-answer">Many people save 50-80% by switching to generic alternatives or finding lower-cost options in the same drug class. Always consult your doctor before making any medication changes.</p>
+              </div>
+              <div className="home-faq-item">
+                <h3 className="home-faq-question">Do you store my medical information?</h3>
+                <p className="home-faq-answer">No. We do not collect, store, or share any personal medical information. Your searches are private and anonymous. We only use Google Analytics to understand site usage.</p>
+              </div>
+              <div className="home-faq-item">
+                <h3 className="home-faq-question">How often is the information updated?</h3>
+                <p className="home-faq-answer">Drug information is synced with the FDA database regularly. Pricing data is updated weekly to ensure accuracy. We continuously add new medications and comparisons.</p>
               </div>
             </div>
           </div>
@@ -390,11 +588,12 @@ export default function Home() {
           <div className="cmm-footer__links">
             <a href="/privacy">Privacy Policy</a>
             <a href="/terms">Terms of Service</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/about">About</a>
+            <a href="/disclaimer">Disclaimer</a>
           </div>
           <p className="cmm-footer__copy">
-            © 2024 CompareMyMedication. All rights reserved.
+            © 2026 CompareMyMedication by MAD Designs LLC. All rights reserved.
           </p>
         </footer>
       </main>

@@ -1,0 +1,352 @@
+/* ===== NEW HOMEPAGE SECTIONS STYLING ===== */
+
+/* Stats Bar */
+.home-stats-bar {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin: 32px 0;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.home-stat {
+  text-align: center;
+}
+
+.home-stat-number {
+  font-size: 36px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.home-stat-label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Section Titles */
+.home-section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #1a202c;
+}
+
+.home-section-subtitle {
+  font-size: 18px;
+  text-align: center;
+  color: #4a5568;
+  margin-bottom: 48px;
+}
+
+/* How It Works Section */
+.home-how-it-works {
+  padding: 80px 24px;
+  background: #f7fafc;
+}
+
+.home-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-step {
+  flex: 1;
+  text-align: center;
+  padding: 32px 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home-step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.home-step-number {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.home-step-icon {
+  font-size: 48px;
+  margin: 16px 0;
+}
+
+.home-step-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 16px 0 8px;
+  color: #1a202c;
+}
+
+.home-step-text {
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.home-step-arrow {
+  font-size: 32px;
+  color: #cbd5e0;
+  flex-shrink: 0;
+}
+
+/* Drug Categories Section */
+.home-categories {
+  padding: 80px 24px;
+  background: white;
+}
+
+.home-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px;
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.home-category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+  border-color: #667eea;
+  background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+}
+
+.home-category-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.home-category-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.home-category-count {
+  font-size: 14px;
+  color: #667eea;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Why Choose Us Section */
+.home-why-choose {
+  padding: 80px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.home-why-choose .home-section-title {
+  color: white;
+}
+
+.home-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-benefit {
+  text-align: center;
+  padding: 32px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
+}
+
+.home-benefit:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.home-benefit-icon {
+  font-size: 48px;
+  font-weight: 700;
+  color: #48bb78;
+  margin-bottom: 16px;
+}
+
+.home-benefit-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: white;
+}
+
+.home-benefit-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+/* SEO Content Section */
+.home-content {
+  padding: 80px 24px;
+  background: white;
+}
+
+.home-content-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-content-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #1a202c;
+  text-align: center;
+}
+
+.home-content-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4a5568;
+}
+
+.home-content-text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 32px 0 16px;
+  color: #2d3748;
+}
+
+.home-content-text p {
+  margin: 16px 0;
+}
+
+/* FAQ Section */
+.home-faq {
+  padding: 80px 24px;
+  background: #f7fafc;
+}
+
+.home-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-faq-item {
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+
+.home-faq-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.home-faq-question {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0 0 12px 0;
+}
+
+.home-faq-answer {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-stats-bar {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .home-steps {
+    flex-direction: column;
+  }
+
+  .home-step-arrow {
+    transform: rotate(90deg);
+    margin: 16px 0;
+  }
+
+  .home-category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .home-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .home-faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-section-title {
+    font-size: 28px;
+  }
+
+  .home-content-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-category-grid {
+    grid-template-columns: 1fr;
+  }
+}
