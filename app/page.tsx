@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+import { getRecentSearches, addRecentSearch, type RecentSearch } from "../lib/userPreferences";
 
 // Common drugs for autocomplete
 const COMMON_DRUGS = [
@@ -97,6 +98,8 @@ export default function Home() {
   const [drugB, setDrugB] = useState("");
   const [singleDrug, setSingleDrug] = useState("");
   const [searchMode, setSearchMode] = useState<'single' | 'compare'>('single');
+  const [recentSearches, setRecentSearches] = useState<RecentSearch[]>([]);
+  const [showHistory, setShowHistory] = useState(false);
   
   const [suggestionsA, setSuggestionsA] = useState<string[]>([]);
   const [suggestionsB, setSuggestionsB] = useState<string[]>([]);
@@ -109,6 +112,11 @@ export default function Home() {
   const inputARef = useRef<HTMLDivElement>(null);
   const inputBRef = useRef<HTMLDivElement>(null);
   const inputSingleRef = useRef<HTMLFormElement>(null);
+
+  // Load recent searches on mount
+  useEffect(() => {
+    setRecentSearches(getRecentSearches());
+  }, []);
 
   const getSuggestions = (query: string) => {
     if (!query) return [];
@@ -181,8 +189,29 @@ export default function Home() {
     e.preventDefault();
     if (singleDrug) {
       const slug = singleDrug.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      addRecentSearch(slug, singleDrug, 'drug');
+      setRecentSearches(getRecentSearches());
       router.push(`/drug/${slug}`);
     }
+  };
+
+  const handleRecentSearchClick = (search: RecentSearch) => {
+    if (search.type === 'drug') {
+      router.push(`/drug/${search.slug}`);
+    } else {
+      router.push(`/compare/${search.slug}`);
+    }
+  };
+
+  const getTimeAgo = (timestamp: number): string => {
+    const seconds = Math.floor((Date.now() - timestamp) / 1000);
+    if (seconds < 60) return 'just now';
+    const minutes = Math.floor(seconds / 60);
+    if (minutes < 60) return `${minutes}m ago`;
+    const hours = Math.floor(minutes / 60);
+    if (hours < 24) return `${hours}h ago`;
+    const days = Math.floor(hours / 24);
+    return `${days}d ago`;
   };
 
   return (
@@ -246,12 +275,23 @@ export default function Home() {
             {searchMode === 'single' && (
               <div className="home-search-container">
                 <form onSubmit={handleSingleSearch} className="home-primary-search" ref={inputSingleRef}>
-                  <span className="home-search-icon">�</span>
+                  {recentSearches.length > 0 && (
+                    <button
+                      type="button"
+                      className="home-history-btn"
+                      onClick={() => setShowHistory(!showHistory)}
+                      title="Recent searches"
+                    >
+                      🕐
+                    </button>
+                  )}
+                  <span className="home-search-icon">🔍</span>
                   <input
                     type="text"
                     placeholder="Search any medication (e.g., Ozempic, Lipitor, Adderall)"
                     value={singleDrug}
                     onChange={(e) => handleSingleDrugChange(e.target.value)}
+                    onFocus={() => setShowHistory(false)}
                     className="home-search-input-primary"
                     autoComplete="off"
                   />
@@ -268,8 +308,42 @@ export default function Home() {
                       ))}
                     </div>
                   )}
+                  {showHistory && recentSearches.length > 0 && (
+                    <div className="home-history-dropdown">
+                      <div className="home-history-header">Recent Searches</div>
+                      {recentSearches.map((search) => (
+                        <div
+                          key={search.slug}
+                          className="home-history-item"
+                          onClick={() => handleRecentSearchClick(search)}
+                        >
+                          <span className="home-history-icon">{search.type === 'drug' ? '💊' : '⚖️'}</span>
+                          <span className="home-history-name">{search.name}</span>
+                          <span className="home-history-time">{getTimeAgo(search.timestamp)}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                   <button type="submit" className="home-search-btn-primary">Search</button>
                 </form>
+
+                {/* Recent Searches Section */}
+                {recentSearches.length > 0 && (
+                  <div className="home-recent-searches">
+                    <span className="home-popular-label">Recent:</span>
+                    <div className="home-popular-pills">
+                      {recentSearches.slice(0, 5).map((search) => (
+                        <a
+                          key={search.slug}
+                          href={search.type === 'drug' ? `/drug/${search.slug}` : `/compare/${search.slug}`}
+                          className="home-pill home-pill-recent"
+                        >
+                          {search.type === 'drug' ? '💊' : '⚖️'} {search.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {/* Popular Drug Searches */}
                 <div className="home-popular-searches">

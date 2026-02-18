@@ -1,20 +1,62 @@
 "use client";
 
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, useRouter } from "next/navigation";
 import { bySlug } from "../../../lib/drugs";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FDADrugInfo from "../../../components/FDADrugInfo";
 import FDADrugData from "../../../components/FDADrugData";
 import { cleanFDAText, extractKeyPoints, type DrugLabel, type AdverseEventSummary } from "../../../lib/openFDA";
+import { toggleFavorite, isFavorite, addRecentSearch, getComparisonCandidate, setComparisonCandidate, clearComparisonCandidate } from "../../../lib/userPreferences";
 
 export default function DrugPage({ params }: { params: { slug: string } }) {
+  const router = useRouter();
   const drug = bySlug(params.slug);
   if (!drug) return notFound();
 
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
   const [fdaLabel, setFdaLabel] = useState<DrugLabel | null>(null);
   const [fdaEvents, setFdaEvents] = useState<AdverseEventSummary[]>([]);
+  const [isFav, setIsFav] = useState(false);
+  const [comparisonCandidate, setCompCandidate] = useState<{ slug: string; name: string } | null>(null);
+  const [showCompareToast, setShowCompareToast] = useState(false);
+
+  useEffect(() => {
+    // Track this page view as a recent search
+    addRecentSearch(params.slug, drug.name, 'drug');
+    
+    // Check if this drug is favorited
+    setIsFav(isFavorite(params.slug));
+    
+    // Check if there's a comparison candidate
+    setCompCandidate(getComparisonCandidate());
+  }, [params.slug, drug.name]);
+
+  const handleToggleFavorite = () => {
+    const newState = toggleFavorite(params.slug, drug.name);
+    setIsFav(newState);
+  };
+
+  const handleSetCompareCandidate = () => {
+    setComparisonCandidate(params.slug, drug.name);
+    setCompCandidate({ slug: params.slug, name: drug.name });
+    setShowCompareToast(true);
+    setTimeout(() => setShowCompareToast(false), 3000);
+  };
+
+  const handleCompareWith = () => {
+    if (comparisonCandidate) {
+      const slugs = [params.slug, comparisonCandidate.slug].sort();
+      const compareSlug = slugs.join('-vs-');
+      clearComparisonCandidate();
+      router.push(`/compare/${compareSlug}`);
+    }
+  };
+
+  const handleClearCandidate = () => {
+    clearComparisonCandidate();
+    setCompCandidate(null);
+  };
 
   const handleFDAData = (data: { label: DrugLabel | null; events: AdverseEventSummary[] }) => {
     setFdaLabel(data.label);
@@ -57,15 +99,49 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
       {/* Fetch FDA Data */}
       <FDADrugData drugName={name} onDataLoaded={handleFDAData} />
       
+      {/* Compare Toast */}
+      {showCompareToast && (
+        <div className="compare-toast">
+          ✓ {drug.name} selected for comparison. Visit another drug and click "Compare with {drug.name}"
+        </div>
+      )}
+      
       {/* Header Section */}
       <div className="drug-header">
         <div className="drug-header-content">
           <div className="drug-header-top">
             <div className="drug-header-left">
-              <h1 className="drug-name">{name}</h1>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                <h1 className="drug-name" style={{ margin: 0 }}>{name}</h1>
+                <button
+                  onClick={handleToggleFavorite}
+                  className="favorite-btn"
+                  title={isFav ? 'Remove from favorites' : 'Add to favorites'}
+                >
+                  {isFav ? '★' : '☆'}
+                </button>
+              </div>
               <p className="drug-generic-name">
                 Generic: <Link href="#" className="drug-generic-link">{generic}</Link>
               </p>
+              
+              {/* Quick Compare Buttons */}
+              <div className="quick-compare-btns">
+                {comparisonCandidate && comparisonCandidate.slug !== params.slug ? (
+                  <>
+                    <button onClick={handleCompareWith} className="compare-with-btn">
+                      ⚖️ Compare with {comparisonCandidate.name}
+                    </button>
+                    <button onClick={handleClearCandidate} className="clear-candidate-btn" title="Clear comparison">
+                      ✕
+                    </button>
+                  </>
+                ) : (
+                  <button onClick={handleSetCompareCandidate} className="set-compare-btn">
+                    ⚖️ Compare with another drug
+                  </button>
+                )}  
+              </div>
               <div className="drug-meta">
                 <span className="drug-category">{category}</span>
                 <span className="drug-meta-separator">•</span>
