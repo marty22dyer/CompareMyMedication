@@ -1548,8 +1548,8 @@
 }
 
 .home-autocomplete-item:hover {
-  background: #f8fafc;
-  color: #10b981;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
 }
 
 .home-drug-icon {
