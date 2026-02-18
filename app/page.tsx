@@ -255,24 +255,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Search Tabs */}
-            <div className="home-search-tabs">
-              <button 
-                className={`home-search-tab ${searchMode === 'single' ? 'active' : ''}`}
-                onClick={() => setSearchMode('single')}
-              >
-                🔍 Search Drug Info
-              </button>
-              <button 
-                className={`home-search-tab ${searchMode === 'compare' ? 'active' : ''}`}
-                onClick={() => setSearchMode('compare')}
-              >
-                ⚖️ Compare Two Drugs
-              </button>
-            </div>
-            
-            {/* Single Drug Search (Default/Primary) */}
-            {searchMode === 'single' && (
+            {/* Single Drug Search (Primary) */}
               <div className="home-search-container">
                 <form onSubmit={handleSingleSearch} className="home-primary-search" ref={inputSingleRef}>
                   {recentSearches.length > 0 && (
@@ -347,21 +330,19 @@ export default function Home() {
 
                 {/* Popular Drug Searches */}
                 <div className="home-popular-searches">
-                  <span className="home-popular-label">Popular:</span>
+                  <span className="home-popular-label">Popular drugs:</span>
                   <div className="home-popular-pills">
-                    <a href="/drug/ozempic" className="home-pill">Ozempic</a>
-                    <a href="/drug/wegovy" className="home-pill">Wegovy</a>
-                    <a href="/drug/zepbound" className="home-pill">Zepbound</a>
-                    <a href="/drug/adderall" className="home-pill">Adderall</a>
-                    <a href="/drug/metformin" className="home-pill">Metformin</a>
-                    <a href="/drug/lexapro" className="home-pill">Lexapro</a>
+                    <a href="/drug/ozempic" className="home-pill home-pill-drug">Ozempic</a>
+                    <a href="/drug/wegovy" className="home-pill home-pill-drug">Wegovy</a>
+                    <a href="/drug/zepbound" className="home-pill home-pill-drug">Zepbound</a>
+                    <a href="/drug/adderall" className="home-pill home-pill-drug">Adderall</a>
+                    <a href="/drug/metformin" className="home-pill home-pill-drug">Metformin</a>
+                    <a href="/drug/lexapro" className="home-pill home-pill-drug">Lexapro</a>
                   </div>
                 </div>
               </div>
-            )}
             
-            {/* Comparison Tool (Secondary) */}
-            {searchMode === 'compare' && (
+            {/* Comparison Tool (Secondary) */
               <div className="home-compare-tool-container">
               <form onSubmit={handleCompare} className="home-compare-tool">
                 <div className="home-compare-inputs">
@@ -426,16 +407,21 @@ export default function Home() {
 
               {/* Popular Comparisons */}
               <div className="home-popular-searches">
-                <span className="home-popular-label">Popular:</span>
+                <span className="home-popular-label">Popular comparisons:</span>
                 <div className="home-popular-pills">
-                  <a href="/compare/adderall-vs-vyvanse" className="home-pill">Adderall vs Vyvanse</a>
-                  <a href="/compare/ozempic-vs-wegovy" className="home-pill">Ozempic vs Wegovy</a>
-                  <a href="/compare/zoloft-vs-lexapro" className="home-pill">Zoloft vs Lexapro</a>
-                  <a href="/compare/metformin-vs-ozempic" className="home-pill">Metformin vs Ozempic</a>
+                  <a href="/compare/adderall-vs-vyvanse" className="home-pill home-pill-compare">Adderall vs Vyvanse</a>
+                  <a href="/compare/ozempic-vs-wegovy" className="home-pill home-pill-compare">Ozempic vs Wegovy</a>
+                  <a href="/compare/zoloft-vs-lexapro" className="home-pill home-pill-compare">Zoloft vs Lexapro</a>
+                  <a href="/compare/metformin-vs-ozempic" className="home-pill home-pill-compare">Metformin vs Ozempic</a>
+                  <a href="/compare/lipitor-vs-crestor" className="home-pill home-pill-compare">Lipitor vs Crestor</a>
+                  <a href="/compare/xanax-vs-ativan" className="home-pill home-pill-compare">Xanax vs Ativan</a>
+                  <a href="/compare/prozac-vs-zoloft" className="home-pill home-pill-compare">Prozac vs Zoloft</a>
+                  <a href="/compare/cialis-vs-viagra" className="home-pill home-pill-compare">Cialis vs Viagra</a>
+                  <a href="/compare/synthroid-vs-levothyroxine" className="home-pill home-pill-compare">Synthroid vs Levothyroxine</a>
+                  <a href="/compare/lisinopril-vs-losartan" className="home-pill home-pill-compare">Lisinopril vs Losartan</a>
                 </div>
               </div>
             </div>
-            )}
           </div>
         </section>
 
