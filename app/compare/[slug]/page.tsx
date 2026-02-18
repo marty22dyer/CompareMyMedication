@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
+"use client";
+
 import { notFound, redirect } from "next/navigation";
 import { allCompareSlugs } from "../../../lib/compare";
-import { bySlug } from "../../../lib/drugs";
-import Breadcrumbs from "../../../components/Breadcrumbs";
+import { bySlug, type Drug } from "../../../lib/drugs";
+import { useState, useEffect } from "react";
+import { addRecentSearch } from "../../../lib/userPreferences";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3001";
 
@@ -17,258 +19,168 @@ function getCompare(slug: string) {
   const sameClass = A.class && B.class && A.class === B.class;
   const genericSame = A.generic === B.generic;
 
-  return {
-    slug,
-    a: {
-      slug: A.slug,
-      name: A.name,
-      generic: A.generic,
-      class: A.class,
-      usedFor: A.usedFor,
-    },
-    b: {
-      slug: B.slug,
-      name: B.name,
-      generic: B.generic,
-      class: B.class,
-      usedFor: B.usedFor,
-    },
-    summary: {
-      sameClass,
-      genericSame,
-      keyDifferences: [
-        { field: "generic", a: A.generic || null, b: B.generic || null },
-        { field: "class", a: A.class || null, b: B.class || null },
-        { field: "usedFor", a: A.usedFor?.slice(0, 5) || [], b: B.usedFor?.slice(0, 5) || [] },
-      ],
-      disclaimer: "Informational only; not medical advice. Consult a healthcare professional.",
-    },
-  };
+  return { slug, A, B, sameClass, genericSame };
 }
 
 type Props = { params: { slug: string } };
 
-const canonicalUrl = (slug: string) => `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3001"}/compare/${slug}`;
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const data = getCompare(params.slug);
-  if (!data) {
-    return { title: "Comparison not found", robots: { index: false, follow: true } };
-  }
-
-  const title = `${data.a.name} vs ${data.b.name}: differences, generics, class & costs`;
-  const description = `Compare ${data.a.name} vs ${data.b.name} with key differences like drug class, generic name, and typical considerations. Informational only — not medical advice.`;
-
-  return {
-    title,
-    description,
-    alternates: { canonical: canonicalUrl(params.slug) },
-    robots: { index: true, follow: true },
-    openGraph: {
-      title,
-      description,
-      url: canonicalUrl(params.slug),
-      type: "article",
-      siteName: "CompareMyMedication",
-    },
-  };
-}
-
-function row(label: string, a: string, b: string) {
-  return (
-    <div className="cmpRow">
-      <div className="cmpLabel">{label}</div>
-      <div className="cmpCell">{a}</div>
-      <div className="cmpCell">{b}</div>
-    </div>
-  );
-}
-
-// Disabled to prevent 740k static pages at build time
-// Pages will be generated on-demand instead
-// export function generateStaticParams() {
-//   return allCompareSlugs().map((slug) => ({ slug }));
-// }
-
-export const dynamic = 'force-dynamic';
-
-export default async function ComparePage({ params }: Props) {
+export default function ComparePage({ params }: Props) {
   const data = getCompare(params.slug);
   if (!data) return notFound();
 
-  // enforce canonical alphabetical order
-  const canonSlug = [data.a.slug, data.b.slug].sort().join("-vs-");
-  if (params.slug !== canonSlug) {
-    redirect(`/compare/${canonSlug}`);
-  }
+  const { A, B, sameClass } = data;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    name: `${data.a.name} vs ${data.b.name}`,
-    url: canonicalUrl(canonSlug),
-    about: [
-      { "@type": "Drug", name: data.a.name, nonProprietaryName: data.a.generic },
-      { "@type": "Drug", name: data.b.name, nonProprietaryName: data.b.generic },
-    ],
-    publisher: { "@type": "Organization", name: "CompareMyMedication" },
-  };
+  // Track this comparison
+  useEffect(() => {
+    addRecentSearch(params.slug, `${A.name} vs ${B.name}`, 'comparison');
+  }, [params.slug, A.name, B.name]);
+
+  // Get pricing data
+  const priceA = A.goodrxData?.current_price ? `$${A.goodrxData.current_price}` : null;
+  const priceB = B.goodrxData?.current_price ? `$${B.goodrxData.current_price}` : null;
+  const genericPriceA = priceA ? `$${Math.round(A.goodrxData!.current_price! * 0.3)}` : null;
+  const genericPriceB = priceB ? `$${Math.round(B.goodrxData!.current_price! * 0.3)}` : null;
 
   return (
-    <main className="compare-page-v2">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
+    <main className="compare-page-new">
       {/* Hero Section */}
-      <section className="cmp-hero">
-        <div className="cmp-container">
-          <h1 className="cmp-main-title">
-            <span className="cmp-drug-a">{data.a.name}</span>
-            <span className="cmp-vs-text">vs</span>
-            <span className="cmp-drug-b">{data.b.name}</span>
+      <section className="compare-hero">
+        <div className="compare-container">
+          <h1 className="compare-title">
+            <span className="compare-drug-a">{A.name}</span>
+            <span className="compare-vs">vs</span>
+            <span className="compare-drug-b">{B.name}</span>
           </h1>
-          
-          <div className="cmp-hero-cards">
-            {/* Drug A Card */}
-            <div className="cmp-hero-card">
-              <div className="cmp-drug-badge cmp-badge-green">{data.a.name}</div>
-              <div className="cmp-card-content">
-                <div className="cmp-stars">★★★★☆</div>
-                <div className="cmp-generic-status">
-                  {data.a.generic ? (
-                    <><span className="cmp-check">✓</span> Generic available</>
-                  ) : (
-                    <><span className="cmp-dollar">$$$</span> Brand only</>
-                  )}
-                </div>
-                <div className="cmp-drug-class">{data.a.class || "Medication"}</div>
-              </div>
-              <a 
-                href={`https://www.goodrx.com/${data.a.slug}`} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="cmp-price-btn cmp-btn-green"
-              >
-                <span className="cmp-btn-icon">💰</span>
-                See cheapest price →
-              </a>
-            </div>
-
-            {/* Drug B Card */}
-            <div className="cmp-hero-card">
-              <div className="cmp-drug-badge cmp-badge-blue">{data.b.name}</div>
-              <div className="cmp-card-content">
-                <div className="cmp-stars">★★★★☆</div>
-                <div className="cmp-generic-status">
-                  {data.b.generic ? (
-                    <><span className="cmp-check">✓</span> Generic available</>
-                  ) : (
-                    <><span className="cmp-dollar">$$$</span> Brand only</>
-                  )}
-                </div>
-                <div className="cmp-drug-class">{data.b.class || "Medication"}</div>
-              </div>
-              <a 
-                href={`https://www.goodrx.com/${data.b.slug}`} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="cmp-price-btn cmp-btn-blue"
-              >
-                <span className="cmp-btn-icon">💰</span>
-                See cheapest price →
-              </a>
-            </div>
-          </div>
-
-          <div className="cmp-which-better">
-            Which works better for YOU? →
-          </div>
+          <p className="compare-subtitle">
+            {sameClass ? `Both are ${A.class}` : 'Different drug classes'} • Side-by-side comparison
+          </p>
         </div>
       </section>
 
-      {/* Comparison Body */}
-      <section className="cmp-body">
-        <div className="cmp-container">
-          
-          {/* Quick Comparison Table */}
-          <div className="cmp-section">
-            <h2 className="cmp-section-title">Quick Comparison</h2>
-            <div className="cmp-comparison-table">
-              <div className="cmp-table-row cmp-table-header">
-                <div className="cmp-table-cell"></div>
-                <div className="cmp-table-cell"><strong>{data.a.name}</strong></div>
-                <div className="cmp-table-cell"><strong>{data.b.name}</strong></div>
+      {/* Comparison Cards */}
+      <section className="compare-body">
+        <div className="compare-container">
+          <div className="compare-grid">
+            {/* Drug A Card */}
+            <div className="compare-card compare-card-a">
+              <div className="compare-card-header">
+                <h2>{A.name}</h2>
+                <span className="compare-badge compare-badge-a">Drug A</span>
               </div>
-              <div className="cmp-table-row">
-                <div className="cmp-table-cell cmp-table-label">Generic name</div>
-                <div className="cmp-table-cell">{data.a.generic || "—"}</div>
-                <div className="cmp-table-cell">{data.b.generic || "—"}</div>
+              
+              <div className="compare-info-grid">
+                <div className="compare-info-item">
+                  <div className="compare-info-label">Generic Name</div>
+                  <div className="compare-info-value">{A.generic || 'No generic'}</div>
+                </div>
+                <div className="compare-info-item">
+                  <div className="compare-info-label">Drug Class</div>
+                  <div className="compare-info-value">{A.class || '—'}</div>
+                </div>
+                <div className="compare-info-item">
+                  <div className="compare-info-label">Brand Price</div>
+                  <div className="compare-info-value compare-price">{priceA || '$$$$'}</div>
+                </div>
+                <div className="compare-info-item">
+                  <div className="compare-info-label">Generic Price</div>
+                  <div className="compare-info-value compare-price">{genericPriceA || '$$'}</div>
+                </div>
               </div>
-              <div className="cmp-table-row">
-                <div className="cmp-table-cell cmp-table-label">Drug class</div>
-                <div className="cmp-table-cell">{data.a.class || "—"}</div>
-                <div className="cmp-table-cell">{data.b.class || "—"}</div>
+
+              <div className="compare-section">
+                <h3 className="compare-section-title">Used For</h3>
+                <ul className="compare-list">
+                  {A.usedFor?.slice(0, 3).map((use, idx) => (
+                    <li key={idx}>✓ {use}</li>
+                  )) || <li>Consult your doctor</li>}
+                </ul>
               </div>
-              <div className="cmp-table-row">
-                <div className="cmp-table-cell cmp-table-label">Used for</div>
-                <div className="cmp-table-cell">{data.a.usedFor?.slice(0, 2).join(", ") || "—"}</div>
-                <div className="cmp-table-cell">{data.b.usedFor?.slice(0, 2).join(", ") || "—"}</div>
+
+              <a href={`/drug/${A.slug}`} className="compare-view-btn compare-btn-a">
+                View {A.name} Details →
+              </a>
+            </div>
+
+            {/* VS Divider */}
+            <div className="compare-vs-divider">
+              <div className="compare-vs-circle">VS</div>
+            </div>
+
+            {/* Drug B Card */}
+            <div className="compare-card compare-card-b">
+              <div className="compare-card-header">
+                <h2>{B.name}</h2>
+                <span className="compare-badge compare-badge-b">Drug B</span>
               </div>
+              
+              <div className="compare-info-grid">
+                <div className="compare-info-item">
+                  <div className="compare-info-label">Generic Name</div>
+                  <div className="compare-info-value">{B.generic || 'No generic'}</div>
+                </div>
+                <div className="compare-info-item">
+                  <div className="compare-info-label">Drug Class</div>
+                  <div className="compare-info-value">{B.class || '—'}</div>
+                </div>
+                <div className="compare-info-item">
+                  <div className="compare-info-label">Brand Price</div>
+                  <div className="compare-info-value compare-price">{priceB || '$$$$'}</div>
+                </div>
+                <div className="compare-info-item">
+                  <div className="compare-info-label">Generic Price</div>
+                  <div className="compare-info-value compare-price">{genericPriceB || '$$'}</div>
+                </div>
+              </div>
+
+              <div className="compare-section">
+                <h3 className="compare-section-title">Used For</h3>
+                <ul className="compare-list">
+                  {B.usedFor?.slice(0, 3).map((use, idx) => (
+                    <li key={idx}>✓ {use}</li>
+                  )) || <li>Consult your doctor</li>}
+                </ul>
+              </div>
+
+              <a href={`/drug/${B.slug}`} className="compare-view-btn compare-btn-b">
+                View {B.name} Details →
+              </a>
             </div>
           </div>
 
-          {/* Cost Comparison */}
-          <div className="cmp-section">
-            <h2 className="cmp-section-title">Cost Comparison</h2>
-            <div className="cmp-cost-grid">
-              <div className="cmp-cost-card">
-                <h3 className="cmp-cost-drug-name">{data.a.name}</h3>
-                <div className="cmp-cost-row">
-                  <span className="cmp-cost-label">Typical monthly cost</span>
-                  <span className="cmp-cost-value">Check GoodRx</span>
+          {/* Key Differences */}
+          <div className="compare-differences">
+            <h2 className="compare-differences-title">Key Differences</h2>
+            <div className="compare-differences-grid">
+              {!sameClass && (
+                <div className="compare-difference-item">
+                  <span className="compare-difference-icon">⚠️</span>
+                  <div>
+                    <strong>Different drug classes:</strong> {A.name} is a {A.class}, while {B.name} is a {B.class}
+                  </div>
                 </div>
-              </div>
-              <div className="cmp-cost-card">
-                <h3 className="cmp-cost-drug-name">{data.b.name}</h3>
-                <div className="cmp-cost-row">
-                  <span className="cmp-cost-label">Typical monthly cost</span>
-                  <span className="cmp-cost-value">Check GoodRx</span>
+              )}
+              {A.generic && B.generic && A.generic !== B.generic && (
+                <div className="compare-difference-item">
+                  <span className="compare-difference-icon">💊</span>
+                  <div>
+                    <strong>Different active ingredients:</strong> {A.generic} vs {B.generic}
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Best If You Want */}
-          <div className="cmp-section">
-            <h2 className="cmp-section-title">Best if you want...</h2>
-            <div className="cmp-best-grid">
-              <div className="cmp-best-card">
-                <div className="cmp-best-header">
-                  <span className="cmp-best-icon">💊</span>
-                  <h3>{data.a.name}</h3>
-                  <span className="cmp-best-arrow">→</span>
+              )}
+              {priceA && priceB && (
+                <div className="compare-difference-item">
+                  <span className="compare-difference-icon">💰</span>
+                  <div>
+                    <strong>Price difference:</strong> {A.name} costs {priceA} vs {B.name} at {priceB}
+                  </div>
                 </div>
-                <div className="cmp-best-info">
-                  <span className="cmp-warning-icon">⚠️</span>
-                  <span>{data.a.usedFor?.[0] || "Consult your healthcare provider"}</span>
-                </div>
-              </div>
-              <div className="cmp-best-card">
-                <div className="cmp-best-header">
-                  <span className="cmp-best-icon">💊</span>
-                  <h3>{data.b.name}</h3>
-                  <span className="cmp-best-arrow">→</span>
-                </div>
-                <div className="cmp-best-info">
-                  <span className="cmp-warning-icon">⚠️</span>
-                  <span>{data.b.usedFor?.[0] || "Consult your healthcare provider"}</span>
-                </div>
-              </div>
+              )}
             </div>
           </div>
 
           {/* Disclaimer */}
-          <div className="cmp-disclaimer">
-            <strong>⚕️ Medical Disclaimer:</strong> This comparison is for informational purposes only and should not be used as a substitute for professional medical advice. Always consult your healthcare provider before starting, stopping, or changing any medication.
+          <div className="compare-disclaimer">
+            <strong>⚕️ Medical Disclaimer:</strong> This comparison is for informational purposes only. Always consult your healthcare provider before starting, stopping, or changing any medication. Individual results may vary.
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@
 
 import "./globals.css";
 import "./homepage-styles.css";
+import "./compare-styles.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
