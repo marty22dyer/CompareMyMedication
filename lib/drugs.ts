@@ -2,6 +2,7 @@ import base from "../data/drugs.json";
 import overrides from "../data/overrides.json";
 import comprehensive from "../data/comprehensive-drugs.json";
 import commonMeds from "../data/common-meds-enriched.json";
+import topDrugs from "../data/top-drugs.json";
 
 export type Drug = {
   slug: string;
@@ -232,12 +233,14 @@ const baseList = safeLoadData(base, "base");
 const comprehensiveList = safeLoadData(comprehensive, "comprehensive");
 const overrideList = safeLoadData(overrides, "overrides");
 const commonMedsList = safeLoadData(commonMeds, "common-meds");
+const topDrugsList = safeLoadData(topDrugs, "top-drugs");
 
-// Merge all datasets (overrides win)
+// Merge all datasets (overrides win, top drugs have high priority)
 const map = new Map<string, Drug>();
 for (const d of comprehensiveList) map.set(d.slug, d);
 for (const d of baseList) map.set(d.slug, { ...map.get(d.slug), ...d });
 for (const d of commonMedsList) map.set(d.slug, { ...map.get(d.slug), ...d });
+for (const d of topDrugsList) map.set(d.slug, { ...map.get(d.slug), ...d });
 for (const d of overrideList) map.set(d.slug, { ...map.get(d.slug), ...d });
 
 export const drugs: Drug[] = Array.from(map.values());
