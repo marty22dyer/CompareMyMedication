@@ -96,6 +96,7 @@ export default function Home() {
   const [drugA, setDrugA] = useState("");
   const [drugB, setDrugB] = useState("");
   const [singleDrug, setSingleDrug] = useState("");
+  const [searchMode, setSearchMode] = useState<'single' | 'compare'>('single');
   
   const [suggestionsA, setSuggestionsA] = useState<string[]>([]);
   const [suggestionsB, setSuggestionsB] = useState<string[]>([]);
@@ -224,14 +225,75 @@ export default function Home() {
                 <div className="home-stat-label">Avg Savings</div>
               </div>
             </div>
+
+            {/* Search Tabs */}
+            <div className="home-search-tabs">
+              <button 
+                className={`home-search-tab ${searchMode === 'single' ? 'active' : ''}`}
+                onClick={() => setSearchMode('single')}
+              >
+                🔍 Search Drug Info
+              </button>
+              <button 
+                className={`home-search-tab ${searchMode === 'compare' ? 'active' : ''}`}
+                onClick={() => setSearchMode('compare')}
+              >
+                ⚖️ Compare Two Drugs
+              </button>
+            </div>
             
-            {/* Comparison Tool */}
-            <div className="home-compare-tool-container">
+            {/* Single Drug Search (Default/Primary) */}
+            {searchMode === 'single' && (
+              <div className="home-search-container">
+                <form onSubmit={handleSingleSearch} className="home-primary-search" ref={inputSingleRef}>
+                  <span className="home-search-icon">�</span>
+                  <input
+                    type="text"
+                    placeholder="Search any medication (e.g., Ozempic, Lipitor, Adderall)"
+                    value={singleDrug}
+                    onChange={(e) => handleSingleDrugChange(e.target.value)}
+                    className="home-search-input-primary"
+                    autoComplete="off"
+                  />
+                  {showSuggestionsSingle && suggestionsSingle.length > 0 && (
+                    <div className="home-autocomplete home-autocomplete-primary">
+                      {suggestionsSingle.map((drug) => (
+                        <div
+                          key={drug}
+                          className="home-autocomplete-item"
+                          onClick={() => selectSingleDrug(drug)}
+                        >
+                          💊 {drug}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  <button type="submit" className="home-search-btn-primary">Search</button>
+                </form>
+
+                {/* Popular Drug Searches */}
+                <div className="home-popular-searches">
+                  <span className="home-popular-label">Popular:</span>
+                  <div className="home-popular-pills">
+                    <a href="/drug/ozempic" className="home-pill">Ozempic</a>
+                    <a href="/drug/wegovy" className="home-pill">Wegovy</a>
+                    <a href="/drug/zepbound" className="home-pill">Zepbound</a>
+                    <a href="/drug/adderall" className="home-pill">Adderall</a>
+                    <a href="/drug/metformin" className="home-pill">Metformin</a>
+                    <a href="/drug/lexapro" className="home-pill">Lexapro</a>
+                  </div>
+                </div>
+              </div>
+            )}
+            
+            {/* Comparison Tool (Secondary) */}
+            {searchMode === 'compare' && (
+              <div className="home-compare-tool-container">
               <form onSubmit={handleCompare} className="home-compare-tool">
                 <div className="home-compare-inputs">
                   <div className="home-drug-input-wrapper" ref={inputARef}>
                     <div className="home-drug-input">
-                      <span className="home-drug-icon">💊</span>
+                      <span className="home-drug-icon">�</span>
                       <input
                         type="text"
                         placeholder="Adderall"
@@ -288,103 +350,18 @@ export default function Home() {
                 </button>
               </form>
 
-              {/* Popular Comparisons - Inside Tool */}
-              <div className="home-popular-inside">
-                <span className="home-popular-label">Popular comparisons</span>
+              {/* Popular Comparisons */}
+              <div className="home-popular-searches">
+                <span className="home-popular-label">Popular:</span>
                 <div className="home-popular-pills">
-                  <a href="/compare/adderall-vs-vyvanse" className="home-pill">
-                    <span className="home-pill-dot"></span>
-                    Adderall vs Vyvanse
-                  </a>
-                  <a href="/compare/ozempic-vs-wegovy" className="home-pill">
-                    <span className="home-pill-dot"></span>
-                    Ozempic vs Wegovy
-                  </a>
-                  <a href="/compare/zoloft-vs-lexapro" className="home-pill">
-                    <span className="home-pill-dot"></span>
-                    Zoloft vs Lexapro
-                  </a>
-                  <a href="/compare/metformin-vs-ozempic" className="home-pill">
-                    <span className="home-pill-dot"></span>
-                    Metformin vs Ozempic
-                  </a>
-                  <button className="home-pill-nav">♡</button>
-                  <button className="home-pill-nav">→</button>
+                  <a href="/compare/adderall-vs-vyvanse" className="home-pill">Adderall vs Vyvanse</a>
+                  <a href="/compare/ozempic-vs-wegovy" className="home-pill">Ozempic vs Wegovy</a>
+                  <a href="/compare/zoloft-vs-lexapro" className="home-pill">Zoloft vs Lexapro</a>
+                  <a href="/compare/metformin-vs-ozempic" className="home-pill">Metformin vs Ozempic</a>
                 </div>
               </div>
             </div>
-
-            {/* Single Drug Search */}
-            <div className="home-single-search-container">
-              <form onSubmit={handleSingleSearch} className="home-single-search" ref={inputSingleRef}>
-                <span className="home-search-icon">🔍</span>
-                <input
-                  type="text"
-                  placeholder="Just researching one medication? Search drug information"
-                  value={singleDrug}
-                  onChange={(e) => handleSingleDrugChange(e.target.value)}
-                  className="home-search-input"
-                  autoComplete="off"
-                  style={{ 
-                    flex: 1, 
-                    width: '100%', 
-                    border: 'none', 
-                    outline: 'none',
-                    boxShadow: 'none',
-                    background: 'transparent',
-                    padding: 0,
-                    margin: 0
-                  }}
-                />
-                {showSuggestionsSingle && suggestionsSingle.length > 0 && (
-                  <div className="home-autocomplete home-autocomplete-single">
-                    {suggestionsSingle.map((drug) => (
-                      <div
-                        key={drug}
-                        className="home-autocomplete-item"
-                        onClick={() => selectSingleDrug(drug)}
-                      >
-                        💊 {drug}
-                      </div>
-                    ))}
-                  </div>
-                )}
-                <button type="submit" className="home-search-btn">Search</button>
-              </form>
-
-              {/* Popular Drug Searches - Inside Search */}
-              <div className="home-popular-drugs">
-                <span className="home-popular-label">Popular drug searches</span>
-                <div className="home-popular-pills">
-                  <a href="/drug/ozempic" className="home-pill">
-                    <span className="home-pill-dot"></span>
-                    Ozempic
-                  </a>
-                  <a href="/drug/wegovy" className="home-pill">
-                    <span className="home-pill-dot"></span>
-                    Wegovy
-                  </a>
-                  <a href="/drug/zepbound" className="home-pill">
-                    <span className="home-pill-dot"></span>
-                    Zepbound
-                  </a>
-                  <a href="/drug/adderall" className="home-pill">
-                    <span className="home-pill-dot"></span>
-                    Adderall
-                  </a>
-                  <a href="/drug/metformin" className="home-pill">
-                    <span className="home-pill-dot"></span>
-                    Metformin
-                  </a>
-                  <a href="/drug/lexapro" className="home-pill">
-                    <span className="home-pill-dot"></span>
-                    Lexapro
-                  </a>
-                  <button className="home-pill-nav">♡</button>
-                  <button className="home-pill-nav">→</button>
-                </div>
-              </div>
-            </div>
+            )}
           </div>
         </section>
 
