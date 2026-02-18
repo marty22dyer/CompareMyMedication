@@ -595,14 +595,23 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   /* Reduce hero padding on mobile */
-  .hero-section {
-    padding: 40px 20px !important;
+  .home-hero {
+    padding: 24px 16px 40px !important;
+  }
+
+  /* Tighter title spacing */
+  .home-title {
+    margin-bottom: 12px !important;
+  }
+
+  .home-subtitle {
+    margin-bottom: 16px !important;
   }
 
   /* Make tabs prominent and clearly visible on mobile */
   .home-search-tabs {
     gap: 10px;
-    margin: 20px 16px 16px 16px;
+    margin: 12px 16px 12px 16px !important;
     display: flex !important;
   }
 
