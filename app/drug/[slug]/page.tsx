@@ -6,7 +6,7 @@ import { bySlug } from "../../../lib/drugs";
 import { useState } from "react";
 import FDADrugInfo from "../../../components/FDADrugInfo";
 import FDADrugData from "../../../components/FDADrugData";
-import { cleanFDAText, type DrugLabel, type AdverseEventSummary } from "../../../lib/openFDA";
+import { cleanFDAText, extractKeyPoints, type DrugLabel, type AdverseEventSummary } from "../../../lib/openFDA";
 
 export default function DrugPage({ params }: { params: { slug: string } }) {
   const drug = bySlug(params.slug);
@@ -179,42 +179,33 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
           {expandedSection === 'effectiveness' && (
             <div className="drug-section-content">
               <p className="drug-info-text" style={{ fontStyle: 'italic', color: '#666', marginBottom: '16px' }}>
-                ⚕️ Consult your healthcare provider for information about how {name} may be effective for your condition.
+                ⚕️ Consult your healthcare provider about how {name} may be effective for you.
               </p>
               
-              {fdaLabel?.indications_and_usage && fdaLabel.indications_and_usage.length > 0 && (
-                <>
-                  <h3 className="drug-subsection-title">FDA-Approved Indications:</h3>
-                  <p className="drug-info-text">{cleanFDAText(fdaLabel.indications_and_usage)}</p>
-                </>
-              )}
-              
-              {fdaLabel?.purpose && fdaLabel.purpose.length > 0 && (
-                <>
-                  <h3 className="drug-subsection-title">Purpose:</h3>
-                  <p className="drug-info-text">{cleanFDAText(fdaLabel.purpose)}</p>
-                </>
-              )}
-              
-              {usedFor.length > 0 && (
-                <>
-                  <h3 className="drug-subsection-title">Common Uses:</h3>
-                  <ul className="drug-list">
-                    {usedFor.map((use, idx) => (
-                      <li key={idx}>{use}</li>
-                    ))}
-                  </ul>
-                </>
-              )}
-              
-              {indications.length > 0 && !fdaLabel?.indications_and_usage && (
-                <>
-                  <h3 className="drug-subsection-title">What is {name} used for?</h3>
-                  {indications.map((indication, idx) => (
-                    <p key={idx} className="drug-info-text">{indication}</p>
-                  ))}
-                </>
-              )}
+              {(() => {
+                const keyPoints = extractKeyPoints(fdaLabel?.indications_and_usage || fdaLabel?.purpose, 5);
+                if (keyPoints.length > 0) {
+                  return (
+                    <ul className="drug-list">
+                      {keyPoints.map((point, idx) => (
+                        <li key={idx}>{point}</li>
+                      ))}
+                    </ul>
+                  );
+                }
+                
+                if (usedFor.length > 0) {
+                  return (
+                    <ul className="drug-list">
+                      {usedFor.slice(0, 5).map((use, idx) => (
+                        <li key={idx}>{use}</li>
+                      ))}
+                    </ul>
+                  );
+                }
+                
+                return null;
+              })()}
             </div>
           )}
         </div>
@@ -234,65 +225,40 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
           {expandedSection === 'sideEffects' && (
             <div className="drug-section-content">
               <p className="drug-info-text" style={{ fontStyle: 'italic', color: '#666', marginBottom: '16px' }}>
-                ⚕️ Always discuss potential side effects with your healthcare provider before starting {name}.
+                ⚕️ Always discuss potential side effects with your healthcare provider.
               </p>
               
-              {fdaLabel?.warnings && fdaLabel.warnings.length > 0 && (
-                <>
-                  <h3 className="drug-subsection-title">⚠️ Important Warnings:</h3>
-                  <p className="drug-warning-text">{cleanFDAText(fdaLabel.warnings)}</p>
-                </>
-              )}
-              
-              {fdaLabel?.adverse_reactions && fdaLabel.adverse_reactions.length > 0 && (
-                <>
-                  <h3 className="drug-subsection-title">Adverse Reactions:</h3>
-                  <p className="drug-info-text">{cleanFDAText(fdaLabel.adverse_reactions)}</p>
-                </>
-              )}
-              
-              {fdaEvents.length > 0 && (
-                <>
-                  <h3 className="drug-subsection-title">Most Reported Side Effects:</h3>
-                  <ul className="drug-list">
-                    {fdaEvents.slice(0, 10).map((event, idx) => (
-                      <li key={idx} style={{ textTransform: 'capitalize' }}>
-                        {event.term.toLowerCase()} <span style={{ color: '#666', fontSize: '14px' }}>({event.count.toLocaleString()} reports)</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="drug-info-text" style={{ fontSize: '13px', color: '#666', marginTop: '12px' }}>
-                    Based on FDA adverse event reports. These are reported side effects and do not necessarily indicate causation.
-                  </p>
-                </>
-              )}
-              
-              {warnings.length > 0 && !fdaLabel?.warnings && (
-                <>
-                  <h3 className="drug-subsection-title">⚠️ Important Warnings:</h3>
-                  {warnings.map((warning, idx) => (
-                    <p key={idx} className="drug-warning-text">{warning}</p>
-                  ))}
-                </>
-              )}
-              
-              {sideEffects.length > 0 && !fdaLabel?.adverse_reactions && fdaEvents.length === 0 && (
-                <>
-                  <h3 className="drug-subsection-title">Common Side Effects:</h3>
-                  <ul className="drug-list">
-                    {sideEffects.slice(0, 10).map((effect, idx) => (
-                      <li key={idx}>{effect}</li>
-                    ))}
-                  </ul>
-                </>
-              )}
-              
-              {interactions.length > 0 && (
-                <>
-                  <h3 className="drug-subsection-title">Drug Interactions:</h3>
-                  <p className="drug-info-text">May interact with: {interactions.slice(0, 5).join(", ")}</p>
-                </>
-              )}
+              {(() => {
+                // Combine FDA warnings and reported side effects
+                const warningPoints = extractKeyPoints(fdaLabel?.warnings, 3);
+                
+                if (warningPoints.length > 0 || fdaEvents.length > 0) {
+                  return (
+                    <ul className="drug-list">
+                      {warningPoints.map((point, idx) => (
+                        <li key={`warning-${idx}`}><strong>⚠️</strong> {point}</li>
+                      ))}
+                      {fdaEvents.slice(0, 5 - warningPoints.length).map((event, idx) => (
+                        <li key={`event-${idx}`} style={{ textTransform: 'capitalize' }}>
+                          {event.term.toLowerCase()}
+                        </li>
+                      ))}
+                    </ul>
+                  );
+                }
+                
+                if (sideEffects.length > 0) {
+                  return (
+                    <ul className="drug-list">
+                      {sideEffects.slice(0, 5).map((effect, idx) => (
+                        <li key={idx}>{effect}</li>
+                      ))}
+                    </ul>
+                  );
+                }
+                
+                return null;
+              })()}
             </div>
           )}
         </div>
@@ -311,29 +277,37 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
           </button>
           {expandedSection === 'dosing' && (
             <div className="drug-section-content">
-              <div className="drug-dosing-disclaimer" style={{ marginBottom: '16px' }}>
-                <p><strong>⚕️ Important:</strong> Never adjust your dosage without consulting your doctor. Dosing varies based on age, weight, condition severity, and other medications.</p>
-              </div>
+              <p className="drug-info-text" style={{ fontStyle: 'italic', color: '#666', marginBottom: '16px' }}>
+                ⚕️ Never adjust your dosage without consulting your doctor.
+              </p>
               
-              {fdaLabel?.dosage_and_administration && fdaLabel.dosage_and_administration.length > 0 && (
-                <>
-                  <h3 className="drug-subsection-title">FDA Dosage Guidelines:</h3>
-                  <p className="drug-info-text">{cleanFDAText(fdaLabel.dosage_and_administration)}</p>
-                </>
-              )}
-              
-              {dosageInfo.length > 0 && !fdaLabel?.dosage_and_administration && (
-                <>
-                  <h3 className="drug-subsection-title">Dosage Information:</h3>
-                  {dosageInfo.map((info, idx) => (
-                    <p key={idx} className="drug-info-text">{info}</p>
-                  ))}
-                </>
-              )}
-              
-              {!fdaLabel?.dosage_and_administration && dosageInfo.length === 0 && (
-                <p className="drug-info-text">Dosing for {name} should be determined by your healthcare provider based on your individual needs and medical condition.</p>
-              )}
+              {(() => {
+                const dosingPoints = extractKeyPoints(fdaLabel?.dosage_and_administration, 5);
+                
+                if (dosingPoints.length > 0) {
+                  return (
+                    <ul className="drug-list">
+                      {dosingPoints.map((point, idx) => (
+                        <li key={idx}>{point}</li>
+                      ))}
+                    </ul>
+                  );
+                }
+                
+                if (dosageInfo.length > 0) {
+                  return (
+                    <ul className="drug-list">
+                      {dosageInfo.slice(0, 5).map((info, idx) => (
+                        <li key={idx}>{info}</li>
+                      ))}
+                    </ul>
+                  );
+                }
+                
+                return (
+                  <p className="drug-info-text">Dosing should be determined by your healthcare provider based on your individual needs.</p>
+                );
+              })()}
             </div>
           )}
         </div>

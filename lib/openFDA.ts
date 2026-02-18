@@ -146,3 +146,22 @@ export function getFirstAvailable(...fields: (string | string[] | undefined)[]):
   }
   return '';
 }
+
+/**
+ * Extract key bullet points from FDA text (3-5 most important points)
+ */
+export function extractKeyPoints(text: string | string[] | undefined, maxPoints: number = 5): string[] {
+  if (!text) return [];
+  
+  const cleaned = cleanFDAText(text);
+  if (!cleaned) return [];
+  
+  // Split by common sentence delimiters
+  const sentences = cleaned
+    .split(/[.!?]\s+/)
+    .map(s => s.trim())
+    .filter(s => s.length > 20 && s.length < 300); // Filter out very short or very long sentences
+  
+  // Take first maxPoints sentences as key points
+  return sentences.slice(0, maxPoints);
+}
