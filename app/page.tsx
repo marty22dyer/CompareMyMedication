@@ -342,8 +342,9 @@ export default function Home() {
                 </div>
               </div>
             
-            {/* Comparison Tool (Secondary) */
+            {/* Comparison Tool (Secondary) */}
               <div className="home-compare-tool-container">
+              <h2 className="home-compare-heading">⚖️ Compare Two Drugs</h2>
               <form onSubmit={handleCompare} className="home-compare-tool">
                 <div className="home-compare-inputs">
                   <div className="home-drug-input-wrapper" ref={inputARef}>

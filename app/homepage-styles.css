@@ -59,6 +59,16 @@
   border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Comparison Heading */
+.home-compare-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin: 0 0 20px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .home-primary-search {
   display: flex;
   align-items: center;
