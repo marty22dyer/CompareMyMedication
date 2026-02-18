@@ -255,7 +255,24 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Search Tabs */}
+            <div className="home-search-tabs">
+              <button 
+                className={`home-search-tab ${searchMode === 'single' ? 'active' : ''}`}
+                onClick={() => setSearchMode('single')}
+              >
+                🔍 Search Drug Info
+              </button>
+              <button 
+                className={`home-search-tab ${searchMode === 'compare' ? 'active' : ''}`}
+                onClick={() => setSearchMode('compare')}
+              >
+                ⚖️ Compare Two Drugs
+              </button>
+            </div>
+
             {/* Single Drug Search (Primary) */}
+            {searchMode === 'single' && (
               <div className="home-search-container">
                 <form onSubmit={handleSingleSearch} className="home-primary-search" ref={inputSingleRef}>
                   {recentSearches.length > 0 && (
@@ -341,10 +358,11 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            )}
             
             {/* Comparison Tool (Secondary) */}
+            {searchMode === 'compare' && (
               <div className="home-compare-tool-container">
-              <h2 className="home-compare-heading">⚖️ Compare Two Drugs</h2>
               <form onSubmit={handleCompare} className="home-compare-tool">
                 <div className="home-compare-inputs">
                   <div className="home-drug-input-wrapper" ref={inputARef}>
@@ -423,6 +441,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            )}
           </div>
         </section>
 
