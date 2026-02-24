@@ -1,9 +1,35 @@
-"use client";
-
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { drugs, type Drug } from "../../../lib/drugs";
 import "./category-styles.css";
+
+const SITE = "https://comparemymedication.com";
+
+type Props = { params: { slug: string } };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const config = CATEGORY_CONFIG[params.slug];
+  if (!config) return { title: "Not Found", robots: { index: false, follow: true } };
+
+  const title = `${config.name}: Compare Medications, Prices & Alternatives`;
+  const description = config.description;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: `${SITE}/category/${params.slug}` },
+    robots: { index: true, follow: true },
+    openGraph: {
+      type: "website",
+      title,
+      description,
+      url: `${SITE}/category/${params.slug}`,
+      siteName: "CompareMyMedication",
+    },
+    twitter: { card: "summary", title, description },
+  };
+}
 
 const CATEGORY_CONFIG: Record<string, {
   name: string;
