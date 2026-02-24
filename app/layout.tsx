@@ -58,6 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <meta name="impact-site-verification" content="59d46921-987d-46c9-baaa-658e9360b1e5" />
+        <meta name="msvalidate.01" content="4EACB3100B294C40B1979B2DC79105B0" />
         <GoogleAnalytics />
       </head>
       <body>
