@@ -108,6 +108,20 @@ const safeLoadData = (data: any, source: string): Drug[] => {
   }
 };
 
+// Filter out long technical dosage-based slugs that cause 404/redirect issues
+const isCleanSlug = (slug: string) =>
+  slug.length <= 50 &&
+  !/\d+-mg/.test(slug) &&
+  !/\d+-mcg/.test(slug) &&
+  !/oral-tablet/.test(slug) &&
+  !/oral-capsule/.test(slug) &&
+  !/oral-solution/.test(slug) &&
+  !/oral-suspension/.test(slug) &&
+  !/oral-powder/.test(slug) &&
+  !/rectal-suppository/.test(slug) &&
+  !/injection/.test(slug) &&
+  !/mg-ml/.test(slug);
+
 // Load and merge data
 const baseList = safeLoadData(base, "base");
 const comprehensiveList = safeLoadData(comprehensive, "comprehensive");
@@ -116,9 +130,9 @@ const commonMedsList = safeLoadData(commonMeds, "common-meds");
 
 // Merge all datasets (overrides win)
 const map = new Map<string, Drug>();
-for (const d of comprehensiveList) map.set(d.slug, d);
+for (const d of comprehensiveList) { if (isCleanSlug(d.slug)) map.set(d.slug, d); }
 for (const d of baseList) map.set(d.slug, { ...map.get(d.slug), ...d });
-for (const d of commonMedsList) map.set(d.slug, { ...map.get(d.slug), ...d });
+for (const d of commonMedsList) { if (isCleanSlug(d.slug)) map.set(d.slug, { ...map.get(d.slug), ...d }); }
 for (const d of overrideList) map.set(d.slug, { ...map.get(d.slug), ...d });
 
 export const drugs: Drug[] = Array.from(map.values());
