@@ -63,12 +63,24 @@ export default function sitemap() {
     priority: 0.85,
   }));
 
-  const drugUrls = Array.from(allDrugs.values()).map((drug) => ({
-    url: `${BASE_URL}/drug/${drug.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+  // Only include clean slugs - exclude long technical dosage slugs that cause redirect issues
+  const isCleanSlug = (slug: string) =>
+    slug.length <= 50 &&
+    !/\d+-mg/.test(slug) &&
+    !/\d+-mcg/.test(slug) &&
+    !/oral-tablet/.test(slug) &&
+    !/oral-capsule/.test(slug) &&
+    !/oral-solution/.test(slug) &&
+    !/injection/.test(slug);
+
+  const drugUrls = Array.from(allDrugs.values())
+    .filter((drug) => isCleanSlug(drug.slug))
+    .map((drug) => ({
+      url: `${BASE_URL}/drug/${drug.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }));
 
   const compareUrls = POPULAR_COMPARISONS.map((slug) => ({
     url: `${BASE_URL}/compare/${slug}`,
