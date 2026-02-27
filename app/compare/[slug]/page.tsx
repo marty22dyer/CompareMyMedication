@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { bySlug } from "../../../lib/drugs";
+import { getCompareContent, getDynamicCompareContent } from "../../../lib/compare-content";
 import ComparePageClient from "./ComparePageClient";
 
 const SITE = "https://comparemymedication.com";
@@ -39,7 +40,16 @@ export default function ComparePage({ params }: Props) {
   const A = bySlug(slugA);
   const B = bySlug(slugB);
 
-  const jsonLd = A && B ? {
+  const sameClass = !!(A?.class && B?.class && A.class === B.class);
+  const richContent = A && B
+    ? (getCompareContent(params.slug) ?? getDynamicCompareContent(
+        A.name, A.class, A.usedFor ?? [],
+        B.name, B.class, B.usedFor ?? [],
+        sameClass, A.generic === B.generic
+      ))
+    : null;
+
+  const articleJsonLd = A && B ? {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: `${A.name} vs ${B.name}: Side-by-Side Comparison`,
@@ -52,12 +62,28 @@ export default function ComparePage({ params }: Props) {
     ],
   } : null;
 
+  const faqJsonLd = richContent ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: richContent.faq.map(({ q, a }) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    })),
+  } : null;
+
   return (
     <>
-      {jsonLd && (
+      {articleJsonLd && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+        />
+      )}
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       )}
       <ComparePageClient params={params} />
