@@ -5,6 +5,7 @@ import { allCompareSlugs } from "../../../lib/compare";
 import { bySlug, type Drug } from "../../../lib/drugs";
 import { useState, useEffect } from "react";
 import { addRecentSearch } from "../../../lib/userPreferences";
+import { getCompareContent, getDynamicCompareContent } from "../../../lib/compare-content";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3001";
 
@@ -41,6 +42,15 @@ export default function ComparePage({ params }: Props) {
   const genericPriceA = priceA ? `$${Math.round(A.goodrxData!.current_price! * 0.3)}` : null;
   const genericPriceB = priceB ? `$${Math.round(B.goodrxData!.current_price! * 0.3)}` : null;
 
+  // Get rich content
+  const richContent = getCompareContent(params.slug) ?? getDynamicCompareContent(
+    A.name, A.class, A.usedFor ?? [],
+    B.name, B.class, B.usedFor ?? [],
+    !!sameClass, A.generic === B.generic
+  );
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
   return (
     <main className="compare-page-new">
       {/* Hero Section */}
@@ -54,6 +64,27 @@ export default function ComparePage({ params }: Props) {
           <p className="compare-subtitle">
             {sameClass ? `Both are ${A.class}` : 'Different drug classes'} • Side-by-side comparison
           </p>
+        </div>
+      </section>
+
+      {/* Overview Section */}
+      <section className="compare-overview-section">
+        <div className="compare-container">
+          <div className="compare-overview-card">
+            <h2 className="compare-overview-title">{A.name} vs {B.name}: Overview</h2>
+            <p className="compare-overview-text">{richContent.overview}</p>
+            <div className="compare-key-points">
+              <h3 className="compare-key-points-title">Key Facts at a Glance</h3>
+              <ul className="compare-key-points-list">
+                {richContent.keyPoints.map((point, idx) => (
+                  <li key={idx} className="compare-key-point-item">
+                    <span className="compare-key-point-check">✓</span>
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -175,6 +206,62 @@ export default function ComparePage({ params }: Props) {
                   </div>
                 </div>
               )}
+            </div>
+          </div>
+
+          {/* Recommendation Section */}
+          <div className="compare-recommendation">
+            <div className="compare-recommendation-icon">⚕️</div>
+            <div>
+              <h2 className="compare-recommendation-title">Which Should You Choose?</h2>
+              <p className="compare-recommendation-text">{richContent.recommendation}</p>
+            </div>
+          </div>
+
+          {/* FAQ Section */}
+          <div className="compare-faq">
+            <h2 className="compare-faq-title">Frequently Asked Questions</h2>
+            <div className="compare-faq-list">
+              {richContent.faq.map((item, idx) => (
+                <div key={idx} className="compare-faq-item">
+                  <button
+                    className="compare-faq-question"
+                    onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                    aria-expanded={openFaq === idx}
+                  >
+                    <span>{item.q}</span>
+                    <span className="compare-faq-arrow">{openFaq === idx ? '▼' : '▶'}</span>
+                  </button>
+                  {openFaq === idx && (
+                    <div className="compare-faq-answer">
+                      <p>{item.a}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Related Comparisons */}
+          <div className="compare-related">
+            <h2 className="compare-related-title">Related Comparisons</h2>
+            <div className="compare-related-grid">
+              {(A.alternatives ?? []).slice(0, 2).map((altSlug: string) => (
+                <a key={altSlug} href={`/compare/${altSlug}-vs-${B.slug}`} className="compare-related-link">
+                  {altSlug.replace(/-/g, ' ')} vs {B.name} →
+                </a>
+              ))}
+              {(B.alternatives ?? []).slice(0, 2).map((altSlug: string) => (
+                <a key={altSlug} href={`/compare/${A.slug}-vs-${altSlug}`} className="compare-related-link">
+                  {A.name} vs {altSlug.replace(/-/g, ' ')} →
+                </a>
+              ))}
+              <a href={`/drug/${A.slug}`} className="compare-related-link">
+                Learn more about {A.name} →
+              </a>
+              <a href={`/drug/${B.slug}`} className="compare-related-link">
+                Learn more about {B.name} →
+              </a>
             </div>
           </div>
 

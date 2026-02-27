@@ -282,6 +282,232 @@
   color: #1a202c;
 }
 
+/* ===== OVERVIEW SECTION ===== */
+.compare-overview-section {
+  background: #fff;
+  padding: 48px 24px 32px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.compare-overview-card {
+  background: linear-gradient(135deg, #f8faff 0%, #f0f4ff 100%);
+  border: 1px solid #c3d0f0;
+  border-radius: 16px;
+  padding: 36px 40px;
+}
+
+.compare-overview-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 16px 0;
+}
+
+.compare-overview-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4a5568;
+  margin: 0 0 28px 0;
+}
+
+.compare-key-points {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 28px;
+  border: 1px solid #e2e8f0;
+}
+
+.compare-key-points-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.compare-key-points-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.compare-key-point-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+.compare-key-point-check {
+  color: #48bb78;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ===== RECOMMENDATION SECTION ===== */
+.compare-recommendation {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #e6fffa 0%, #f0fff4 100%);
+  border: 2px solid #9ae6b4;
+  border-radius: 16px;
+  padding: 32px 36px;
+  margin: 32px 0;
+}
+
+.compare-recommendation-icon {
+  font-size: 36px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.compare-recommendation-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #276749;
+  margin: 0 0 12px 0;
+}
+
+.compare-recommendation-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #2d3748;
+  margin: 0;
+}
+
+/* ===== FAQ SECTION ===== */
+.compare-faq {
+  margin: 32px 0;
+}
+
+.compare-faq-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 20px 0;
+}
+
+.compare-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.compare-faq-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.compare-faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2d3748;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.compare-faq-question:hover {
+  background: #f7fafc;
+}
+
+.compare-faq-arrow {
+  font-size: 12px;
+  color: #718096;
+  flex-shrink: 0;
+}
+
+.compare-faq-answer {
+  padding: 0 24px 20px;
+  border-top: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.compare-faq-answer p {
+  margin: 16px 0 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4a5568;
+}
+
+/* ===== RELATED COMPARISONS ===== */
+.compare-related {
+  margin: 32px 0;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 28px 32px;
+  border: 1px solid #e2e8f0;
+}
+
+.compare-related-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 16px 0;
+}
+
+.compare-related-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.compare-related-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #fff;
+  border: 1px solid #c3d0f0;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #4a6cf7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.15s;
+  text-transform: capitalize;
+}
+
+.compare-related-link:hover {
+  background: #4a6cf7;
+  color: #fff;
+  border-color: #4a6cf7;
+}
+
+/* Responsive for new sections */
+@media (max-width: 768px) {
+  .compare-overview-card {
+    padding: 24px 20px;
+  }
+  .compare-key-points-list {
+    grid-template-columns: 1fr;
+  }
+  .compare-recommendation {
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px 20px;
+  }
+  .compare-overview-title {
+    font-size: 20px;
+  }
+}
+
 /* Disclaimer */
 .compare-disclaimer {
   background: #fff3cd;

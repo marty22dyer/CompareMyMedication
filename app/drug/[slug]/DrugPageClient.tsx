@@ -8,6 +8,7 @@ import FDADrugInfo from "../../../components/FDADrugInfo";
 import FDADrugData from "../../../components/FDADrugData";
 import { cleanFDAText, extractKeyPoints, type DrugLabel, type AdverseEventSummary } from "../../../lib/openFDA";
 import { toggleFavorite, isFavorite, addRecentSearch, getComparisonCandidate, setComparisonCandidate, clearComparisonCandidate } from "../../../lib/userPreferences";
+import { getDrugContent } from "../../../lib/drug-content";
 
 export default function DrugPageClient({ params }: { params: { slug: string } }) {
   const router = useRouter();
@@ -188,6 +189,42 @@ export default function DrugPageClient({ params }: { params: { slug: string } })
 
       {/* Main Content */}
       <div className="drug-main-content">
+
+        {/* Rich Overview Section */}
+        {(() => {
+          const content = getDrugContent(params.slug);
+          if (!content) return null;
+          return (
+            <div className="drug-overview-block">
+              <div className="drug-overview-about">
+                <h2 className="drug-overview-heading">About {name}</h2>
+                <p className="drug-overview-text">{content.overview}</p>
+              </div>
+              <div className="drug-overview-columns">
+                <div className="drug-overview-col">
+                  <h3 className="drug-overview-subheading">How It Works</h3>
+                  <p className="drug-overview-text">{content.howItWorks}</p>
+                </div>
+                <div className="drug-overview-col">
+                  <h3 className="drug-overview-subheading">Key Facts</h3>
+                  <ul className="drug-overview-facts">
+                    {content.keyFacts.map((fact, i) => (
+                      <li key={i} className="drug-overview-fact-item">
+                        <span className="drug-overview-fact-check">✓</span>
+                        <span>{fact}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="drug-overview-who">
+                <h3 className="drug-overview-subheading">Who Is {name} For?</h3>
+                <p className="drug-overview-text">{content.whoIsItFor}</p>
+              </div>
+            </div>
+          );
+        })()}
+
         {/* Snapshot Section */}
         <div className="drug-section">
           <h2 className="drug-section-title">

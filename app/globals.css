@@ -4056,3 +4056,94 @@ padding:12px 14px;text-align:left}
     }
   }
 }
+
+/* ===== DRUG OVERVIEW BLOCK ===== */
+.drug-overview-block {
+  background: linear-gradient(135deg, #f8faff 0%, #f0f4ff 100%);
+  border: 1px solid #c3d0f0;
+  border-radius: 16px;
+  padding: 36px 40px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.drug-overview-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 12px 0;
+}
+
+.drug-overview-subheading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.drug-overview-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4a5568;
+  margin: 0;
+}
+
+.drug-overview-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.drug-overview-col {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+}
+
+.drug-overview-facts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.drug-overview-fact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+.drug-overview-fact-check {
+  color: #48bb78;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.drug-overview-who {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .drug-overview-block {
+    padding: 24px 20px;
+  }
+  .drug-overview-columns {
+    grid-template-columns: 1fr;
+  }
+  .drug-overview-heading {
+    font-size: 20px;
+  }
+}
