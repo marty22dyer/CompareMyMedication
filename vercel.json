@@ -4,7 +4,8 @@
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.comparemymedication.com" }],
       "destination": "https://comparemymedication.com/:path*",
-      "permanent": true
+      "permanent": true,
+      "statusCode": 301
     }
   ]
 }
